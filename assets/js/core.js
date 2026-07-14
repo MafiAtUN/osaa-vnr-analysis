@@ -51,8 +51,11 @@
        narrow no-break space before the % sign. */
     num(v, unit) {
       if (v == null || v === "") return "";
+      // Percentages want one decimal; index values below 1 (an HDI of 0.571,
+      // a ratio) need three, or they round away to a meaningless "0.6".
+      const dp = Math.abs(v) < 1 ? 3 : 1;
       const s = new Intl.NumberFormat(lang === "fr" ? "fr-FR" : "en-GB", {
-        maximumFractionDigits: 1
+        maximumFractionDigits: dp
       }).format(v);
       if (!unit) return s;
       if (unit === "%" || unit === "%+") {
