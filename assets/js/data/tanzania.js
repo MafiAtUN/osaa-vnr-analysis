@@ -34,8 +34,8 @@ window.VNR.register({
      the emphasis survives translation instead of being positional. */
   lede: {
     statement: {
-      en: "Tanzania built hard and paid for it at home: *86%* of people now have electricity from some source, and *78%* of the budget is financed from domestic revenue. But only *52%* of households are actually connected to the national grid — and the review does not hide that manufacturing's share of the economy fell even as the infrastructure rose.",
-      fr: "La Tanzanie a beaucoup construit et l'a financé chez elle : *86 %* de la population a désormais accès à l'électricité, toutes sources confondues, et *78 %* du budget provient des recettes intérieures. Mais seuls *52 %* des ménages sont réellement raccordés au réseau national — et la revue ne cache pas que la part de l'industrie manufacturière a reculé alors même que les infrastructures progressaient."
+      en: "Tanzania invested heavily in infrastructure and financed much of it at home: *86%* of people now have electricity from some source, and *78%* of the budget is financed from domestic revenue. But only *52%* of households are actually connected to the national grid, while manufacturing's share of the economy fell even as the infrastructure rose.",
+      fr: "La Tanzanie a beaucoup investi dans les infrastructures et les a financées en grande partie chez elle : *86 %* de la population a désormais accès à l'électricité, toutes sources confondues, et *78 %* du budget provient des recettes intérieures. Mais seuls *52 %* des ménages sont réellement raccordés au réseau national, tandis que la part de l'industrie manufacturière a reculé alors même que les infrastructures progressaient."
     },
     figures: [
       { ref: "elec_access" },
@@ -194,8 +194,8 @@ window.VNR.register({
         id: "overview",
         label: { en: "Overview & Trends", fr: "Aperçu et tendances" },
         intro: {
-          en: "Tanzania's third review documents an infrastructure delivery record few countries in the region can match — generation capacity more than doubled, every region on the grid, internet penetration at 85%, rural water at 85.2%. It also documents, with unusual candour, that this has not yet become structural transformation: manufacturing's share of GDP fell from 7.7% to 5.9% over the same period, and 95.7% of non-agricultural jobs are informal. The six tiles below carry that argument. Select one to open its evidence.",
-          fr: "La troisième revue de la Tanzanie documente une exécution d'infrastructures que peu de pays de la région égalent : capacité de production plus que doublée, toutes les régions raccordées au réseau, pénétration d'Internet à 85 %, eau rurale à 85,2 %. Elle documente aussi, avec une franchise inhabituelle, que cela ne s'est pas encore converti en transformation structurelle : la part de l'industrie manufacturière dans le PIB est tombée de 7,7 % à 5,9 % sur la même période et 95,7 % des emplois non agricoles sont informels. Les six tuiles ci-dessous portent cette démonstration. Sélectionnez-en une pour ouvrir ses données."
+          en: "Tanzania's third review documents a large infrastructure build-out: generation capacity more than doubled, every region on the grid, internet penetration at 85%, rural water at 85.2%. Over the same period, manufacturing's share of GDP fell from 7.7% to 5.9%, and 95.7% of non-agricultural jobs are informal. Select a tile to open its data.",
+          fr: "La troisième revue de la Tanzanie documente une importante construction d'infrastructures : capacité de production plus que doublée, toutes les régions raccordées au réseau, pénétration d'Internet à 85 %, eau rurale à 85,2 %. Sur la même période, la part de l'industrie manufacturière dans le PIB est tombée de 7,7 % à 5,9 % et 95,7 % des emplois non agricoles sont informels. Sélectionnez une tuile pour ouvrir ses données."
         },
         blocks: [
 
@@ -237,8 +237,8 @@ window.VNR.register({
                      fr: "2025, contre 72,3 % en 2020 — tandis que le raccordement aux égouts est tombé à 5,6 %" },
               panel: {
                 sdg: 6,
-                title: { en: "A strong pipe network on a weak sanitation base",
-                         fr: "Un réseau d'eau solide sur une base d'assainissement fragile" },
+                title: { en: "Water coverage high; sanitation coverage low",
+                         fr: "Couverture d'eau élevée, assainissement faible" },
                 chart: {
                   type: "gap", sdg: 6, unit: "%",
                   title: { en: "Water is nearly universal; sanitation and hygiene are not",
@@ -253,8 +253,8 @@ window.VNR.register({
                   source: "VNR 2026, Annex Table A6 · Ch. 4 (SDG 6) narrative"
                 },
                 text: {
-                  en: "Water supply is the review's most complete success: rural coverage up nearly thirteen points, regional centres at 92.5%, Dar es Salaam at 94.5%. Sanitation is the opposite story, and the report does not hide it. Sewer connectivity in regional centres is rated \"regressing\" — 13.0% in 2020 against 5.6% in 2024 — barely a quarter of the population has adequate hygiene services, and non-revenue water in Dar es Salaam sits at about 40%, the one SDG 6 indicator explicitly rated \"not on track\". Reporting the water figure alone would flatter the picture badly.",
-                  fr: "L'approvisionnement en eau est la réussite la plus aboutie de la revue : la couverture rurale progresse de près de treize points, les centres régionaux atteignent 92,5 % et Dar es Salaam 94,5 %. L'assainissement raconte l'inverse, et le rapport ne le dissimule pas. Le raccordement aux égouts dans les centres régionaux est classé « en régression » — 13,0 % en 2020 contre 5,6 % en 2024 —, à peine un quart de la population dispose de services d'hygiène adéquats et l'eau non facturée à Dar es Salaam avoisine 40 %, seul indicateur de l'ODD 6 explicitement jugé « hors trajectoire ». Ne présenter que le chiffre de l'eau embellirait gravement le tableau."
+                  en: "Water supply advanced across the period: rural coverage up nearly thirteen points, regional centres at 92.5%, Dar es Salaam at 94.5%. Sanitation moved differently. Sewer connectivity in regional centres is rated \"regressing\" — 13.0% in 2020 against 5.6% in 2024 — about a quarter of the population has adequate hygiene services, and non-revenue water in Dar es Salaam is about 40%, the one SDG 6 indicator rated \"not on track\".",
+                  fr: "L'approvisionnement en eau a progressé sur la période : la couverture rurale gagne près de treize points, les centres régionaux atteignent 92,5 % et Dar es Salaam 94,5 %. L'assainissement a évolué différemment. Le raccordement aux égouts dans les centres régionaux est classé « en régression » — 13,0 % en 2020 contre 5,6 % en 2024 —, environ un quart de la population dispose de services d'hygiène adéquats et l'eau non facturée à Dar es Salaam avoisine 40 %, seul indicateur de l'ODD 6 jugé « hors trajectoire »."
                 },
                 source: "VNR 2026, Table 4.1 · Annex Table A6"
               } },
@@ -263,8 +263,8 @@ window.VNR.register({
             { sdg: 9,
               label: { en: "Manufacturing, % of GDP", fr: "Industrie manufacturière, en % du PIB" },
               value: 5.9, unit: "%",
-              sub: { en: "2025, down from 7.7% in 2020 — the review's central failure",
-                     fr: "2025, contre 7,7 % en 2020 — l'échec central de la revue" },
+              sub: { en: "2025, down from 7.7% in 2020",
+                     fr: "2025, contre 7,7 % en 2020" },
               panel: {
                 sdg: 9,
                 title: { en: "Manufacturing value added, % of GDP, 2020–2025",
@@ -281,8 +281,8 @@ window.VNR.register({
                   source: "VNR 2026, Annex Table A9 (9.2.1)"
                 },
                 text: {
-                  en: "This is the report's verdict on itself: \"the central implementation gap is structural transformation\". Over the five years in which Tanzania doubled generation capacity, put every region on the grid and quadrupled rail passengers, the manufacturing share of GDP did not rise — it fell by nearly two points, with the sharpest drop in the final year. Infrastructure has been built; industrial value added has not followed it. The one countervailing signal is the SME share of industrial value added, which climbed steadily from 7.2% to 11.6%.",
-                  fr: "C'est le verdict que le rapport porte sur lui-même : « la principale lacune de mise en œuvre est la transformation structurelle ». Pendant les cinq années où la Tanzanie a doublé sa capacité de production, raccordé toutes ses régions au réseau et quadruplé le trafic ferroviaire de voyageurs, la part de l'industrie manufacturière dans le PIB n'a pas progressé : elle a reculé de près de deux points, la chute la plus marquée intervenant la dernière année. Les infrastructures ont été construites ; la valeur ajoutée industrielle n'a pas suivi. Le seul signal contraire vient de la part des PME dans la valeur ajoutée industrielle, passée régulièrement de 7,2 % à 11,6 %."
+                  en: "The report names structural transformation as \"the central implementation gap\". Over the five years in which Tanzania doubled generation capacity, put every region on the grid and quadrupled rail passengers, the manufacturing share of GDP fell by nearly two points, with the sharpest drop in the final year. The SME share of industrial value added rose from 7.2% to 11.6%.",
+                  fr: "Le rapport désigne la transformation structurelle comme « la principale lacune de mise en œuvre ». Pendant les cinq années où la Tanzanie a doublé sa capacité de production, raccordé toutes ses régions au réseau et quadruplé le trafic ferroviaire de voyageurs, la part de l'industrie manufacturière dans le PIB a reculé de près de deux points, la chute la plus marquée intervenant la dernière année. La part des PME dans la valeur ajoutée industrielle est passée de 7,2 % à 11,6 %."
                 },
                 source: "VNR 2026, Table 4.3 · Annex Table A9"
               } },
@@ -308,8 +308,8 @@ window.VNR.register({
                   source: "VNR 2026, Table 3.8 · Annex Table A8 (8.3.1)"
                 },
                 text: {
-                  en: "Informality is not stable — it is rising, from 92.5% of non-agricultural employment in 2021 to 95.7% in 2025, and it reaches 97.1% among women. This is the mechanism that connects every other weakness in the review: informality suppresses the tax base, which constrains the financing of the SDGs, while the absence of formal industrial jobs is exactly what a falling manufacturing share implies. Unemployment fell to 5.9% over the same period — a reminder that in this economy the binding constraint is the quality of work, not its quantity.",
-                  fr: "L'informalité n'est pas stable : elle progresse, de 92,5 % de l'emploi non agricole en 2021 à 95,7 % en 2025, et atteint 97,1 % chez les femmes. C'est le mécanisme qui relie toutes les autres faiblesses de la revue : l'informalité comprime l'assiette fiscale, ce qui limite le financement des ODD, tandis que l'absence d'emplois industriels formels est précisément ce qu'implique le recul de la part manufacturière. Le chômage est tombé à 5,9 % sur la même période — rappel que, dans cette économie, la contrainte déterminante porte sur la qualité de l'emploi, non sur son volume."
+                  en: "Informal employment rose from 92.5% of non-agricultural employment in 2021 to 95.7% in 2025, reaching 97.1% among women. Informality narrows the tax base that finances the SDGs, and formal industrial jobs remain limited alongside the falling manufacturing share. Unemployment fell to 5.9% over the same period.",
+                  fr: "L'emploi informel est passé de 92,5 % de l'emploi non agricole en 2021 à 95,7 % en 2025, et atteint 97,1 % chez les femmes. L'informalité réduit l'assiette fiscale qui finance les ODD, et les emplois industriels formels restent limités, au regard du recul de la part manufacturière. Le chômage est tombé à 5,9 % sur la même période."
                 },
                 source: "VNR 2026, Table 3.8 · Annex Table A8"
               } },
@@ -335,8 +335,8 @@ window.VNR.register({
                   source: "VNR 2026, Annex Table A17 (17.1.1)"
                 },
                 text: {
-                  en: "Tanzania's revenue effort is the quiet achievement of this cycle — and the one number a dashboard must report honestly. Domestic revenue rose by three points of GDP in three years, then fell back in 2024/25 to 15.1%. The 16.4% quoted in the Main Messages is the 2023/24 peak, not the latest reading. Tax revenue has the same shape, peaking at 14.9% of GDP in 2022/23 before easing to about 13.3%. The base strengthened substantially; it has also just started to slip, and FYDP IV is costed on the assumption that it will not.",
-                  fr: "L'effort de recettes est la réussite discrète de ce cycle — et le chiffre qu'un tableau de bord doit rapporter avec exactitude. Les recettes intérieures ont gagné trois points de PIB en trois ans, avant de refluer à 15,1 % en 2024-2025. Les 16,4 % cités dans les messages clés correspondent au sommet de 2023-2024, non au dernier relevé. Les recettes fiscales suivent la même courbe : culminant à 14,9 % du PIB en 2022-2023, elles retombent à environ 13,3 %. La base s'est nettement renforcée ; elle vient aussi de commencer à fléchir, alors que le 4e Plan quinquennal est chiffré sur l'hypothèse inverse."
+                  en: "Domestic revenue rose by three points of GDP in three years, then fell back in 2024/25 to 15.1%. The 16.4% cited in the Main Messages is the 2023/24 peak; 15.1% is the latest reading. Tax revenue has the same shape, peaking at 14.9% of GDP in 2022/23 before easing to about 13.3%. The base strengthened over the period and has begun to ease, while FYDP IV is costed on the assumption that it will not.",
+                  fr: "Les recettes intérieures ont gagné trois points de PIB en trois ans, avant de refluer à 15,1 % en 2024-2025. Les 16,4 % cités dans les messages clés correspondent au sommet de 2023-2024 ; 15,1 % est le dernier relevé. Les recettes fiscales suivent la même courbe : culminant à 14,9 % du PIB en 2022-2023, elles retombent à environ 13,3 %. La base s'est renforcée sur la période et a commencé à fléchir, alors que le 4e Plan quinquennal est chiffré sur l'hypothèse inverse."
                 },
                 source: "VNR 2026, Table 1.1 · Annex Table A17"
               } },
@@ -345,7 +345,7 @@ window.VNR.register({
             { sdg: 15,
               label: { en: "Forest area", fr: "Superficie forestière" },
               value: 43.71, unit: " M ha",
-              sub: { en: "2025, from 46.06 M ha in 2020 — falling every single year",
+              sub: { en: "2025, from 46.06 M ha in 2020 — down each year",
                      fr: "2025, contre 46,06 M ha en 2020 — en recul chaque année" },
               panel: {
                 sdg: 15,
@@ -362,8 +362,8 @@ window.VNR.register({
                   source: "VNR 2026, Annex Table A15 (15.1.1)"
                 },
                 text: {
-                  en: "The environment is the one domain where Tanzania is not slowing a decline but sustaining one. Forest area has fallen every year of the review period — a cumulative loss of 2.35 million hectares, 5% of the 2020 stock. Greenhouse gas emissions rose from 95,000 to 101,000 Gg CO2e, land degradation affects 50–61% of the land area, and marine key-biodiversity-area coverage has not moved from 53.6% since 2020. SDG 14 and SDG 15 are the only two goals the national dashboard rates \"requires attention\". Note that the report's Executive Summary states forest area as 48.1 million hectares; that figure contradicts the SDG 15 table, the annex and the direction of travel, and is not used here.",
-                  fr: "L'environnement est le seul domaine où la Tanzanie n'atténue pas un déclin mais l'entretient. La superficie forestière a reculé chaque année de la période sous revue — une perte cumulée de 2,35 millions d'hectares, soit 5 % du stock de 2020. Les émissions de gaz à effet de serre sont passées de 95 000 à 101 000 Gg éq. CO2, la dégradation des terres touche 50 à 61 % du territoire et la couverture des zones marines clés pour la biodiversité stagne à 53,6 % depuis 2020. Les ODD 14 et 15 sont les deux seuls objectifs que le tableau de bord national classe « nécessite une attention particulière ». À noter : le résumé analytique du rapport avance une superficie forestière de 48,1 millions d'hectares, chiffre qui contredit le tableau de l'ODD 15, l'annexe et le sens de l'évolution ; il n'est pas retenu ici."
+                  en: "Forest area has fallen every year of the review period — a cumulative loss of 2.35 million hectares, 5% of the 2020 stock. Greenhouse gas emissions rose from 95,000 to 101,000 Gg CO2e, land degradation affects 50–61% of the land area, and marine key-biodiversity-area coverage has held at 53.6% since 2020. SDG 14 and SDG 15 are the two goals the national dashboard rates \"requires attention\". (The SDG 15 table and annex give 43.71 million hectares; the value shown here follows the annex.)",
+                  fr: "La superficie forestière a reculé chaque année de la période sous revue — une perte cumulée de 2,35 millions d'hectares, soit 5 % du stock de 2020. Les émissions de gaz à effet de serre sont passées de 95 000 à 101 000 Gg éq. CO2, la dégradation des terres touche 50 à 61 % du territoire et la couverture des zones marines clés pour la biodiversité se maintient à 53,6 % depuis 2020. Les ODD 14 et 15 sont les deux objectifs que le tableau de bord national classe « nécessite une attention particulière ». (Le tableau de l'ODD 15 et l'annexe retiennent 43,71 millions d'hectares ; la valeur affichée ici suit l'annexe.)"
                 },
                 source: "VNR 2026, Table 3.13 (SDG 15) · Annex Tables A13, A14, A15"
               } }
@@ -387,8 +387,8 @@ window.VNR.register({
                           fr: "Statut de pays à revenu intermédiaire de la tranche inférieure maintenu" } },
               { label: { en: "Manufacturing, % of GDP", fr: "Industrie manufacturière, en % du PIB" },
                 from: 7.7, fromYear: "2020", to: 5.9, toYear: "2025", unit: "%", dir: "down",
-                status: { en: "Falling — the review's central implementation gap",
-                          fr: "En recul — la principale lacune de mise en œuvre de la revue" } },
+                status: { en: "Falling over 2020–2025",
+                          fr: "En recul sur 2020-2025" } },
               { label: { en: "Informal employment, non-agricultural", fr: "Emploi informel non agricole" },
                 from: 92.5, fromYear: "2021", to: 95.7, toYear: "2025", unit: "%", dir: "up",
                 status: { en: "Rising; 97.1% among women. Formalization is the priority",
@@ -399,8 +399,8 @@ window.VNR.register({
                           fr: "Forte reprise post-pandémie ; 2,14 millions d'arrivées en 2024" } },
               { label: { en: "Internet users", fr: "Utilisateurs d'Internet" },
                 from: 48, fromYear: "2020", to: 85, toYear: "2025", unit: "%", dir: "up",
-                status: { en: "The report says 48% in 2020, not the 49% quoted elsewhere",
-                          fr: "Le rapport indique 48 % en 2020, et non les 49 % cités ailleurs" } },
+                status: { en: "48% in 2020 per the report",
+                          fr: "48 % en 2020 selon le rapport" } },
               { label: { en: "Tax revenue, % of GDP", fr: "Recettes fiscales, en % du PIB" },
                 from: 11.2, fromYear: "2020/21", to: 13.3, toYear: "2024/25", unit: "%", dir: "up",
                 status: { en: "Improving, but below the 14.9% peak of 2022/23",
@@ -419,8 +419,8 @@ window.VNR.register({
                           fr: "Selon le rapport lui-même : « à gérer avec prudence »" } },
               { label: { en: "Child labour", fr: "Travail des enfants" },
                 from: 24.9, fromYear: "2021", to: 21.1, toYear: "2025", unit: "%", dir: "down",
-                status: { en: "Improving; the \"one in four\" figure quoted elsewhere is the 2024 reading",
-                          fr: "En amélioration ; le chiffre « un enfant sur quatre » cité ailleurs correspond à 2024" } }
+                status: { en: "Down from 24.9% in 2021; 21.1% is the 2025 reading",
+                          fr: "En recul depuis 24,9 % en 2021 ; 21,1 % est le relevé de 2025" } }
             ],
             source: "VNR 2026, Table 1.1 · Tables 3.8, 4.3 · Annex Tables A8, A9, A17" }
         ]
@@ -439,8 +439,8 @@ window.VNR.register({
 
             /* SDG 6 */
             { sdg: 6,
-              headline: { en: "Water has almost arrived; sanitation has not left the station",
-                          fr: "L'eau est presque au rendez-vous ; l'assainissement n'a pas démarré" },
+              headline: { en: "Water access high; sanitation lagging",
+                          fr: "Accès à l'eau élevé ; assainissement en retard" },
               stats: [
                 { label: { en: "Rural water access (2025)", fr: "Accès à l'eau en milieu rural (2025)" }, value: 85.2, unit: "%" },
                 { label: { en: "Regional centres (2025)", fr: "Centres régionaux (2025)" }, value: 92.5, unit: "%" },
@@ -463,8 +463,8 @@ window.VNR.register({
                               { x: "2023", y: 79.6 }, { x: "2024", y: 83.0 }, { x: "2025", y: 85.2 } ] }
                 ],
                 insight: {
-                  en: "The rural line is the one that matters: it climbs almost thirteen points and closes roughly half the gap with the towns. Note that the chapter table reports regional centres at 91.6% \"in 2025\" — that is the annex's 2024 value; the 2025 figure is 92.5%.",
-                  fr: "C'est la courbe rurale qui compte : elle gagne près de treize points et comble environ la moitié de l'écart avec les villes. À noter : le tableau du chapitre situe les centres régionaux à 91,6 % « en 2025 » — il s'agit de la valeur 2024 de l'annexe ; le chiffre de 2025 est 92,5 %."
+                  en: "The rural line climbs almost thirteen points and closes roughly half the gap with the towns. Note that the chapter table reports regional centres at 91.6% \"in 2025\" — that is the annex's 2024 value; the 2025 figure is 92.5%.",
+                  fr: "La courbe rurale gagne près de treize points et comble environ la moitié de l'écart avec les villes. À noter : le tableau du chapitre situe les centres régionaux à 91,6 % « en 2025 » — il s'agit de la valeur 2024 de l'annexe ; le chiffre de 2025 est 92,5 %."
                 },
                 source: "VNR 2026, Annex Table A6 (6.1.1)"
               },
@@ -473,15 +473,15 @@ window.VNR.register({
                 fr: "L'accès à l'eau en milieu rural est passé de 72,3 % à 85,2 % et les centres régionaux ont atteint 92,5 %, Dar es Salaam culminant à 94,5 %. Neuf offices de bassin ont été renforcés, sept bassins sur neuf disposent désormais d'un plan de GIRE, les réseaux de surveillance de la qualité de l'eau ont plus que doublé (de 16 à 38) et les autorisations de rejet accordées sont passées de 11 à 92 par an. Le tout a été réalisé alors que la population passait de 33,6 millions d'habitants en 2002 à 61,7 millions en 2022."
               },
               priority: {
-                en: "Sanitation, not water, is the SDG 6 emergency. Sewer connectivity in regional centres is rated \"regressing\" (13.0% in 2020, 5.6% in 2024); only 26% of the population has adequate hygiene services and open defecation persists in some regions; non-revenue water in Dar es Salaam is about 40% against a 25% target for 2029, and is the goal's only \"not on track\" indicator. Per-capita water availability has fallen from 3,678 to 2,105 m³ a year. Safely managed sanitation is itself contested — the annex records 64.6% for 2025, the chapter table 78.5%, and the report's own priority response on that row reads \"clarify methodology\".",
-                fr: "L'urgence de l'ODD 6 porte sur l'assainissement, non sur l'eau. Le raccordement aux égouts dans les centres régionaux est classé « en régression » (13,0 % en 2020, 5,6 % en 2024) ; seuls 26 % de la population disposent de services d'hygiène adéquats et la défécation à l'air libre persiste dans certaines régions ; l'eau non facturée à Dar es Salaam avoisine 40 %, contre une cible de 25 % pour 2029, et constitue le seul indicateur de l'objectif jugé « hors trajectoire ». La disponibilité en eau par habitant est tombée de 3 678 à 2 105 m³ par an. L'assainissement géré en toute sécurité est lui-même contesté : l'annexe retient 64,6 % pour 2025, le tableau du chapitre 78,5 %, et la réponse prioritaire inscrite par le rapport sur cette ligne est « clarifier la méthodologie »."
+                en: "Sanitation, not water, is the SDG 6 priority. Sewer connectivity in regional centres is rated \"regressing\" (13.0% in 2020, 5.6% in 2024); only 26% of the population has adequate hygiene services and open defecation persists in some regions; non-revenue water in Dar es Salaam is about 40% against a 25% target for 2029, and is the goal's only \"not on track\" indicator. Per-capita water availability has fallen from 3,678 to 2,105 m³ a year. Safely managed sanitation is itself contested — the annex records 64.6% for 2025, the chapter table 78.5%, and the report's own priority response on that row reads \"clarify methodology\".",
+                fr: "La priorité de l'ODD 6 porte sur l'assainissement, non sur l'eau. Le raccordement aux égouts dans les centres régionaux est classé « en régression » (13,0 % en 2020, 5,6 % en 2024) ; seuls 26 % de la population disposent de services d'hygiène adéquats et la défécation à l'air libre persiste dans certaines régions ; l'eau non facturée à Dar es Salaam avoisine 40 %, contre une cible de 25 % pour 2029, et constitue le seul indicateur de l'objectif jugé « hors trajectoire ». La disponibilité en eau par habitant est tombée de 3 678 à 2 105 m³ par an. L'assainissement géré en toute sécurité est lui-même contesté : l'annexe retient 64,6 % pour 2025, le tableau du chapitre 78,5 %, et la réponse prioritaire inscrite par le rapport sur cette ligne est « clarifier la méthodologie »."
               },
               source: "VNR 2026, Table 4.1 · Annex Table A6 · Ch. 4 (SDG 6)" },
 
             /* SDG 7 */
             { sdg: 7,
-              headline: { en: "Capacity more than doubled in a year; the household is the unfinished business",
-                          fr: "Une capacité plus que doublée en un an ; le ménage reste le chantier inachevé" },
+              headline: { en: "Capacity more than doubled in a year; household connection still partial",
+                          fr: "Capacité plus que doublée en un an ; le raccordement des ménages reste partiel" },
               stats: [
                 { label: { en: "Installed capacity (2025)", fr: "Capacité installée (2025)" }, value: 4504.9, unit: " MW" },
                 { label: { en: "Electricity access (2025)", fr: "Accès à l'électricité (2025)" }, value: 86.2, unit: "%" },
@@ -508,8 +508,8 @@ window.VNR.register({
                 fr: "La capacité de production installée est passée de 2 100 MW à 4 504,9 MW, portée par la centrale hydroélectrique Julius Nyerere (2 115 MW). Les 26 régions sont désormais raccordées au réseau national (contre 23 en 2023), la longueur du réseau atteint 8 500 km, tous les villages ont accès au réseau et l'accès à l'électricité est passé de 78,4 % à 86,2 %. Les renouvelables assurent 76,6 % de l'électricité produite et 73,85 % de la consommation finale totale d'énergie. La consommation par habitant est passée de 131 à 152 kWh."
               },
               priority: {
-                en: "Convert capacity into connections, and connections into productive demand. Household connectivity stands at 52.1% and rural connectivity below 36%; clean cooking, at 23.2%, is the laggard the report names explicitly, and the annex rates it a \"critical gap\" with one observation since 2022. Reliability is unproven: SAIDI runs to 599 minutes a year across roughly ten interruptions, and transmission and distribution losses have not improved (15.3% in 2020, 15.0% in 2025). Renewables must be stated precisely — 76.6% is the share of electricity generated, 73.85% the share of final energy consumption; the \"80% of the mix\" quoted in the Main Messages appears nowhere in the report.",
-                fr: "Convertir la capacité en raccordements, et les raccordements en demande productive. Le taux de raccordement des ménages s'établit à 52,1 % et celui des zones rurales reste inférieur à 36 % ; la cuisson propre, à 23,2 %, est le retard que le rapport désigne explicitement, et l'annexe la classe « lacune critique », avec une seule observation depuis 2022. La fiabilité n'est pas démontrée : l'indice SAIDI atteint 599 minutes par an pour une dizaine d'interruptions, et les pertes de transport et de distribution n'ont pas reculé (15,3 % en 2020, 15,0 % en 2025). Les renouvelables doivent être énoncées avec précision : 76,6 % est la part de l'électricité produite, 73,85 % celle de la consommation finale d'énergie ; les « 80 % du mix » cités dans les messages clés ne figurent nulle part dans le rapport."
+                en: "Convert capacity into connections, and connections into productive demand. Household connectivity stands at 52.1% and rural connectivity below 36%; clean cooking, at 23.2%, is the indicator the report names explicitly, and the annex rates it a \"critical gap\" with one observation since 2022. On reliability: SAIDI runs to 599 minutes a year across roughly ten interruptions, and transmission and distribution losses are unchanged (15.3% in 2020, 15.0% in 2025). On renewables: 76.6% is the share of electricity generated, and 73.85% the share of final energy consumption.",
+                fr: "Convertir la capacité en raccordements, et les raccordements en demande productive. Le taux de raccordement des ménages s'établit à 52,1 % et celui des zones rurales reste inférieur à 36 % ; la cuisson propre, à 23,2 %, est l'indicateur que le rapport désigne explicitement, et l'annexe la classe « lacune critique », avec une seule observation depuis 2022. Sur la fiabilité : l'indice SAIDI atteint 599 minutes par an pour une dizaine d'interruptions, et les pertes de transport et de distribution sont stables (15,3 % en 2020, 15,0 % en 2025). Sur les renouvelables : 76,6 % est la part de l'électricité produite, et 73,85 % celle de la consommation finale d'énergie."
               },
               source: "VNR 2026, Table 4.2 · Annex Table A7 · Ch. 4 (SDG 7)" },
 
@@ -543,7 +543,7 @@ window.VNR.register({
                 fr: "Le trafic ferroviaire de voyageurs est passé de 1,28 million à 4,14 millions et le trafic aérien de 2,77 millions à 8,11 millions ; le fret maritime a atteint 29,1 millions de tonnes en 2024. Les utilisateurs d'Internet sont passés de 48 % à 85 % de la population, la couverture 4G de 55 % à 94 %, la 5G atteint 30 % et les 123 052 premiers abonnements à la fibre jusqu'au domicile ont été enregistrés. Les dépenses de R&D sont passées de 0,6 % à 1,06 % du PIB et la part des PME dans la valeur ajoutée industrielle a progressé régulièrement de 7,2 % à 11,6 %."
               },
               priority: {
-                en: "Manufacturing is going backwards: 7.7% of GDP in 2020, 5.9% in 2025, with the steepest fall in the final year. Rail freight is declining even as rail passengers surge. Only 15% of the road network is paved. The review's own conclusion is that infrastructure must now be converted into value addition — through industrial corridors along the railway that package reliable power with serviced land, logistics, water, waste treatment and skills centres; through agro-processing clusters in cashew, coffee and horticulture; and through SME finance and supplier development. Digital access, likewise, has to translate into productivity rather than remain a consumption story.",
+                en: "Manufacturing declined: 7.7% of GDP in 2020, 5.9% in 2025, with the steepest fall in the final year. Rail freight is declining even as rail passengers surge. Only 15% of the road network is paved. The review's own conclusion is that infrastructure must now be converted into value addition — through industrial corridors along the railway that package reliable power with serviced land, logistics, water, waste treatment and skills centres; through agro-processing clusters in cashew, coffee and horticulture; and through SME finance and supplier development. Digital access, likewise, has to translate into productivity rather than remain a consumption story.",
                 fr: "L'industrie manufacturière recule : 7,7 % du PIB en 2020, 5,9 % en 2025, avec la chute la plus forte lors de la dernière année. Le fret ferroviaire décline alors même que le trafic voyageurs s'envole. Seuls 15 % du réseau routier sont revêtus. La revue conclut elle-même que les infrastructures doivent désormais être converties en valeur ajoutée : par des corridors industriels le long du chemin de fer associant électricité fiable, terrains viabilisés, logistique, eau, traitement des déchets et centres de formation ; par des grappes agro-industrielles dans la noix de cajou, le café et l'horticulture ; et par le financement des PME et le développement des fournisseurs. De même, l'accès numérique doit se traduire en productivité et non rester une histoire de consommation."
               },
               source: "VNR 2026, Table 4.3 · Annex Table A9 · Case Box 4.3" },
@@ -588,7 +588,7 @@ window.VNR.register({
 
             /* SDG 17 */
             { sdg: 17,
-              headline: { en: "Four-fifths of the budget is now Tanzania's own money",
+              headline: { en: "Four-fifths of the budget is now financed from domestic revenue",
                           fr: "Quatre cinquièmes du budget proviennent désormais de ressources propres" },
               stats: [
                 { label: { en: "Budget self-reliance (2023/24)", fr: "Autonomie budgétaire (2023-2024)" }, value: 78.0, unit: "%" },
@@ -606,8 +606,8 @@ window.VNR.register({
                               { x: "2022/23", y: 70.7 }, { x: "2023/24", y: 78.0 } ] }
                 ],
                 insight: {
-                  en: "Four points, because the annex records four — there is no 2024/25 observation, and none has been invented to extend the line. The baseline is 58.3%, not the 68.3% that circulated in earlier material; 68.5% is in fact the 2021/22 value.",
-                  fr: "Quatre points, parce que l'annexe n'en consigne que quatre : il n'existe pas d'observation pour 2024-2025 et aucune n'a été inventée pour prolonger la courbe. La référence est 58,3 %, et non les 68,3 % qui ont circulé dans des documents antérieurs ; 68,5 % correspond en réalité à l'exercice 2021-2022."
+                  en: "Four points, because the annex records four — there is no 2024/25 observation. The baseline is 58.3%; the 2021/22 value is 68.5%.",
+                  fr: "Quatre points, parce que l'annexe n'en consigne que quatre : il n'existe pas d'observation pour 2024-2025. La référence est 58,3 % ; la valeur 2021-2022 est de 68,5 %."
                 },
                 source: "VNR 2026, Annex Table A17 (17.1.2)"
               },
@@ -656,8 +656,8 @@ window.VNR.register({
                 { label: { en: "Private-sector share of investment need", fr: "Part du secteur privé dans les besoins d'investissement" }, value: 70, unit: "%" }
               ],
               text: {
-                en: "The Fourth Five-Year Development Plan replaces FYDP III and is structured around pillars, drivers and foundations. The report's Call to Action asks explicitly that FYDP IV be used as the SDG acceleration plan — one plan, not two. Its financing model assumes the private sector will contribute 70% of total investment requirements, which makes private capital mobilisation the single largest execution risk in the review.",
-                fr: "Le 4e Plan quinquennal de développement remplace le FYDP III et s'organise autour de piliers, de moteurs et de fondations. L'appel à l'action du rapport demande explicitement que le FYDP IV serve de plan d'accélération des ODD — un seul plan, et non deux. Son modèle de financement suppose que le secteur privé apporte 70 % des besoins d'investissement totaux, ce qui fait de la mobilisation des capitaux privés le principal risque d'exécution de la revue."
+                en: "The Fourth Five-Year Development Plan replaces FYDP III and is structured around pillars, drivers and foundations. The report's Call to Action asks explicitly that FYDP IV be used as the SDG acceleration plan — one plan, not two. Its financing model assumes the private sector will contribute 70% of total investment requirements, which makes private capital mobilisation a central execution risk in the review.",
+                fr: "Le 4e Plan quinquennal de développement remplace le FYDP III et s'organise autour de piliers, de moteurs et de fondations. L'appel à l'action du rapport demande explicitement que le FYDP IV serve de plan d'accélération des ODD — un seul plan, et non deux. Son modèle de financement suppose que le secteur privé apporte 70 % des besoins d'investissement totaux, ce qui fait de la mobilisation des capitaux privés un risque d'exécution central de la revue."
               },
               source: "VNR 2026, Ch. 5.2 · Ch. 8" },
 
@@ -669,8 +669,8 @@ window.VNR.register({
                 { label: { en: "Requires attention", fr: "Nécessitent une attention" }, value: 2, unit: "" }
               ],
               text: {
-                en: "Four goals are on track (SDG 3 health, 6 water, 7 energy, 17 partnerships); nine are mixed (1, 2, 4, 5, 8, 9, 11, 13, 16); two carry only partial data (10, 12); and two require attention (14 life below water, 15 life on land). No goal is declared off track — but the two weakest are both environmental, and both are getting worse rather than plateauing.",
-                fr: "Quatre objectifs sont en bonne voie (ODD 3 santé, 6 eau, 7 énergie, 17 partenariats) ; neuf sont contrastés (1, 2, 4, 5, 8, 9, 11, 13, 16) ; deux ne disposent que de données partielles (10, 12) ; et deux nécessitent une attention particulière (14 vie aquatique, 15 vie terrestre). Aucun objectif n'est déclaré hors trajectoire — mais les deux plus faibles relèvent tous deux de l'environnement, et se dégradent au lieu de se stabiliser."
+                en: "Four goals are on track (SDG 3 health, 6 water, 7 energy, 17 partnerships); nine are mixed (1, 2, 4, 5, 8, 9, 11, 13, 16); two carry only partial data (10, 12); and two require attention (14 life below water, 15 life on land). No goal is declared off track; the two rated \"requires attention\" (14 and 15) are both environmental.",
+                fr: "Quatre objectifs sont en bonne voie (ODD 3 santé, 6 eau, 7 énergie, 17 partenariats) ; neuf sont contrastés (1, 2, 4, 5, 8, 9, 11, 13, 16) ; deux ne disposent que de données partielles (10, 12) ; et deux nécessitent une attention particulière (14 vie aquatique, 15 vie terrestre). Aucun objectif n'est déclaré hors trajectoire ; les deux classés « nécessite une attention » (14 et 15) relèvent tous deux de l'environnement."
               },
               source: "VNR 2026, Table 3.1" },
 
@@ -687,11 +687,11 @@ window.VNR.register({
               },
               source: "VNR 2026, Tables 2.1–2.3 · Table 6.1" },
 
-            { name: { en: "Candour about the data", fr: "Une franchise assumée sur les données" },
-              kicker: { en: "Gaps declared, not hidden", fr: "Des lacunes déclarées, non dissimulées" },
+            { name: { en: "Data gaps and sources", fr: "Lacunes de données et sources" },
+              kicker: { en: "Where data are incomplete", fr: "Là où les données sont incomplètes" },
               text: {
-                en: "The review is unusually honest about its statistical limits, and that honesty is a credibility asset. Learning outcomes at the end of primary are recorded as \"pending — data gap\" for every year. Clean cooking is flagged a \"critical gap\". The safely managed sanitation row carries the priority response \"clarify methodology\". SDG 10 and SDG 12 are rated \"partial data\" outright. The chapter tables and the statistical annex disagree in more than a dozen places — most often because a chapter table labels the annex's 2024 value as \"2025\". This dashboard follows the annex where they conflict, and says so.",
-                fr: "La revue fait preuve d'une honnêteté inhabituelle sur ses limites statistiques, et cette honnêteté constitue un atout de crédibilité. Les acquis d'apprentissage en fin de primaire sont consignés comme « en attente — lacune de données » pour chaque année. La cuisson propre est signalée comme une « lacune critique ». La ligne relative à l'assainissement géré en toute sécurité porte la réponse prioritaire « clarifier la méthodologie ». Les ODD 10 et 12 sont classés d'emblée « données partielles ». Les tableaux des chapitres et l'annexe statistique divergent en plus d'une douzaine d'endroits — le plus souvent parce qu'un tableau de chapitre attribue à « 2025 » la valeur de 2024 de l'annexe. Ce tableau de bord suit l'annexe en cas de conflit, et le signale."
+                en: "The review records several statistical limits. Learning outcomes at the end of primary are marked \"pending — data gap\" for every year. Clean cooking is flagged a \"critical gap\". The safely managed sanitation row carries the priority response \"clarify methodology\". SDG 10 and SDG 12 are rated \"partial data\". The chapter tables and the statistical annex differ in some places — most often where a chapter table labels the annex's 2024 value as \"2025\"; this dashboard follows the annex in those cases.",
+                fr: "La revue consigne plusieurs limites statistiques. Les acquis d'apprentissage en fin de primaire sont notés « en attente — lacune de données » pour chaque année. La cuisson propre est signalée comme une « lacune critique ». La ligne relative à l'assainissement géré en toute sécurité porte la réponse prioritaire « clarifier la méthodologie ». Les ODD 10 et 12 sont classés « données partielles ». Les tableaux des chapitres et l'annexe statistique diffèrent par endroits — le plus souvent lorsqu'un tableau de chapitre attribue à « 2025 » la valeur de 2024 de l'annexe ; ce tableau de bord suit alors l'annexe."
               },
               source: "VNR 2026, Table 2.4 · Annex Tables A4, A6, A7" },
 
@@ -703,8 +703,8 @@ window.VNR.register({
                 { label: { en: "Informal employment (2025)", fr: "Emploi informel (2025)" }, value: 64.0, unit: "%" }
               ],
               text: {
-                en: "Zanzibar reports through the Zanzibar Planning Commission and OCGS, with the Blue Economy Strategy as its platform for SDGs 8, 9, 14 and 15. Basic-needs poverty fell from 22.9% to 19.9%, stunting from 24.0% to 14.4%, and its statistical performance score rose from 75 to 91 — the sharpest data-systems improvement anywhere in the review. Informal employment, at 64.0%, is far below the mainland's, though it is a narrower series and not directly comparable.",
-                fr: "Zanzibar rend compte par l'intermédiaire de sa Commission de planification et de l'OCGS, la Stratégie d'économie bleue servant de plateforme pour les ODD 8, 9, 14 et 15. La pauvreté de base est passée de 22,9 % à 19,9 %, le retard de croissance de 24,0 % à 14,4 %, et son score de performance statistique de 75 à 91 — la plus forte progression des systèmes de données de toute la revue. L'emploi informel, à 64,0 %, est très inférieur à celui du continent, même s'il s'agit d'une série plus étroite, non directement comparable."
+                en: "Zanzibar reports through the Zanzibar Planning Commission and OCGS, with the Blue Economy Strategy as its platform for SDGs 8, 9, 14 and 15. Basic-needs poverty fell from 22.9% to 19.9%, stunting from 24.0% to 14.4%, and its statistical performance score rose from 75 to 91. Informal employment is recorded at 64.0%, on a narrower series that is not directly comparable to the mainland's.",
+                fr: "Zanzibar rend compte par l'intermédiaire de sa Commission de planification et de l'OCGS, la Stratégie d'économie bleue servant de plateforme pour les ODD 8, 9, 14 et 15. La pauvreté de base est passée de 22,9 % à 19,9 %, le retard de croissance de 24,0 % à 14,4 %, et son score de performance statistique de 75 à 91. L'emploi informel est consigné à 64,0 %, sur une série plus étroite, non directement comparable à celle du continent."
               },
               source: "VNR 2026, Zanzibar status box (p. 17) · Case Boxes 4.2, 4.3" }
           ] }
@@ -730,8 +730,8 @@ window.VNR.register({
                 { label: { en: "Regions on the national grid", fr: "Régions raccordées au réseau national" }, value: 26, unit: "" }
               ],
               text: {
-                en: "The single largest driver of the energy expansion, and on its own nearly the size of the entire national fleet as recently as 2022. Its completion took installed capacity from 2,411 MW to 4,504.9 MW in a year, lifted renewables to 76.6% of electricity generated, and underpinned the connection of all 26 regions to the national grid. The corollary is a concentration risk the report acknowledges only obliquely: the mix is now heavily hydro, in a country whose own SDG 13 chapter documents recurrent drought.",
-                fr: "Principal moteur de l'expansion énergétique, et à elle seule presque équivalente à l'ensemble du parc national de 2022 encore. Sa mise en service a porté la capacité installée de 2 411 MW à 4 504,9 MW en un an, hissé les renouvelables à 76,6 % de l'électricité produite et permis le raccordement des 26 régions au réseau national. Le corollaire est un risque de concentration que le rapport ne reconnaît qu'en creux : le mix est désormais fortement hydraulique, dans un pays dont le chapitre consacré à l'ODD 13 documente des sécheresses récurrentes."
+                en: "The single largest driver of the energy expansion, and on its own nearly the size of the entire national fleet as recently as 2022. Its completion took installed capacity from 2,411 MW to 4,504.9 MW in a year, lifted renewables to 76.6% of electricity generated, and underpinned the connection of all 26 regions to the national grid. One corollary is a concentration risk: the mix is now heavily hydro, in a country whose SDG 13 chapter documents recurrent drought.",
+                fr: "Principal moteur de l'expansion énergétique, et à elle seule presque équivalente à l'ensemble du parc national de 2022 encore. Sa mise en service a porté la capacité installée de 2 411 MW à 4 504,9 MW en un an, hissé les renouvelables à 76,6 % de l'électricité produite et permis le raccordement des 26 régions au réseau national. Un corollaire est un risque de concentration : le mix est désormais fortement hydraulique, dans un pays dont le chapitre consacré à l'ODD 13 documente des sécheresses récurrentes."
               },
               source: "VNR 2026, Ch. 4 (SDG 7) · Annex Table A7" },
 
@@ -754,8 +754,8 @@ window.VNR.register({
                 { label: { en: "Tax revenue, % of GDP (2024/25)", fr: "Recettes fiscales, en % du PIB (2024-2025)" }, value: 13.3, unit: "%" }
               ],
               text: {
-                en: "The share of the budget financed from Tanzania's own revenue rose from 58.3% in 2020/21 to 78.0% in 2023/24 — a genuinely large shift, and the reason SDG 17 is rated on track. Two caveats belong beside it. Domestic revenue as a share of GDP peaked at 16.4% in 2023/24 and fell to 15.1% the following year; tax revenue peaked at 14.9% in 2022/23 and eased to about 13.3%. Formalizing an economy in which 95.7% of non-agricultural jobs are informal is the structural precondition for going further.",
-                fr: "La part du budget financée sur les recettes propres de la Tanzanie est passée de 58,3 % en 2020-2021 à 78,0 % en 2023-2024 — un basculement réellement important, et la raison pour laquelle l'ODD 17 est jugé en bonne voie. Deux réserves doivent l'accompagner. Les recettes intérieures rapportées au PIB ont culminé à 16,4 % en 2023-2024 avant de retomber à 15,1 % l'année suivante ; les recettes fiscales ont culminé à 14,9 % en 2022-2023 puis reflué à environ 13,3 %. Formaliser une économie où 95,7 % des emplois non agricoles sont informels constitue la condition structurelle pour aller plus loin."
+                en: "The share of the budget financed from Tanzania's own revenue rose from 58.3% in 2020/21 to 78.0% in 2023/24, and SDG 17 is rated on track. Two caveats belong beside it. Domestic revenue as a share of GDP peaked at 16.4% in 2023/24 and fell to 15.1% the following year; tax revenue peaked at 14.9% in 2022/23 and eased to about 13.3%. Formalizing an economy in which 95.7% of non-agricultural jobs are informal is the structural precondition for going further.",
+                fr: "La part du budget financée sur les recettes propres de la Tanzanie est passée de 58,3 % en 2020-2021 à 78,0 % en 2023-2024, et l'ODD 17 est jugé en bonne voie. Deux réserves doivent l'accompagner. Les recettes intérieures rapportées au PIB ont culminé à 16,4 % en 2023-2024 avant de retomber à 15,1 % l'année suivante ; les recettes fiscales ont culminé à 14,9 % en 2022-2023 puis reflué à environ 13,3 %. Formaliser une économie où 95,7 % des emplois non agricoles sont informels constitue la condition structurelle pour aller plus loin."
               },
               source: "VNR 2026, Table 1.1 · Table 4.5 · Annex Table A17" },
 
@@ -767,8 +767,8 @@ window.VNR.register({
                 { label: { en: "Fibre-to-the-home subscriptions", fr: "Abonnements à la fibre jusqu'au domicile" }, value: 123052, unit: "" }
               ],
               text: {
-                en: "Internet penetration nearly doubled in five years, from 48% of the population in 2020 to 85% in 2025 — the report says 48%, not the 49% that circulates in secondary summaries. Private investment did much of the work: Vodacom put TZS 890 billion into network infrastructure and Airtel deployed 156 new 4G sites in underserved areas. In Zanzibar, penetration reached 97.2% with 78 e-government services live. The report's framing of the challenge is unsentimental: digital access must now translate into productivity, service delivery and inclusion rather than remain a consumption statistic.",
-                fr: "La pénétration d'Internet a presque doublé en cinq ans, de 48 % de la population en 2020 à 85 % en 2025 — le rapport indique 48 %, et non les 49 % qui circulent dans les synthèses secondaires. L'investissement privé y a largement contribué : Vodacom a consacré 890 milliards de TZS aux infrastructures de réseau et Airtel a déployé 156 nouveaux sites 4G dans des zones mal desservies. À Zanzibar, la pénétration atteint 97,2 % et 78 services d'administration en ligne sont opérationnels. Le rapport formule le défi sans complaisance : l'accès numérique doit désormais se traduire en productivité, en services publics et en inclusion, plutôt que rester une statistique de consommation."
+                en: "Internet penetration nearly doubled in five years, from 48% of the population in 2020 to 85% in 2025 (the report uses 48% for 2020). Private investment did much of the work: Vodacom put TZS 890 billion into network infrastructure and Airtel deployed 156 new 4G sites in underserved areas. In Zanzibar, penetration reached 97.2% with 78 e-government services live. The report frames the next step as translating digital access into productivity, service delivery and inclusion rather than consumption alone.",
+                fr: "La pénétration d'Internet a presque doublé en cinq ans, de 48 % de la population en 2020 à 85 % en 2025 (le rapport retient 48 % pour 2020). L'investissement privé y a largement contribué : Vodacom a consacré 890 milliards de TZS aux infrastructures de réseau et Airtel a déployé 156 nouveaux sites 4G dans des zones mal desservies. À Zanzibar, la pénétration atteint 97,2 % et 78 services d'administration en ligne sont opérationnels. Le rapport formule l'étape suivante ainsi : l'accès numérique doit se traduire en productivité, en services publics et en inclusion, plutôt que rester une statistique de consommation."
               },
               source: "VNR 2026, Table 4.3 · Annex Table A9 · Case Box 4.3" },
 
@@ -780,21 +780,21 @@ window.VNR.register({
                 { label: { en: "Gazetted water sources", fr: "Sources d'eau classées" }, value: 80, unit: "" }
               ],
               text: {
-                en: "Rural water access rose almost thirteen points while the population nearly doubled, which is the achievement the headline number understates. The institutional side matched it: nine Basin Water Boards reinforced, seven of nine basins now holding integrated water resources management plans, monitoring networks up from 16 to 38, and 100% of transboundary basins under cooperation arrangements. The unfinished half of the mandate is sanitation and utility efficiency — the report proposes a bankable non-revenue water programme for Dar es Salaam built on district metering, pressure management, active leakage control and performance-based contracts.",
-                fr: "L'accès à l'eau en milieu rural a gagné près de treize points alors que la population a quasiment doublé : c'est là l'accomplissement que le chiffre de tête sous-estime. Le volet institutionnel a suivi : neuf offices de bassin renforcés, sept bassins sur neuf dotés d'un plan de gestion intégrée des ressources en eau, des réseaux de surveillance portés de 16 à 38 et 100 % des bassins transfrontaliers couverts par des accords de coopération. La moitié inachevée du mandat porte sur l'assainissement et l'efficience des services : le rapport propose un programme bancable de réduction de l'eau non facturée à Dar es Salaam, fondé sur la sectorisation des compteurs, la gestion de la pression, la recherche active de fuites et des contrats de performance."
+                en: "Rural water access rose almost thirteen points while the population nearly doubled over the longer period. The institutional side matched it: nine Basin Water Boards reinforced, seven of nine basins now holding integrated water resources management plans, monitoring networks up from 16 to 38, and 100% of transboundary basins under cooperation arrangements. The unfinished half of the mandate is sanitation and utility efficiency — the report proposes a bankable non-revenue water programme for Dar es Salaam built on district metering, pressure management, active leakage control and performance-based contracts.",
+                fr: "L'accès à l'eau en milieu rural a gagné près de treize points alors que la population a quasiment doublé sur la période longue. Le volet institutionnel a suivi : neuf offices de bassin renforcés, sept bassins sur neuf dotés d'un plan de gestion intégrée des ressources en eau, des réseaux de surveillance portés de 16 à 38 et 100 % des bassins transfrontaliers couverts par des accords de coopération. La moitié inachevée du mandat porte sur l'assainissement et l'efficience des services : le rapport propose un programme bancable de réduction de l'eau non facturée à Dar es Salaam, fondé sur la sectorisation des compteurs, la gestion de la pression, la recherche active de fuites et des contrats de performance."
               },
               source: "VNR 2026, Table 4.1 · Annex Table A6 · Case Box 4.1" },
 
             { name: { en: "Special Economic Zones and industrial corridors", fr: "Zones économiques spéciales et corridors industriels" },
-              kicker: { en: "The instrument that has not yet delivered", fr: "L'instrument qui n'a pas encore produit ses effets" },
+              kicker: { en: "Infrastructure-to-industry link", fr: "Le lien infrastructures-industrie" },
               stats: [
                 { label: { en: "FDI registered via TISEZA, 2025 (USD m)", fr: "IDE enregistrés via la TISEZA, 2025 (M USD)" }, value: 1656, unit: "" },
                 { label: { en: "SME share of industrial value added", fr: "Part des PME dans la valeur ajoutée industrielle" }, value: 11.6, unit: "%" },
                 { label: { en: "Manufacturing employment, % of total", fr: "Emploi manufacturier, en % du total" }, value: 5.5, unit: "%" }
               ],
               text: {
-                en: "SEZs, industrial parks and the corridor programme are the instruments Tanzania is counting on to convert infrastructure into industry — and on the evidence of this review they have not yet done so: manufacturing fell to 5.9% of GDP even as FDI registered through TISEZA rose from USD 944 million to 1,656 million. The report's own figures are in tension here — Table 4.5 puts 2024 FDI at USD 2,679.7 million while two separate annex tables give 1,656 million; the difference is most likely gross registered investment against net inflows, and the report does not say. Manufacturing employment and the SME share are both rising, which suggests the industrial base is broadening even as its share of output shrinks.",
-                fr: "Les ZES, les parcs industriels et le programme de corridors sont les instruments sur lesquels la Tanzanie compte pour convertir les infrastructures en industrie — et, à l'aune de cette revue, ils n'y sont pas encore parvenus : l'industrie manufacturière est tombée à 5,9 % du PIB alors même que les IDE enregistrés via la TISEZA passaient de 944 à 1 656 millions d'USD. Les chiffres du rapport sont ici en tension : le tableau 4.5 situe les IDE de 2024 à 2 679,7 millions d'USD, tandis que deux tableaux distincts de l'annexe retiennent 1 656 millions ; l'écart tient très probablement à la distinction entre investissements bruts enregistrés et flux nets, que le rapport ne précise pas. L'emploi manufacturier et la part des PME progressent tous deux, ce qui suggère que la base industrielle s'élargit alors même que son poids dans la production se contracte."
+                en: "SEZs, industrial parks and the corridor programme are the instruments Tanzania is counting on to convert infrastructure into industry — and on the evidence of this review they have not yet done so: manufacturing fell to 5.9% of GDP even as FDI registered through TISEZA rose from USD 944 million to 1,656 million. The report's figures differ here — Table 4.5 puts 2024 FDI at USD 2,679.7 million while two annex tables give 1,656 million; the difference is most likely gross registered investment versus net inflows. Manufacturing employment and the SME share are both rising, which suggests the industrial base is broadening even as its share of output shrinks.",
+                fr: "Les ZES, les parcs industriels et le programme de corridors sont les instruments sur lesquels la Tanzanie compte pour convertir les infrastructures en industrie — et, à l'aune de cette revue, ils n'y sont pas encore parvenus : l'industrie manufacturière est tombée à 5,9 % du PIB alors même que les IDE enregistrés via la TISEZA passaient de 944 à 1 656 millions d'USD. Les chiffres du rapport diffèrent ici : le tableau 4.5 situe les IDE de 2024 à 2 679,7 millions d'USD, tandis que deux tableaux de l'annexe retiennent 1 656 millions ; l'écart tient très probablement à la distinction entre investissements bruts enregistrés et flux nets. L'emploi manufacturier et la part des PME progressent tous deux, ce qui suggère que la base industrielle s'élargit alors même que son poids dans la production se contracte."
               },
               source: "VNR 2026, Table 4.5 · Annex Tables A9, A17" }
           ] }
@@ -806,8 +806,8 @@ window.VNR.register({
         id: "financing",
         label: { en: "Financing", fr: "Financement" },
         intro: {
-          en: "Tanzania finances the 2030 Agenda from its own budget. That is the strength of this review — and its exposure. Four-fifths of the budget is now covered by domestic revenue, but the revenue ratio has just turned down, and FYDP IV is costed on the expectation that private capital will supply 70% of what it needs.",
-          fr: "La Tanzanie finance l'Agenda 2030 par son propre budget. C'est la force de cette revue — et sa vulnérabilité. Quatre cinquièmes du budget sont désormais couverts par les recettes intérieures, mais le ratio de recettes vient de s'infléchir à la baisse, et le 4e Plan quinquennal est chiffré sur l'hypothèse que les capitaux privés apporteront 70 % de ses besoins."
+          en: "Tanzania finances the 2030 Agenda largely from its own budget. Four-fifths of the budget is now covered by domestic revenue; the revenue ratio has recently turned down, and FYDP IV is costed on the expectation that private capital will supply 70% of what it needs.",
+          fr: "La Tanzanie finance l'Agenda 2030 en grande partie par son propre budget. Quatre cinquièmes du budget sont désormais couverts par les recettes intérieures ; le ratio de recettes s'est récemment infléchi à la baisse, et le 4e Plan quinquennal est chiffré sur l'hypothèse que les capitaux privés apporteront 70 % de ses besoins."
         },
         blocks: [
           { type: "stats", items: [
@@ -873,16 +873,16 @@ window.VNR.register({
                 { label: { en: "Private-sector share of investment need", fr: "Part du secteur privé dans les besoins d'investissement" }, value: 70, unit: "%" }
               ],
               text: {
-                en: "This is the most consequential number in Tanzania's financing chapter. FYDP IV — the country's SDG acceleration plan — expects the private sector to supply 70% of total investment requirements. Public revenue, however strong, is therefore not the binding constraint; the pipeline of bankable projects is. The report's own risk table says so plainly: bankability gaps constrain investment, and projects \"enter the budget without sufficient preparation\".",
-                fr: "C'est le chiffre le plus lourd de conséquences du chapitre financier tanzanien. Le FYDP IV — plan national d'accélération des ODD — attend du secteur privé qu'il fournisse 70 % des besoins d'investissement totaux. Les recettes publiques, aussi solides soient-elles, ne constituent donc pas la contrainte déterminante ; c'est le vivier de projets bancables qui l'est. Le tableau des risques du rapport le dit sans détour : les lacunes de bancabilité freinent l'investissement et les projets « entrent au budget sans préparation suffisante »."
+                en: "This number is central to Tanzania's financing chapter. FYDP IV — the country's SDG acceleration plan — expects the private sector to supply 70% of total investment requirements. Public revenue, however strong, is therefore not the binding constraint; the pipeline of bankable projects is. The report's own risk table says so plainly: bankability gaps constrain investment, and projects \"enter the budget without sufficient preparation\".",
+                fr: "C'est un chiffre central du chapitre financier tanzanien. Le FYDP IV — plan national d'accélération des ODD — attend du secteur privé qu'il fournisse 70 % des besoins d'investissement totaux. Les recettes publiques, aussi solides soient-elles, ne constituent donc pas la contrainte déterminante ; c'est le vivier de projets bancables qui l'est. Le tableau des risques du rapport le dit sans détour : les lacunes de bancabilité freinent l'investissement et les projets « entrent au budget sans préparation suffisante »."
               },
               source: "VNR 2026, Ch. 5.2 · Table 5.1" },
 
             { name: { en: "Capital markets and green finance", fr: "Marchés de capitaux et finance verte" },
               kicker: { en: "USD 300m green bond", fr: "Obligation verte de 300 M USD" },
               text: {
-                en: "CRDB Bank issued a USD 300 million green bond covering climate-smart agriculture, clean cooking, buildings and transport; Stanbic issued a TZS 50 billion commercial green bond. These are small against the FYDP IV requirement, but they are proof of concept: domestic capital markets will price SDG-aligned paper. Credit to the private sector grew 23.6% in 2025 and non-performing loans fell from 9.8% to 3.3% — a banking system with room to lend.",
-                fr: "La CRDB Bank a émis une obligation verte de 300 millions d'USD couvrant l'agriculture climato-intelligente, la cuisson propre, les bâtiments et les transports ; Stanbic a émis une obligation verte commerciale de 50 milliards de TZS. Ces montants restent modestes au regard des besoins du FYDP IV, mais ils font la démonstration du concept : les marchés de capitaux nationaux savent valoriser des titres alignés sur les ODD. Le crédit au secteur privé a progressé de 23,6 % en 2025 et les prêts non performants sont tombés de 9,8 % à 3,3 % — un système bancaire qui dispose de marge pour prêter."
+                en: "CRDB Bank issued a USD 300 million green bond covering climate-smart agriculture, clean cooking, buildings and transport; Stanbic issued a TZS 50 billion commercial green bond. These are small against the FYDP IV requirement, but they show that domestic capital markets can price SDG-aligned instruments. Credit to the private sector grew 23.6% in 2025 and non-performing loans fell from 9.8% to 3.3%.",
+                fr: "La CRDB Bank a émis une obligation verte de 300 millions d'USD couvrant l'agriculture climato-intelligente, la cuisson propre, les bâtiments et les transports ; Stanbic a émis une obligation verte commerciale de 50 milliards de TZS. Ces montants restent modestes au regard des besoins du FYDP IV, mais ils montrent que les marchés de capitaux nationaux peuvent valoriser des titres alignés sur les ODD. Le crédit au secteur privé a progressé de 23,6 % en 2025 et les prêts non performants sont tombés de 9,8 % à 3,3 %."
               },
               source: "VNR 2026, Case Boxes 4.2 and 4.5 · Annex Table A10" },
 
@@ -893,20 +893,20 @@ window.VNR.register({
                 { label: { en: "Project objectives aligned", fr: "Objectifs de projet alignés" }, value: 95.74, unit: "%" }
               ],
               text: {
-                en: "The share of partner project objectives aligned to national frameworks rose from 92.0% in 2023/24 to 95.74% in 2024/25 — note that the chapter table mislabels these years as 2020 and 2025. ODA commitments grew steadily to USD 3.19 billion. Tanzania's ask of its partners is not more money in the abstract but predictability and alignment: fragmentation and unpredictable funding are listed in the risk table as a direct threat to implementation.",
-                fr: "La part des objectifs de projets des partenaires alignés sur les cadres nationaux est passée de 92,0 % en 2023-2024 à 95,74 % en 2024-2025 — à noter que le tableau du chapitre attribue par erreur ces valeurs à 2020 et 2025. Les engagements d'APD ont progressé régulièrement jusqu'à 3,19 milliards d'USD. La demande de la Tanzanie à ses partenaires ne porte pas sur davantage d'argent dans l'abstrait, mais sur la prévisibilité et l'alignement : la fragmentation et l'imprévisibilité des financements figurent dans le tableau des risques comme une menace directe pour la mise en œuvre."
+                en: "The share of partner project objectives aligned to national frameworks rose from 92.0% in 2023/24 to 95.74% in 2024/25 (the chapter table labels these years as 2020 and 2025). ODA commitments grew steadily to USD 3.19 billion. Tanzania's ask of its partners is not more money in the abstract but predictability and alignment: fragmentation and unpredictable funding are listed in the risk table as a direct threat to implementation.",
+                fr: "La part des objectifs de projets des partenaires alignés sur les cadres nationaux est passée de 92,0 % en 2023-2024 à 95,74 % en 2024-2025 (le tableau du chapitre situe ces valeurs en 2020 et 2025). Les engagements d'APD ont progressé régulièrement jusqu'à 3,19 milliards d'USD. La demande de la Tanzanie à ses partenaires ne porte pas sur davantage d'argent dans l'abstrait, mais sur la prévisibilité et l'alignement : la fragmentation et l'imprévisibilité des financements figurent dans le tableau des risques comme une menace directe pour la mise en œuvre."
               },
               source: "VNR 2026, Table 4.5 · Table 5.1 · Annex Table A17" },
 
             { name: { en: "External flows: FDI and remittances", fr: "Flux extérieurs : IDE et transferts de fonds" },
-              kicker: { en: "A figure the report disputes with itself", fr: "Un chiffre que le rapport se conteste à lui-même" },
+              kicker: { en: "Two figures in the report", fr: "Deux chiffres dans le rapport" },
               stats: [
                 { label: { en: "FDI inflows, 2024/25 (USD m, annex)", fr: "Flux d'IDE, 2024-2025 (M USD, annexe)" }, value: 1656, unit: "" },
                 { label: { en: "Remittances, % of GDP (2024/25)", fr: "Transferts de fonds, en % du PIB (2024-2025)" }, value: 1.5, unit: "%" }
               ],
               text: {
-                en: "Two annex tables independently record FDI at USD 1,656 million for the latest year, up from USD 944 million in 2020. Table 4.5 and the body text instead give USD 2,679.7 million for 2024 — a 62% divergence the report never explains, and most likely a gross-registered versus net-inflow distinction. This dashboard uses the annex figure and flags the conflict rather than choosing silently. Remittances, at 1.5% of GDP, remain a minor financing source by regional standards.",
-                fr: "Deux tableaux de l'annexe consignent indépendamment des IDE de 1 656 millions d'USD pour le dernier exercice, contre 944 millions en 2020. Le tableau 4.5 et le corps du texte retiennent au contraire 2 679,7 millions d'USD pour 2024 — une divergence de 62 % que le rapport n'explique jamais, et qui tient très probablement à la distinction entre investissements bruts enregistrés et flux nets. Ce tableau de bord retient le chiffre de l'annexe et signale le conflit plutôt que de trancher en silence. Les transferts de fonds, à 1,5 % du PIB, demeurent une source de financement mineure au regard des standards régionaux."
+                en: "Two annex tables independently record FDI at USD 1,656 million for the latest year, up from USD 944 million in 2020. Table 4.5 and the body text give USD 2,679.7 million for 2024 — a 62% difference, most likely a gross-registered versus net-inflow distinction. This dashboard uses the annex figure. Remittances are 1.5% of GDP.",
+                fr: "Deux tableaux de l'annexe consignent indépendamment des IDE de 1 656 millions d'USD pour le dernier exercice, contre 944 millions en 2020. Le tableau 4.5 et le corps du texte retiennent 2 679,7 millions d'USD pour 2024 — une différence de 62 %, qui tient très probablement à la distinction entre investissements bruts enregistrés et flux nets. Ce tableau de bord retient le chiffre de l'annexe. Les transferts de fonds représentent 1,5 % du PIB."
               },
               source: "VNR 2026, Table 4.5 · Annex Tables A9, A17" },
 
@@ -926,8 +926,8 @@ window.VNR.register({
         id: "debt",
         label: { en: "Debt & Revenue", fr: "Dette et recettes" },
         intro: {
-          en: "Public debt rose almost ten points of GDP in five years. The review does not present that as a failure but as the price of the infrastructure programme — and names tax effort, debt-service discipline and rigorous project preparation as the conditions for keeping it sustainable. The three charts below are the arithmetic behind that judgement.",
-          fr: "La dette publique a progressé de près de dix points de PIB en cinq ans. La revue n'y voit pas un échec, mais le prix du programme d'infrastructures — et désigne l'effort fiscal, la discipline du service de la dette et une préparation rigoureuse des projets comme les conditions de sa soutenabilité. Les trois graphiques ci-dessous constituent l'arithmétique de ce jugement."
+          en: "Public debt rose almost ten points of GDP in five years. The review presents this as the cost of the infrastructure programme and names tax effort, debt-service discipline and rigorous project preparation as the conditions for keeping it sustainable. The three charts below show the underlying series.",
+          fr: "La dette publique a progressé de près de dix points de PIB en cinq ans. La revue y voit le coût du programme d'infrastructures et désigne l'effort fiscal, la discipline du service de la dette et une préparation rigoureuse des projets comme les conditions de sa soutenabilité. Les trois graphiques ci-dessous présentent les séries sous-jacentes."
         },
         blocks: [
           { type: "chart",
@@ -941,8 +941,8 @@ window.VNR.register({
                             { x: "2023/24", y: 47.8 }, { x: "2024/25", y: 51.0 } ] }
               ],
               insight: {
-                en: "The rise is steady, not sudden — roughly two points of GDP a year, every year, tracking the investment cycle that delivered the hydropower plant, the railway and the grid. The report classifies the indicator as monitored rather than at risk, and asks the international community for debt-architecture reform and concessional terms. The judgement to make at the HLPF is whether the assets bought with those ten points will generate the growth to service them: on the manufacturing evidence, not yet.",
-                fr: "La progression est régulière, non brutale — environ deux points de PIB par an, chaque année, au rythme du cycle d'investissement qui a livré la centrale hydroélectrique, le chemin de fer et le réseau. Le rapport classe l'indicateur comme surveillé plutôt qu'à risque, et demande à la communauté internationale une réforme de l'architecture de la dette et des conditions concessionnelles. La question à trancher au FPHN est de savoir si les actifs acquis avec ces dix points généreront la croissance permettant de les servir : au vu des données sur l'industrie manufacturière, pas encore."
+                en: "The rise is steady, not sudden — roughly two points of GDP a year, every year, tracking the investment cycle that delivered the hydropower plant, the railway and the grid. The report classifies the indicator as monitored rather than at risk, and asks the international community for debt-architecture reform and concessional terms. Whether the assets financed by that debt generate the growth to service it is an open question at the HLPF; manufacturing's share has fallen over the period.",
+                fr: "La progression est régulière, non brutale — environ deux points de PIB par an, chaque année, au rythme du cycle d'investissement qui a livré la centrale hydroélectrique, le chemin de fer et le réseau. Le rapport classe l'indicateur comme surveillé plutôt qu'à risque, et demande à la communauté internationale une réforme de l'architecture de la dette et des conditions concessionnelles. La question de savoir si les actifs financés par cette dette généreront la croissance permettant de les servir reste ouverte au FPHN ; la part de l'industrie manufacturière a reculé sur la période."
               },
               source: "VNR 2026, Table 1.1 · Annex Table A17 (17.4.1)"
             } },
@@ -961,8 +961,8 @@ window.VNR.register({
                             { x: "2023/24", y: 14.6 }, { x: "2024/25", y: 13.3 } ] }
               ],
               insight: {
-                en: "Both series are shares of GDP and both have turned down. Domestic revenue — which includes non-tax receipts and therefore sits above tax revenue — peaked at 16.4% in 2023/24 and fell to 15.1%; tax revenue peaked earlier, at 14.9% in 2022/23, and has lost 1.6 points since. The report labels tax revenue \"improving\", which the five-year endpoints support and the intervening trajectory does not. Debt is climbing two points a year while the revenue that services it has stopped climbing — that, rather than the debt ratio on its own, is the fiscal watch item.",
-                fr: "Les deux séries sont exprimées en parts de PIB et toutes deux se sont retournées. Les recettes intérieures — qui incluent les recettes non fiscales et se situent donc au-dessus des recettes fiscales — ont culminé à 16,4 % en 2023-2024 avant de retomber à 15,1 % ; les recettes fiscales ont culminé plus tôt, à 14,9 % en 2022-2023, et ont perdu 1,6 point depuis. Le rapport qualifie les recettes fiscales d'« en amélioration », ce que les points extrêmes sur cinq ans corroborent, mais que la trajectoire intermédiaire dément. La dette progresse de deux points par an tandis que les recettes qui la servent ont cessé de progresser : c'est là, et non le seul ratio d'endettement, le point de vigilance budgétaire."
+                en: "Both series are shares of GDP and both have turned down. Domestic revenue — which includes non-tax receipts and therefore sits above tax revenue — peaked at 16.4% in 2023/24 and fell to 15.1%; tax revenue peaked earlier, at 14.9% in 2022/23, and has lost 1.6 points since. The report labels tax revenue \"improving\" on the five-year endpoints; the intervening trajectory peaks and eases. Debt has risen about two points of GDP a year while the revenue ratio has stopped climbing.",
+                fr: "Les deux séries sont exprimées en parts de PIB et toutes deux se sont retournées. Les recettes intérieures — qui incluent les recettes non fiscales et se situent donc au-dessus des recettes fiscales — ont culminé à 16,4 % en 2023-2024 avant de retomber à 15,1 % ; les recettes fiscales ont culminé plus tôt, à 14,9 % en 2022-2023, et ont perdu 1,6 point depuis. Le rapport qualifie les recettes fiscales d'« en amélioration » sur les points extrêmes à cinq ans ; la trajectoire intermédiaire culmine puis reflue. La dette progresse d'environ deux points de PIB par an tandis que le ratio de recettes a cessé de progresser."
               },
               source: "VNR 2026, Annex Table A17 (17.1.1)"
             } },
@@ -978,8 +978,8 @@ window.VNR.register({
                             { x: "2022/23", y: 70.7 }, { x: "2023/24", y: 78.0 } ] }
               ],
               insight: {
-                en: "Nearly twenty points in three years — the strongest fiscal result in the review, and the reason SDG 17 is rated on track. Two clarifications. The baseline is 58.3%, confirmed in four separate places in the report; the 68.3% that circulated in earlier material was a misreading of 68.5%, which is the 2021/22 value. And the series stops at 2023/24: the annex records no 2024/25 observation, so none is shown.",
-                fr: "Près de vingt points en trois ans : le meilleur résultat budgétaire de la revue, et la raison pour laquelle l'ODD 17 est jugé en bonne voie. Deux précisions. La référence est 58,3 %, confirmée à quatre endroits distincts du rapport ; les 68,3 % qui ont circulé dans des documents antérieurs procèdent d'une mauvaise lecture de 68,5 %, valeur de l'exercice 2021-2022. Et la série s'arrête en 2023-2024 : l'annexe ne consigne aucune observation pour 2024-2025, aucune n'est donc affichée."
+                en: "Nearly twenty points in three years, and SDG 17 is rated on track. Two clarifications. The baseline is 58.3%, confirmed in four places in the report; 68.5% is the 2021/22 value. And the series stops at 2023/24: the annex records no 2024/25 observation, so none is shown.",
+                fr: "Près de vingt points en trois ans, et l'ODD 17 est jugé en bonne voie. Deux précisions. La référence est 58,3 %, confirmée à quatre endroits du rapport ; 68,5 % correspond à l'exercice 2021-2022. Et la série s'arrête en 2023-2024 : l'annexe ne consigne aucune observation pour 2024-2025, aucune n'est donc affichée."
               },
               source: "VNR 2026, Annex Table A17 (17.1.2)"
             } },
@@ -1002,8 +1002,8 @@ window.VNR.register({
                           fr: "Sommet de 16,4 % en 2023-2024 ; le dernier exercice marque un recul" } },
               { label: { en: "Budget self-reliance", fr: "Autonomie budgétaire" },
                 from: 58.3, fromYear: "2020/21", to: 78.0, toYear: "2023/24", unit: "%", dir: "up",
-                status: { en: "On track. The strongest fiscal result in the review",
-                          fr: "En bonne voie. Le meilleur résultat budgétaire de la revue" } },
+                status: { en: "On track; up nearly twenty points since 2020/21",
+                          fr: "En bonne voie ; en hausse de près de vingt points depuis 2020-2021" } },
               { label: { en: "Public debt, % of GDP", fr: "Dette publique, en % du PIB" },
                 from: 41.3, fromYear: "2020/21", to: 51.0, toYear: "2024/25", unit: "%", dir: "up",
                 status: { en: "Monitored. Roughly two points of GDP a year, every year",
@@ -1026,8 +1026,8 @@ window.VNR.register({
                           fr: "En amélioration, mais série volatile (0,42 % en 2023-2024)" } },
               { label: { en: "Project objectives aligned to national frameworks", fr: "Objectifs de projet alignés sur les cadres nationaux" },
                 from: 92.0, fromYear: "2023/24", to: 95.74, toYear: "2024/25", unit: "%", dir: "up",
-                status: { en: "On track. The chapter table mislabels these years as 2020 and 2025",
-                          fr: "En bonne voie. Le tableau du chapitre attribue par erreur ces valeurs à 2020 et 2025" } },
+                status: { en: "On track. The chapter table labels these years as 2020 and 2025",
+                          fr: "En bonne voie. Le tableau du chapitre situe ces valeurs en 2020 et 2025" } },
               { label: { en: "Statistical capacity score (SPI)", fr: "Score de capacité statistique (SPI)" },
                 from: 61.53, fromYear: "2020/21", to: 69, toYear: "2024/25", unit: "", dir: "up",
                 status: { en: "Improving. Zanzibar's own score rose from 75 to 91",
@@ -1046,8 +1046,8 @@ window.VNR.register({
         id: "acceleration",
         label: { en: "Acceleration 2026–2030", fr: "Accélération 2026-2030" },
         intro: {
-          en: "Chapter 7 of the review is unusually direct: five cross-cutting challenges, three acceleration pathways, and five asks of the international community. What follows is the report's own diagnosis, not an external one — including its judgement that the country's central failure is structural transformation.",
-          fr: "Le chapitre 7 de la revue est d'une franchise inhabituelle : cinq défis transversaux, trois trajectoires d'accélération et cinq demandes adressées à la communauté internationale. Ce qui suit constitue le diagnostic du rapport lui-même, et non un diagnostic externe — y compris son verdict selon lequel l'échec central du pays porte sur la transformation structurelle."
+          en: "Chapter 7 of the review sets out five cross-cutting challenges, three acceleration pathways, and five asks of the international community. What follows is the report's own diagnosis, not an external one — including its finding that the central implementation gap is structural transformation.",
+          fr: "Le chapitre 7 de la revue présente cinq défis transversaux, trois trajectoires d'accélération et cinq demandes adressées à la communauté internationale. Ce qui suit constitue le diagnostic du rapport lui-même, et non un diagnostic externe — y compris son constat selon lequel la principale lacune de mise en œuvre porte sur la transformation structurelle."
         },
         blocks: [
           { type: "cards", items: [
@@ -1067,8 +1067,8 @@ window.VNR.register({
                 { label: { en: "Among women", fr: "Chez les femmes" }, value: 97.1, unit: "%" }
               ],
               text: {
-                en: "Informality is the transmission belt between the review's weaknesses: it erodes the tax base, which constrains SDG financing; it leaves workers outside social protection, which is why disability benefit coverage reaches 0.004% of households; and it is the direct consequence of an industrial sector too small to absorb the labour force. It is rising, not falling, and it is worst for women.",
-                fr: "L'informalité est la courroie de transmission entre les faiblesses de la revue : elle érode l'assiette fiscale, ce qui limite le financement des ODD ; elle laisse les travailleurs hors de la protection sociale, raison pour laquelle la couverture des prestations d'invalidité n'atteint que 0,004 % des ménages ; et elle est la conséquence directe d'un secteur industriel trop réduit pour absorber la population active. Elle progresse au lieu de reculer, et elle frappe le plus durement les femmes."
+                en: "Informality links several of the review's findings: it erodes the tax base, which constrains SDG financing; it leaves workers outside social protection (disability benefit coverage reaches 0.004% of households); and it reflects an industrial sector too small to absorb the labour force. It is rising, and highest among women.",
+                fr: "L'informalité relie plusieurs constats de la revue : elle érode l'assiette fiscale, ce qui limite le financement des ODD ; elle laisse les travailleurs hors de la protection sociale (la couverture des prestations d'invalidité n'atteint que 0,004 % des ménages) ; et elle reflète un secteur industriel trop réduit pour absorber la population active. Elle progresse, et elle est la plus élevée chez les femmes."
               },
               source: "VNR 2026, Ch. 7 · Table 3.8 · Annex Tables A1, A8" },
 
@@ -1079,8 +1079,8 @@ window.VNR.register({
                 { label: { en: "Flood losses, 2025 (USD m)", fr: "Pertes dues aux inondations, 2025 (M USD)" }, value: 500, unit: "" }
               ],
               text: {
-                en: "The one domain moving decisively in the wrong direction. Forest area falls every year; greenhouse gas emissions rose from 95,000 to 101,000 Gg CO2e; land degradation affects 50–61% of the land area; marine protected coverage has not moved since 2020. Climate shocks then feed back into the fiscal position — the report's own words are that they increase fiscal pressure.",
-                fr: "Le seul domaine qui évolue résolument dans la mauvaise direction. La superficie forestière recule chaque année ; les émissions de gaz à effet de serre sont passées de 95 000 à 101 000 Gg éq. CO2 ; la dégradation des terres touche 50 à 61 % du territoire ; la couverture marine protégée n'a pas bougé depuis 2020. Les chocs climatiques se répercutent ensuite sur la position budgétaire — le rapport écrit qu'ils accroissent la pression budgétaire."
+                en: "The environmental indicators decline over the period. Forest area falls every year; greenhouse gas emissions rose from 95,000 to 101,000 Gg CO2e; land degradation affects 50–61% of the land area; marine protected coverage has not moved since 2020. Climate shocks then feed back into the fiscal position — the report's own words are that they increase fiscal pressure.",
+                fr: "Les indicateurs environnementaux reculent sur la période. La superficie forestière recule chaque année ; les émissions de gaz à effet de serre sont passées de 95 000 à 101 000 Gg éq. CO2 ; la dégradation des terres touche 50 à 61 % du territoire ; la couverture marine protégée n'a pas bougé depuis 2020. Les chocs climatiques se répercutent ensuite sur la position budgétaire — le rapport écrit qu'ils accroissent la pression budgétaire."
               },
               source: "VNR 2026, Ch. 7 · Tables 3.11, 3.13 · Annex Tables A11, A13, A15" },
 
@@ -1109,8 +1109,8 @@ window.VNR.register({
             { name: { en: "Pathway 1 — Industrial transformation", fr: "Trajectoire 1 — Transformation industrielle" },
               kicker: { en: "Convert infrastructure into productive capacity", fr: "Convertir les infrastructures en capacité productive" },
               text: {
-                en: "Core objective: turn the energy and transport investments into exports and formal jobs. Priority actions named in the report: activate industrial corridors; develop agro-processing and blue-economy value chains; expand SME finance; reform technical and vocational training; strengthen supplier development. This is the pathway that answers the review's central failure, and it is the one with the least to show so far — which is precisely why it is listed first.",
-                fr: "Objectif central : convertir les investissements énergétiques et de transport en exportations et en emplois formels. Actions prioritaires désignées par le rapport : activer les corridors industriels ; développer les chaînes de valeur de l'agro-transformation et de l'économie bleue ; élargir le financement des PME ; réformer l'enseignement technique et professionnel ; renforcer le développement des fournisseurs. C'est la trajectoire qui répond à l'échec central de la revue, et celle qui affiche jusqu'ici le moins de résultats — raison précise pour laquelle elle vient en tête."
+                en: "Core objective: turn the energy and transport investments into exports and formal jobs. Priority actions named in the report: activate industrial corridors; develop agro-processing and blue-economy value chains; expand SME finance; reform technical and vocational training; strengthen supplier development. This pathway addresses the central implementation gap, and shows the least progress so far — which is why it is listed first.",
+                fr: "Objectif central : convertir les investissements énergétiques et de transport en exportations et en emplois formels. Actions prioritaires désignées par le rapport : activer les corridors industriels ; développer les chaînes de valeur de l'agro-transformation et de l'économie bleue ; élargir le financement des PME ; réformer l'enseignement technique et professionnel ; renforcer le développement des fournisseurs. Cette trajectoire répond à la principale lacune de mise en œuvre et affiche jusqu'ici le moins de résultats — raison pour laquelle elle vient en tête."
               },
               source: "VNR 2026, Table 7.1" },
 
@@ -1157,8 +1157,8 @@ window.VNR.register({
             { name: { en: "Data discipline", fr: "Discipline des données" },
               kicker: { en: "Condition 3", fr: "Condition 3" },
               text: {
-                en: "Decision makers need trusted, timely and comparable indicators. The response: agree metadata, units, sources and reporting calendars. The review demonstrates the need better than it states it — its own chapter tables and statistical annex disagree in more than a dozen places, most often on which year a value belongs to.",
-                fr: "Les décideurs ont besoin d'indicateurs fiables, actuels et comparables. La réponse : s'accorder sur les métadonnées, les unités, les sources et les calendriers de publication. La revue démontre ce besoin mieux qu'elle ne l'énonce : ses propres tableaux de chapitre et son annexe statistique divergent en plus d'une douzaine d'endroits, le plus souvent sur l'année à laquelle une valeur se rattache."
+                en: "Decision makers need trusted, timely and comparable indicators. The response: agree metadata, units, sources and reporting calendars. The review's own chapter tables and statistical annex differ in several places, most often on which year a value belongs to.",
+                fr: "Les décideurs ont besoin d'indicateurs fiables, actuels et comparables. La réponse : s'accorder sur les métadonnées, les unités, les sources et les calendriers de publication. Les propres tableaux de chapitre de la revue et son annexe statistique diffèrent par endroits, le plus souvent sur l'année à laquelle une valeur se rattache."
               },
               source: "VNR 2026, Table 7.2 · Table 2.4" },
             { name: { en: "Partnership alignment", fr: "Alignement des partenariats" },

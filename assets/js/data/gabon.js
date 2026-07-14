@@ -58,10 +58,10 @@ window.VNR.register({
         en: "The Special Investment Zones lifted manufacturing value added to 6.8% of GDP in 2024, but the logistics divide (26.5% rural road access) still caps the impact on manufacturing employment (4.5%)."
       } },
     { sdg: 11,
-      title: { fr: "Villes vulnérables, fracture territoriale", en: "Vulnerable cities, a territorial fracture" },
+      title: { fr: "Urbanisation, services et risques", en: "Urbanisation, services and risk" },
       text: {
-        fr: "Avec une urbanisation supérieure à 90 %, les villes concentrent les vulnérabilités : 295 sinistrés pour 100 000 habitants en 2024 — une aggravation — et 19,5 % seulement d’accès aisé aux transports publics.",
-        en: "With urbanisation above 90%, the cities concentrate vulnerability: 295 disaster-affected people per 100,000 inhabitants in 2024 — a worsening — and easy access to public transport for just 19.5%."
+        fr: "Avec une urbanisation supérieure à 90 %, les enjeux se concentrent en ville : 295 sinistrés pour 100 000 habitants en 2024 (245 en 2022) et 19,5 % d’accès aisé aux transports publics.",
+        en: "With urbanisation above 90%, most issues are concentrated in the cities: 295 disaster-affected people per 100,000 inhabitants in 2024 (245 in 2022) and easy access to public transport at 19.5%."
       } },
     { sdg: 17,
       title: { fr: "Souveraineté budgétaire et partenariats", en: "Fiscal sovereignty and partnerships" },
@@ -114,8 +114,8 @@ window.VNR.register({
       { id: "overview",
         label: { fr: "Aperçu et tendances", en: "Overview & Trends" },
         intro: {
-          fr: "Toutes les valeurs sont celles du rapport intégral ENV 2026 pour l’année 2024. Le PDF « Messages clés » autonome, et la fiche qui en dérive, ont publié les projections 2025 comme s’il s’agissait de valeurs courantes : ce tableau de bord rétablit les chiffres du rapport et signale explicitement toute projection. Sélectionnez une vignette pour en déplier la lecture.",
-          en: "Every figure here is the 2024 value carried by the full 2026 VNR report. The standalone Main Messages PDF — and the fact sheet derived from it — published Gabon's 2025 projections as if they were current values; this dashboard restores the report's figures and labels every projection as such. Select a tile to open its reading."
+          fr: "Toutes les valeurs sont celles du rapport intégral ENV 2026 pour l’année 2024. Toute projection y est signalée comme telle. Sélectionnez une vignette pour en déplier la lecture.",
+          en: "Every figure here is the 2024 value carried by the full 2026 VNR report. Where a value is a projection, it is labelled as such. Select a tile to open its reading."
         },
         blocks: [
 
@@ -128,8 +128,8 @@ window.VNR.register({
                      en: "2024 · but 26.3% in rural areas (proj. 2025: 92.8%)" },
               panel: {
                 sdg: 7,
-                title: { fr: "Accès à l’électricité : la moyenne nationale et le pays réel, 2020-2024",
-                         en: "Electricity access: the national average and the real country, 2020–2024" },
+                title: { fr: "Accès à l’électricité : moyenne nationale et milieu rural, 2020-2024",
+                         en: "Electricity access: national average and rural areas, 2020–2024" },
                 chart: {
                   type: "line", sdg: 7, unit: "%",
                   title: { fr: "Accès à l’électricité, ensemble et milieu rural",
@@ -143,8 +143,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 7.1.1 (BM/WDI · SEEG · INSTAT)"
                 },
                 text: {
-                  fr: "Deux courbes, un seul pays. La ligne haute est celle que citent les documents de synthèse ; la ligne basse est celle où vivent les campagnes gabonaises. En cinq ans, l’accès rural n’a gagné que 1,6 point — de 24,7 % à 26,3 % — pendant que la moyenne nationale se rapprochait de la saturation. L’écart n’est pas un artefact statistique : l’accès urbain atteint 98,2 % en 2024. Le rapport ne donne nulle part 92,8 % comme valeur 2024 : c’est la projection 2025.",
-                  en: "Two lines, one country. The upper line is the one the summary documents quote; the lower line is where rural Gabon actually lives. In five years rural access gained just 1.6 points — from 24.7% to 26.3% — while the national average approached saturation. The gap is not a statistical artefact: urban access reached 98.2% in 2024. The report nowhere gives 92.8% as a 2024 value: that is the 2025 projection."
+                  fr: "Deux courbes, un seul pays. La moyenne nationale approche la saturation, tandis que l’accès rural a gagné 1,6 point en cinq ans — de 24,7 % en 2020 à 26,3 % en 2024. L’accès urbain atteint 98,2 % en 2024. La valeur 2024 est de 92,5 % ; 92,8 % est la projection 2025.",
+                  en: "Two lines, one country. The national average is close to saturation, while rural access gained 1.6 points in five years — from 24.7% in 2020 to 26.3% in 2024. Urban access reached 98.2% in 2024. The 2024 value is 92.5%; 92.8% is the 2025 projection."
                 },
                 source: "ENV 2026 · Messages clés (rapport intégral) · annexe 1, ODD 7.1.1"
               } },
@@ -156,8 +156,8 @@ window.VNR.register({
                      en: "2024 · against 83% in the cities, flat since 2020" },
               panel: {
                 sdg: 6,
-                title: { fr: "Services d’eau de base : la ville immobile, la campagne qui monte lentement, 2020-2024",
-                         en: "Basic water services: the city stands still, the countryside inches up, 2020–2024" },
+                title: { fr: "Services d’eau de base : milieu urbain et rural, 2020-2024",
+                         en: "Basic water services: urban and rural, 2020–2024" },
                 chart: {
                   type: "line", sdg: 6, unit: "%",
                   title: { fr: "Population utilisant au moins les services d’eau de base",
@@ -173,8 +173,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 6.1.1 (OMS/UNICEF, JMP)"
                 },
                 text: {
-                  fr: "La fiche de synthèse annonçait une eau rurale « stagnant à 30 % » contre « 60 % en ville ». Aucun de ces deux chiffres n’existe dans le rapport. Le rapport donne 57 % en milieu rural — en hausse continue depuis 53 % en 2020 — et 83 % en ville. La stagnation est réelle, mais elle est urbaine : la courbe des villes n’a pas bougé d’un point en cinq ans. Elle est réelle ailleurs aussi : les équipements de lavage des mains plafonnent à 48,2 % depuis 2022 — le rapport parle lui-même d’un « palier de stagnation préoccupant » — et la défécation à l’air libre reste figée à 8 % en zone rurale.",
-                  en: "The summary sheet announced rural water \"stuck at 30%\" against \"60% in the cities\". Neither figure exists in the report. The report gives 57% rural — climbing steadily from 53% in 2020 — and 83% urban. The stagnation is real, but it is urban: the city line has not moved a single point in five years. It is real elsewhere too: handwashing facilities have been stuck at 48.2% since 2022 — the report itself speaks of a \"worrying plateau\" — and rural open defecation remains frozen at 8%."
+                  fr: "Le rapport donne 57 % en milieu rural — en hausse continue depuis 53 % en 2020 — et 83 % en ville, stable depuis 2020. Les équipements de lavage des mains se maintiennent à 48,2 % depuis 2022, et la défécation à l’air libre reste à 8 % en zone rurale.",
+                  en: "The report gives 57% rural — climbing steadily from 53% in 2020 — and 83% urban, unchanged since 2020. Handwashing facilities have held at 48.2% since 2022, and rural open defecation remains at 8%."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 6.1.1 et 6.2.1 (OMS/UNICEF, JMP)"
               } },
@@ -186,8 +186,8 @@ window.VNR.register({
                      en: "national poverty line, 2023 · against 39.6% urban" },
               panel: {
                 sdg: 1,
-                title: { fr: "Pauvreté au seuil national : le chiffre le plus dur du rapport",
-                         en: "Poverty at the national line: the hardest number in the report" },
+                title: { fr: "Pauvreté au seuil national : milieu urbain et rural, 2023",
+                         en: "Poverty at the national line: urban and rural, 2023" },
                 chart: {
                   type: "gap", sdg: 1, unit: "%",
                   title: { fr: "Taux de pauvreté au seuil national, 2023",
@@ -200,8 +200,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 2 — ODD 1.2.1 (INSTAT, EGEP II)"
                 },
                 text: {
-                  fr: "Huit ruraux sur dix vivent sous le seuil national de pauvreté, contre quatre citadins sur dix. Ce chiffre est enfoui dans l’annexe 2 du rapport ; il n’apparaît dans aucun message clé, dans aucune fiche. C’est pourtant la preuve chiffrée de tout le reste : l’électricité, l’eau, la route, la santé et l’école ne se distribuent pas au hasard sur le territoire — elles se distribuent le long de cette ligne. La moyenne nationale de 45 % ne décrit personne.",
-                  en: "Eight rural people in ten live below the national poverty line, against four city-dwellers in ten. The figure is buried in Annex 2 of the report; it appears in no key message and on no fact sheet. Yet it is the arithmetic proof of everything else: electricity, water, roads, health and schooling are not distributed at random across the territory — they are distributed along this line. The 45% national average describes nobody."
+                  fr: "Huit ruraux sur dix vivent sous le seuil national de pauvreté (80,1 %), contre quatre citadins sur dix (39,6 %) ; la moyenne nationale est de 45,0 % (annexe 2, indicateur 1.2.1, INSTAT/EGEP II). Le même écart rural-urbain se retrouve pour l’électricité, l’eau, la route, la santé et l’école.",
+                  en: "Eight rural people in ten live below the national poverty line (80.1%), against four city-dwellers in ten (39.6%); the national average is 45.0% (Annex 2, indicator 1.2.1, INSTAT/EGEP II). The same rural–urban pattern runs through electricity, water, roads, health and schooling."
                 },
                 source: "ENV 2026 · annexe 2 — ODD 1.2.1 (INSTAT, EGEP II / RGEF Estuaire 2023)"
               } },
@@ -213,8 +213,8 @@ window.VNR.register({
                      en: "of GDP, 2024 · up from 5.5% in 2020 (proj. 2025: 7.1%)" },
               panel: {
                 sdg: 9,
-                title: { fr: "La croissance industrielle, et l’emploi qui ne suit pas, 2020-2024",
-                         en: "Industrial growth, and the employment that does not follow, 2020–2024" },
+                title: { fr: "Valeur ajoutée manufacturière et emploi, 2020-2024",
+                         en: "Manufacturing value added and employment, 2020–2024" },
                 chart: {
                   type: "line", sdg: 9, unit: "%",
                   title: { fr: "Valeur ajoutée manufacturière (% du PIB) et emploi manufacturier (% de l’emploi total)",
@@ -228,8 +228,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 9.2.1 et 9.2.2 (DGEPF · BM)"
                 },
                 text: {
-                  fr: "La diversification produit de la valeur ajoutée : +1,3 point de PIB en quatre ans, portée par les Zones d’Investissement Spéciales. Elle ne produit pas encore d’emplois : la part de l’emploi manufacturier n’a gagné que 0,3 point sur la même période, et elle est plate depuis 2023. C’est la définition d’une croissance sans emploi — à confronter au chômage de 20,0 %, à l’emploi informel de 47,0 % et aux 36,2 % de jeunes ni en emploi, ni en études, ni en formation.",
-                  en: "Diversification is producing value added: +1.3 points of GDP in four years, driven by the Special Investment Zones. It is not yet producing jobs: manufacturing's share of employment gained only 0.3 points over the same period, and has been flat since 2023. This is the definition of jobless growth — set it against 20.0% unemployment, 47.0% informal employment and the 36.2% of young people not in employment, education or training."
+                  fr: "La diversification produit de la valeur ajoutée : +1,3 point de PIB en quatre ans, portée par les Zones d’Investissement Spéciales. La part de l’emploi manufacturier a gagné 0,3 point sur la même période et reste stable depuis 2023, aux côtés d’un chômage de 20,0 %, d’un emploi informel de 47,0 % et de 36,2 % de jeunes ni en emploi, ni en études, ni en formation.",
+                  en: "Diversification is adding value: +1.3 points of GDP in four years, driven by the Special Investment Zones. Manufacturing’s share of employment gained 0.3 points over the same period and has been flat since 2023, alongside 20.0% unemployment, 47.0% informal employment and 36.2% of young people not in employment, education or training."
                 },
                 source: "ENV 2026 · annexes 1 et 2 — ODD 9.2.1, 9.2.2, 8.3.1, 8.5.2, 8.6.1"
               } },
@@ -237,8 +237,8 @@ window.VNR.register({
             { sdg: 11,
               label: { fr: "Sinistrés de catastrophes", en: "Disaster-affected people" },
               value: 295, unit: "",
-              sub: { fr: "pour 100 000 hab., 2024 · 245 en 2022 — une aggravation",
-                     en: "per 100,000 inhabitants, 2024 · 245 in 2022 — a worsening" },
+              sub: { fr: "pour 100 000 hab., 2024 · 245 en 2022",
+                     en: "per 100,000 inhabitants, 2024 · 245 in 2022" },
               panel: {
                 sdg: 11,
                 title: { fr: "Personnes décédées, disparues ou directement touchées par une catastrophe, 2020-2024",
@@ -255,8 +255,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 11.5.1 (UNDRR)"
                 },
                 text: {
-                  fr: "C’est l’une des rares courbes du rapport qui va dans le mauvais sens : +60 % de sinistrés en quatre ans. La fiche de synthèse annonçait « 285 sinistrés en 2023 » — doublement inexact : 2023 vaut 280, et 285 est la projection 2025. Surtout, elle présentait un constat statique là où le rapport décrit une aggravation. Le contexte : 30,8 % des Gabonais vivent en zone inondable, 76,2 % se déclarent exposés aux risques liés aux grandes pluies, et 90 % jugent l’accès à un logement décent hors de portée.",
-                  en: "This is one of the few curves in the report heading the wrong way: 60% more disaster-affected people in four years. The summary sheet announced \"285 affected in 2023\" — wrong twice over: 2023 is 280, and 285 is the 2025 projection. Above all, it offered a static observation where the report describes a deterioration. The context: 30.8% of Gabonese live in flood-prone areas, 76.2% report exposure to heavy-rainfall hazards, and 90% consider decent housing out of reach."
+                  fr: "Les sinistrés de catastrophes passent de 185 pour 100 000 habitants en 2020 à 295 en 2024 (245 en 2022). Le contexte : 30,8 % des Gabonais vivent en zone inondable, 76,2 % se déclarent exposés aux risques liés aux grandes pluies, et 90 % jugent l’accès à un logement décent hors de portée. (285 est la projection 2025 ; la valeur 2023 est de 280.)",
+                  en: "Disaster-affected people rose from 185 per 100,000 in 2020 to 295 in 2024 (245 in 2022). The context: 30.8% of Gabonese live in flood-prone areas, 76.2% report exposure to heavy-rainfall hazards, and 90% consider decent housing out of reach. (285 is the 2025 projection; the 2023 value is 280.)"
                 },
                 source: "ENV 2026 · annexe 1 — ODD 11.5.1 (UNDRR) · ENP GABON-2050"
               } },
@@ -264,8 +264,8 @@ window.VNR.register({
             { sdg: 17,
               label: { fr: "Recettes publiques / PIB", en: "Government revenue / GDP" },
               value: 23.7, unit: "%",
-              sub: { fr: "2024 · contre 17,6 % en 2020 — la vraie réussite macro",
-                     en: "2024 · up from 17.6% in 2020 — the genuine macro success" },
+              sub: { fr: "2024 · contre 17,6 % en 2020",
+                     en: "2024 · up from 17.6% in 2020" },
               panel: {
                 sdg: 17,
                 title: { fr: "Total des recettes publiques, en pourcentage du PIB, 2020-2024",
@@ -281,8 +281,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 17.1.1 (DGEPF/TOFE · FMI)"
                 },
                 text: {
-                  fr: "Du creux post-COVID de 15,3 % en 2021 au pic de 24,6 % en 2023, les recettes publiques ont gagné plus de neuf points de PIB en deux ans, avant de se stabiliser à 23,7 %. C’est le socle du plaidoyer gabonais à New York : un pays qui a consenti l’effort domestique et qui demande de l’investissement, non de l’assistance. L’ancien tableau de bord affichait « 15,2 % » — un chiffre sans contrepartie dans le rapport, vraisemblablement confondu avec la valeur 2021 (15,3 %) ou avec les dépenses de préservation du patrimoine (15,2 $ US par habitant).",
-                  en: "From the post-COVID trough of 15.3% in 2021 to the 24.6% peak of 2023, government revenue gained more than nine points of GDP in two years before settling at 23.7%. This is the bedrock of Gabon's case in New York: a country that has made the domestic effort and is asking for investment, not assistance. The old dashboard displayed \"15.2%\" — a figure with no counterpart in the report, most likely confused with the 2021 value (15.3%) or with heritage-preservation spending (US$ 15.2 per capita)."
+                  fr: "Du creux post-COVID de 15,3 % en 2021 au pic de 24,6 % en 2023, les recettes publiques ont gagné plus de neuf points de PIB en deux ans, avant de se stabiliser à 23,7 %. C’est le socle du plaidoyer gabonais à New York : l’investissement plutôt que l’assistance.",
+                  en: "From the post-COVID trough of 15.3% in 2021 to the 24.6% peak of 2023, government revenue gained more than nine points of GDP in two years before settling at 23.7%. This underpins Gabon’s case in New York: investment rather than assistance."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 17.1.1 (DGEPF/TOFE · FMI)"
               } }
@@ -298,80 +298,80 @@ window.VNR.register({
                           en: "Urban access is near saturation (98.2%); the remaining gap is almost entirely rural." } },
               { label: { fr: "Accès à l’électricité — milieu rural", en: "Electricity access — rural" },
                 from: 24.7, fromYear: "2020", to: 26.3, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "+1,6 point en cinq ans. À ce rythme, l’accès universel rural n’est pas en vue.",
-                          en: "+1.6 points in five years. At this pace, universal rural access is not in sight." } },
+                status: { fr: "+1,6 point en cinq ans.",
+                          en: "+1.6 points in five years." } },
               { label: { fr: "Eau de base — milieu rural", en: "Basic water — rural" },
                 from: 53, fromYear: "2020", to: 57, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "Progression réelle et continue — l’inverse de la « stagnation à 30 % » annoncée par la fiche.",
-                          en: "Real, continuous progress — the opposite of the \"stuck at 30%\" claimed by the fact sheet." } },
+                status: { fr: "Progression continue depuis 2020 (+4 points).",
+                          en: "Continuous progress since 2020 (+4 points)." } },
               { label: { fr: "Eau de base — milieu urbain", en: "Basic water — urban" },
                 from: 83, fromYear: "2020", to: 83, toYear: "2024", unit: "%", dir: "flat",
-                status: { fr: "Strictement immobile depuis 2020 : c’est ici que la stagnation est réelle.",
-                          en: "Strictly unchanged since 2020: this is where the stagnation actually is." } },
+                status: { fr: "Stable depuis 2020.",
+                          en: "Unchanged since 2020." } },
               { label: { fr: "Équipements de lavage des mains (eau + savon)", en: "Handwashing facilities (water + soap)" },
                 from: 48.0, fromYear: "2020", to: 48.2, toYear: "2024", unit: "%", dir: "flat",
-                status: { fr: "Le rapport parle d’un « palier de stagnation préoccupant » : un ménage sur deux reste sans dispositif.",
-                          en: "The report calls it a \"worrying plateau\": one household in two still has no facility." } },
+                status: { fr: "Un ménage sur deux reste sans dispositif.",
+                          en: "One household in two still has no facility." } },
               { label: { fr: "Assainissement amélioré", en: "Improved sanitation" },
                 from: 54.2, fromYear: "2020", to: 57.4, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "Amélioration lente ; la défécation à l’air libre reste figée à 8 % en milieu rural.",
-                          en: "Slow improvement; rural open defecation remains frozen at 8%." } },
+                status: { fr: "Amélioration depuis 2020 ; la défécation à l’air libre reste à 8 % en milieu rural.",
+                          en: "Improvement since 2020; rural open defecation remains at 8%." } },
               { label: { fr: "VA manufacturière / PIB", en: "Manufacturing VA / GDP" },
                 from: 5.5, fromYear: "2020", to: 6.8, toYear: "2024", unit: "%", dir: "up",
                 status: { fr: "La diversification produit de la valeur (proj. 2025 : 7,1 %).",
                           en: "Diversification is creating value (proj. 2025: 7.1%)." } },
               { label: { fr: "Emploi manufacturier / emploi total", en: "Manufacturing employment / total employment" },
                 from: 4.2, fromYear: "2020", to: 4.5, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "…mais pas encore d’emplois : +0,3 point, et plat depuis 2023.",
-                          en: "…but not yet jobs: +0.3 points, and flat since 2023." } },
+                status: { fr: "+0,3 point, et stable depuis 2023.",
+                          en: "+0.3 points, and flat since 2023." } },
               { label: { fr: "Accès routier rural (< 2 km d’une route praticable)", en: "Rural road access (within 2 km of an all-season road)" },
                 from: 25, fromYear: "2020", to: 26.5, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "La fracture logistique. Les routes sont la 2ᵉ priorité absolue des Gabonais (18,2 %).",
-                          en: "The logistics divide. Roads are Gabonese citizens' second-highest priority (18.2%)." } },
+                status: { fr: "Les routes sont la 2ᵉ priorité des Gabonais (18,2 %).",
+                          en: "Roads are citizens’ second-highest priority (18.2%)." } },
               { label: { fr: "Population urbaine en quartiers précaires", en: "Urban population in slums or inadequate housing" },
                 from: 40.0, fromYear: "2020", to: 38.5, toYear: "2024", unit: "%", dir: "down",
-                status: { fr: "Recul marginal : −1,5 point en cinq ans, alors que 90 % jugent le logement décent inaccessible.",
-                          en: "Marginal decline: −1.5 points in five years, while 90% find decent housing unattainable." } },
+                status: { fr: "−1,5 point en cinq ans ; 90 % jugent le logement décent hors de portée.",
+                          en: "−1.5 points in five years; 90% find decent housing out of reach." } },
               { label: { fr: "Accès aisé aux transports publics", en: "Easy access to public transport" },
                 from: 18.0, fromYear: "2020", to: 19.5, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "Quatre citadins sur cinq restent hors d’atteinte (proj. 2025 : 20,1 %).",
-                          en: "Four city-dwellers in five remain out of reach (proj. 2025: 20.1%)." } },
+                status: { fr: "19,5 % d’accès aisé en 2024 (proj. 2025 : 20,1 %).",
+                          en: "19.5% with easy access in 2024 (proj. 2025: 20.1%)." } },
               { label: { fr: "Sinistrés de catastrophes (pour 100 000 hab.)", en: "Disaster-affected people (per 100,000)" },
                 from: 185, fromYear: "2020", to: 295, toYear: "2024", unit: "", dir: "up",
-                status: { fr: "Aggravation nette : la courbe qui va dans le mauvais sens.",
-                          en: "A clear deterioration: the curve heading the wrong way." } },
+                status: { fr: "En hausse depuis 185 pour 100 000 en 2020.",
+                          en: "Up from 185 per 100,000 in 2020." } },
               { label: { fr: "Recettes publiques / PIB", en: "Government revenue / GDP" },
                 from: 17.6, fromYear: "2020", to: 23.7, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "La réussite macroéconomique du cycle, après un creux à 15,3 % en 2021.",
-                          en: "The macroeconomic success of the cycle, after a 15.3% trough in 2021." } },
+                status: { fr: "En hausse de plus de six points depuis 2020, après un creux à 15,3 % en 2021.",
+                          en: "Up more than six points since 2020, after a 15.3% trough in 2021." } },
               { label: { fr: "Part du budget financée par l’impôt intérieur", en: "Share of the budget financed by domestic taxes" },
                 from: 43.5, fromYear: "2020", to: 53.7, toYear: "2024", unit: "%", dir: "up",
                 status: { fr: "Dématérialisation des régies (e-t@x, Sydonia World) : plus de dix points gagnés.",
                           en: "Digitalised revenue administration (e-t@x, Sydonia World): more than ten points gained." } },
               { label: { fr: "APD nette / RNB", en: "Net ODA / GNI" },
                 from: 0.7, fromYear: "2020", to: 0.4, toYear: "2024", unit: "%", dir: "down",
-                status: { fr: "L’aide se retire et ne revient pas : plate à 0,4 % depuis 2022.",
-                          en: "Aid has withdrawn and is not returning: flat at 0.4% since 2022." } },
+                status: { fr: "Stable à 0,4 % depuis 2022.",
+                          en: "Flat at 0.4% since 2022." } },
               { label: { fr: "IDE nets / PIB", en: "Net FDI / GDP" },
                 from: 11.2, fromYear: "2020", to: 5.5, toYear: "2024", unit: "%", dir: "down",
-                status: { fr: "Divisés par deux. Le rapport les dit « plafonnant de manière endémique ».",
-                          en: "Halved. The report calls them \"endemically capped\"." } },
+                status: { fr: "En recul, de 11,2 % à 5,5 % depuis 2020.",
+                          en: "Down from 11.2% to 5.5% since 2020." } },
               { label: { fr: "Taux de chômage", en: "Unemployment rate" },
                 from: 21.0, fromYear: "2020", to: 20.0, toYear: "2024", unit: "%", dir: "down",
                 status: { fr: "Un point en cinq ans, avec 47,0 % d’emploi informel. 53,4 % des citoyens en font la priorité n° 1.",
                           en: "One point in five years, with 47.0% informal employment. 53.4% of citizens make it priority number one." } },
               { label: { fr: "Jeunes de 15-24 ans ni en emploi, ni en études (NEET)", en: "Youth 15–24 not in employment, education or training" },
                 from: 38.5, fromYear: "2020", to: 36.2, toYear: "2024", unit: "%", dir: "down",
-                status: { fr: "Plus d’un jeune sur trois. Le dividende démographique s’évapore.",
-                          en: "More than one young person in three. The demographic dividend is evaporating." } },
+                status: { fr: "Plus d’un jeune sur trois.",
+                          en: "More than one young person in three." } },
               { label: { fr: "Part des renouvelables dans l’énergie finale", en: "Renewables in final energy consumption" },
                 from: 91.4, fromYear: "2020", to: 91.2, toYear: "2024", unit: "%", dir: "flat",
-                status: { fr: "L’un des mix les plus propres du continent, et stable.",
-                          en: "One of the cleanest energy mixes on the continent, and stable." } },
+                status: { fr: "Mix à 91,2 % renouvelable, stable sur la série.",
+                          en: "91.2% renewable, stable across the series." } },
               { label: { fr: "Couverture forestière", en: "Forest cover" },
                 from: 88.0, fromYear: "2020", to: 88.0, toYear: "2024", unit: "%", dir: "flat",
-                status: { fr: "Constante sur toute la série. La fiche indiquait 85 % ; le rapport dit 88 %, à plusieurs reprises.",
-                          en: "Constant across the whole series. The fact sheet said 85%; the report says 88%, repeatedly." } }
+                status: { fr: "Constante sur toute la série, à 88 %.",
+                          en: "Constant across the whole series, at 88%." } }
             ],
             source: "ENV 2026 · annexes statistiques 1 et 2 (séries 2020-2024)" },
 
@@ -392,8 +392,8 @@ window.VNR.register({
 
           { type: "chart", chart: {
             type: "bars", sdg: 4, unit: "%",
-            title: { fr: "L’entonnoir éducatif : ce qu’il reste d’une cohorte, 2024",
-                     en: "The education funnel: what survives of a cohort, 2024" },
+            title: { fr: "Éducation : de la scolarisation à l’achèvement, 2024",
+                     en: "Education: from enrolment to completion, 2024" },
             items: [
               { label: { fr: "Scolarisation nette au primaire", en: "Net primary enrolment" }, value: 94.8, emphasis: false },
               { label: { fr: "Achèvement du primaire", en: "Primary completion" }, value: 67.5, emphasis: false },
@@ -401,8 +401,8 @@ window.VNR.register({
               { label: { fr: "Achèvement du 2ᵈ cycle du secondaire", en: "Upper-secondary completion" }, value: 30.2, emphasis: true }
             ],
             insight: {
-              fr: "Presque tous les enfants gabonais entrent à l’école : la scolarisation nette au primaire atteint 94,8 %. Deux sur trois achèvent le primaire ; trois sur dix seulement achèvent le second cycle du secondaire. C’est par ce trou que fuit le dividende démographique — et c’est lui qui alimente les 36,2 % de jeunes NEET et les 47 % d’emploi informel. L’« adéquation formation-emploi », que le rapport érige en accélérateur de l’ODD 9, commence ici.",
-              en: "Almost every Gabonese child starts school: net primary enrolment reaches 94.8%. Two in three complete primary; only three in ten complete upper secondary. This is the hole through which the demographic dividend drains — and it is what feeds the 36.2% NEET rate and 47% informality. The \"training-to-jobs alignment\" that the report names as an SDG 9 accelerator begins here."
+              fr: "Presque tous les enfants gabonais entrent à l’école : la scolarisation nette au primaire atteint 94,8 %. Deux sur trois achèvent le primaire ; trois sur dix achèvent le second cycle du secondaire. Ce constat rejoint les 36,2 % de jeunes NEET et les 47 % d’emploi informel. Le rapport retient l’« adéquation formation-emploi » comme accélérateur de l’ODD 9.",
+              en: "Almost every Gabonese child starts school: net primary enrolment reaches 94.8%. Two in three complete primary; three in ten complete upper secondary. This links to the 36.2% NEET rate and 47% informality. The report names training-to-jobs alignment as an SDG 9 accelerator."
             },
             source: "ENV 2026 · annexe 2 — ODD 4 (taux d’achèvement et de scolarisation, 2024)"
           } }
@@ -412,8 +412,8 @@ window.VNR.register({
       { id: "drivers",
         label: { fr: "Les cinq moteurs", en: "The Five Drivers" },
         intro: {
-          fr: "Le rapport retient cinq « ODD moteurs » — 6, 7, 9, 11 et 17 — présentés comme « l’ossature physique, logistique et financière du développement national ». Les douze autres ODD sont traités comme transversaux, l’ODD 8 compris — contrairement à la fiche OSAA, qui comptait six thèmes. Chaque moteur est exposé dans la structure du Gabon lui-même : Le contraste, L’enjeu, L’accélérateur. Le français est le texte du rapport ; l’anglais en est la traduction.",
-          en: "The report selects five \"driver goals\" — SDG 6, 7, 9, 11 and 17 — described as \"the physical, logistical and financial backbone of national development\". The other twelve SDGs are treated as cross-cutting, SDG 8 among them — contrary to the OSAA fact sheet, which counted six themes. Each driver is set out in Gabon's own structure: The contrast, What is at stake, The accelerator. The French is the report's own wording; the English is its translation."
+          fr: "Le rapport retient cinq « ODD moteurs » — 6, 7, 9, 11 et 17 — présentés comme « l’ossature physique, logistique et financière du développement national ». Les douze autres ODD sont traités comme transversaux, l’ODD 8 compris. Chaque moteur est exposé dans la structure du Gabon lui-même : Le contraste, L’enjeu, L’accélérateur. Le français est le texte du rapport ; l’anglais en est la traduction.",
+          en: "The report selects five \"driver goals\" — SDG 6, 7, 9, 11 and 17 — described as \"the physical, logistical and financial backbone of national development\". The other twelve SDGs are treated as cross-cutting, SDG 8 among them. Each driver is set out in Gabon's own structure: The contrast, What is at stake, The accelerator. The French is the report's own wording; the English is its translation."
         },
         blocks: [
           { type: "triptych", items: [
@@ -431,8 +431,8 @@ window.VNR.register({
                   { label: { fr: "Milieu rural", en: "Rural" }, value: 57, emphasis: true }
                 ],
                 insight: {
-                  fr: "Le rapport ne chiffre pas le déficit du Grand Libreville : il le qualifie de « structurel ». Les 50 000 m³ par jour, les 30 % ruraux et les 60 % urbains de la fiche de synthèse n’apparaissent nulle part dans ses 165 pages. À l’échelle du pays, 71 % des ménages n’ont pas d’adduction dans le logement, et 52 % de ceux qui sont raccordés jugent l’eau « mauvaise » ou « très mauvaise ».",
-                  en: "The report puts no number on Greater Libreville's deficit: it calls it \"structural\". The 50,000 m³ a day, the 30% rural and the 60% urban figures of the summary sheet appear nowhere in its 165 pages. Nationally, 71% of households have no piped water in the home, and 52% of those connected rate the water \"poor\" or \"very poor\"."
+                  fr: "Le rapport ne chiffre pas le déficit du Grand Libreville : il le qualifie de « structurel ». À l’échelle du pays, 71 % des ménages n’ont pas d’adduction dans le logement, et 52 % de ceux qui sont raccordés jugent l’eau « mauvaise » ou « très mauvaise ».",
+                  en: "The report puts no number on Greater Libreville’s deficit: it calls it \"structural\". Nationally, 71% of households have no piped water in the home, and 52% of those connected rate the water \"poor\" or \"very poor\"."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 6.1.1 (OMS/UNICEF, JMP) · ENP GABON-2050"
               },
@@ -451,8 +451,8 @@ window.VNR.register({
               source: "ENV 2026 · Messages clés (rapport intégral)" },
 
             { sdg: 7,
-              headline: { fr: "Un succès national qui masque une fracture territoriale majeure",
-                          en: "A national success that masks a major territorial divide" },
+              headline: { fr: "Un taux national élevé, un écart rural marqué",
+                          en: "A high national rate, a wide rural gap" },
               chart: {
                 type: "gap", sdg: 7, unit: "%",
                 title: { fr: "Accès à l’électricité, 2024", en: "Electricity access, 2024" },
@@ -462,14 +462,14 @@ window.VNR.register({
                   { label: { fr: "Milieu rural", en: "Rural" }, value: 26.3, emphasis: true }
                 ],
                 insight: {
-                  fr: "Soixante-douze points séparent la ville du village — le plus grand écart du rapport, et l’image même de la fracture territoriale. S’y ajoute la question de la qualité : 57,3 % des personnes raccordées jugent la fourniture mauvaise, et 55,2 % des ruraux cuisinent encore au bois de coupe familiale. (Le rapport comporte une coquille : l’accès urbain 2022 y est saisi à 25,4 % dans une série 97,0 · 97,5 · … · 98,0 ; ce point n’est pas tracé.)",
-                  en: "Seventy-two points separate city from village — the widest gap in the report, and the very image of the territorial fracture. Quality compounds it: 57.3% of connected households rate supply as poor, and 55.2% of rural people still cook with self-cut firewood. (The report contains a typo: 2022 urban access is entered as 25.4% in a series running 97.0 · 97.5 · … · 98.0; that point is not plotted.)"
+                  fr: "Soixante-douze points séparent l’accès urbain (98,2 %) de l’accès rural (26,3 %). Sur la qualité : 57,3 % des personnes raccordées jugent la fourniture mauvaise, et 55,2 % des ruraux cuisinent encore au bois de coupe familiale.",
+                  en: "Seventy-two points separate urban access (98.2%) from rural access (26.3%). On quality: 57.3% of connected households rate supply as poor, and 55.2% of rural people still cook with self-cut firewood."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 7.1.1 (BM/WDI · SEEG · INSTAT) · ENP GABON-2050"
               },
               contrast: {
-                fr: "Si le taux d’électrification atteint 92,5 % en 2024 avec un mix renouvelable exemplaire dépassant 91 % (établi à 91,2 %), ce succès national masque une fracture territoriale majeure, l’accès rural plafonnant à 26,3 %.",
-                en: "While the electrification rate reaches 92.5% in 2024, with an exemplary renewable mix above 91% (at 91.2%), this national success masks a major territorial divide: rural access is capped at 26.3%."
+                fr: "Le taux d’électrification atteint 92,5 % en 2024 avec un mix renouvelable supérieur à 91 % (établi à 91,2 %) ; l’accès rural s’établit à 26,3 %.",
+                en: "The electrification rate reaches 92.5% in 2024, with a renewable mix above 91% (at 91.2%); rural access stands at 26.3%."
               },
               stake: {
                 fr: "L’instabilité du service en zone rurale bride la productivité économique et freine l’inclusion des territoires.",
@@ -482,8 +482,8 @@ window.VNR.register({
               source: "ENV 2026 · Messages clés (rapport intégral)" },
 
             { sdg: 9,
-              headline: { fr: "Le corridor avance, les villages restent enclavés",
-                          en: "The corridor moves; the villages stay cut off" },
+              headline: { fr: "Le fret ferroviaire progresse, l’accès routier rural reste limité",
+                          en: "Rail freight rises; rural road access stays limited" },
               chart: {
                 type: "line", sdg: 9, unit: " Mt",
                 title: { fr: "Fret ferroviaire du Transgabonais, en millions de tonnes",
@@ -513,8 +513,8 @@ window.VNR.register({
               source: "ENV 2026 · Messages clés (rapport intégral)" },
 
             { sdg: 11,
-              headline: { fr: "Une urbanisation supérieure à 90 %, des services qui ne suivent pas",
-                          en: "Urbanisation above 90%, services that do not keep up" },
+              headline: { fr: "Une urbanisation supérieure à 90 % et la couverture des services urbains",
+                          en: "Urbanisation above 90% and urban service coverage" },
               chart: {
                 type: "line", sdg: 11, unit: "%",
                 title: { fr: "Les services urbains, 2020-2024", en: "Urban services, 2020–2024" },
@@ -527,18 +527,18 @@ window.VNR.register({
                     points: [{ x: "2020", y: 18.0 }, { x: "2021", y: 18.2 }, { x: "2022", y: 18.5 }, { x: "2023", y: 19.0 }, { x: "2024", y: 19.5 }] }
                 ],
                 insight: {
-                  fr: "Trois services, une même inertie. La collecte des déchets progresse par paliers, alors que 64,1 % des habitants notent l’absence d’aménagements pour le dépôt des ordures ; la part des quartiers précaires ne recule que d’un point et demi en cinq ans, quand 90 % des Gabonais jugent le logement décent hors de portée ; l’accès aisé aux transports publics reste sous les 20 %, avec 74 % d’usagers insatisfaits. Le rapport ne donne aucun taux d’urbanisation exact : il écrit « supérieure à 90 % » — aucun chiffre plus précis n’est étayé.",
-                  en: "Three services, one shared inertia. Waste collection improves in steps, while 64.1% of residents report no facilities for depositing refuse; the slum share falls by just a point and a half in five years, while 90% of Gabonese find decent housing out of reach; easy access to public transport stays below 20%, with 74% of users dissatisfied. The report gives no exact urbanisation rate: it says \"above 90%\" — no more precise figure is supported."
+                  fr: "Trois services urbains. La collecte des déchets progresse par paliers, alors que 64,1 % des habitants notent l’absence d’aménagements pour le dépôt des ordures ; la part des quartiers précaires recule d’un point et demi en cinq ans, quand 90 % des Gabonais jugent le logement décent hors de portée ; l’accès aisé aux transports publics reste sous les 20 %, avec 74 % d’usagers insatisfaits. Le rapport donne une urbanisation « supérieure à 90 % ».",
+                  en: "Three urban services. Waste collection improves in steps, while 64.1% of residents report no facilities for depositing refuse; the slum share falls by a point and a half in five years, while 90% of Gabonese find decent housing out of reach; easy access to public transport stays below 20%, with 74% of users dissatisfied. The report gives urbanisation as \"above 90%\"."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 11.1.1, 11.2.1, 11.6.1 (ONU-Habitat · INSTAT) · ENP GABON-2050"
               },
               contrast: {
-                fr: "Avec une urbanisation supérieure à 90 %, les villes gabonaises concentrent les vulnérabilités, notamment pour les ménages précaires installés en zones inconstructibles.",
-                en: "With urbanisation above 90%, Gabon's cities concentrate vulnerability — above all for precarious households settled on unbuildable land."
+                fr: "Avec une urbanisation supérieure à 90 %, les villes gabonaises regroupent l’essentiel de la population, y compris des ménages précaires installés en zones inconstructibles.",
+                en: "With urbanisation above 90%, Gabon’s cities are home to most of the population, including precarious households settled on unbuildable land."
               },
               stake: {
-                fr: "En 2024, le pays enregistre une aggravation avec 295 sinistrés pour 100 000 habitants, alors que la mobilité urbaine pâtit d’un accès restreint aux transports publics (19,5 %).",
-                en: "In 2024 the country records a worsening: 295 disaster-affected people per 100,000 inhabitants, while urban mobility suffers from restricted access to public transport (19.5%)."
+                fr: "En 2024, le pays enregistre 295 sinistrés pour 100 000 habitants (245 en 2022), et l’accès aisé aux transports publics s’établit à 19,5 %.",
+                en: "In 2024 the country records 295 disaster-affected people per 100,000 inhabitants (245 in 2022), and easy access to public transport stands at 19.5%."
               },
               accelerator: {
                 fr: "La régularisation foncière massive et la modernisation des réseaux de drainage sont indispensables pour bâtir des espaces de vie résilients face aux risques climatiques, intégrés dans une planification urbaine plus inclusive et préventive.",
@@ -547,8 +547,8 @@ window.VNR.register({
               source: "ENV 2026 · Messages clés (rapport intégral)" },
 
             { sdg: 17,
-              headline: { fr: "Une souveraineté budgétaire reconquise, un étau extérieur qui se referme",
-                          en: "Fiscal sovereignty regained, an external vice closing in" },
+              headline: { fr: "Des recettes intérieures en hausse, un financement extérieur plus contraint",
+                          en: "Rising domestic revenue, tighter external financing" },
               chart: {
                 type: "line", sdg: 17, unit: "%",
                 title: { fr: "Les trois contraintes du financement extérieur, 2020-2024",
@@ -562,8 +562,8 @@ window.VNR.register({
                     points: [{ x: "2020", y: 0.7 }, { x: "2021", y: 0.5 }, { x: "2022", y: 0.4 }, { x: "2023", y: 0.4 }, { x: "2024", y: 0.4 }] }
                 ],
                 insight: {
-                  fr: "Après le point bas de 2022, le service de la dette remonte : 14,5 % des exportations en 2024, et 17,0 % projetés pour 2025. Les investissements directs étrangers ont été divisés par deux depuis 2020 et l’aide publique est figée à 0,4 % du RNB. Les trois lignes racontent la même histoire : l’espace de financement extérieur se referme au moment précis où le Gabon a le plus besoin d’investir. Le rapport ajoute que le service de la dette absorbe 17 % du budget national.",
-                  en: "After bottoming out in 2022, debt service is climbing again: 14.5% of exports in 2024, and a projected 17.0% for 2025. Foreign direct investment has halved since 2020 and official aid is frozen at 0.4% of GNI. The three lines tell one story: external financing space is closing at the very moment Gabon most needs to invest. The report adds that debt service absorbs 17% of the national budget."
+                  fr: "Après le point bas de 2022, le service de la dette remonte : 14,5 % des exportations en 2024, et 17,0 % projetés pour 2025. Les investissements directs étrangers ont reculé de moitié depuis 2020 et l’aide publique se maintient à 0,4 % du RNB. Le rapport ajoute que le service de la dette absorbe 17 % du budget national.",
+                  en: "After bottoming out in 2022, debt service is climbing again: 14.5% of exports in 2024, and a projected 17.0% for 2025. Foreign direct investment has fallen by half since 2020 and official aid holds at 0.4% of GNI. The report adds that debt service absorbs 17% of the national budget."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 17.3.1 et 17.4.1 (BM · OCDE · CNUCED)"
               },
@@ -593,10 +593,10 @@ window.VNR.register({
 
       /* ═══════════ 3. LA FRACTURE TERRITORIALE ═══════════ */
       { id: "divide",
-        label: { fr: "La fracture territoriale", en: "The Territorial Divide" },
+        label: { fr: "Écarts territoriaux", en: "Urban–Rural Gaps" },
         intro: {
-          fr: "C’est le message unique du rapport, et celui que les moyennes nationales effacent. Le Gabon n’a pas un problème de niveau : il a un problème de distribution. Le chiffre qui le prouve est enfoui dans l’annexe 2 et n’a jamais été mis en avant.",
-          en: "This is the report's single message, and the one the national averages erase. Gabon does not have a level problem; it has a distribution problem. The number that proves it is buried in Annex 2 and has never been brought forward."
+          fr: "Le rapport met en avant les écarts entre les moyennes nationales et les niveaux ruraux et urbains. La pauvreté rurale au seuil national (80,1 %, annexe 2, indicateur 1.2.1) en est une illustration.",
+          en: "The report highlights differences between national averages and rural and urban levels. Rural poverty at the national line (80.1%, Annex 2, indicator 1.2.1) illustrates the pattern."
         },
         blocks: [
 
@@ -604,8 +604,8 @@ window.VNR.register({
             title: { fr: "Huit ruraux sur dix vivent sous le seuil de pauvreté",
                      en: "Eight rural people in ten live below the poverty line" },
             text: {
-              fr: "Le taux de pauvreté au seuil national atteint 80,1 % en milieu rural, contre 39,6 % en milieu urbain. Ce chiffre ne figure ni dans les Messages clés, ni dans la fiche OSAA, ni dans l’ancien tableau de bord : il faut aller le chercher dans l’annexe 2 du rapport, sous l’indicateur 1.2.1, source INSTAT (EGEP II). Il est pourtant la clé de lecture de tout le reste.\n\nCar toutes les autres fractures s’alignent sur celle-là. L’électricité : 98,2 % en ville, 26,3 % à la campagne — soixante-douze points d’écart. L’eau potable : 83 % contre 57 %. L’accès routier rural : 26,5 % de la population rurale à moins de deux kilomètres d’une route praticable toute l’année. Les accouchements assistés : 96,3 % en ville, 76,0 % en zone rurale. Le paludisme frappe à 515 cas pour 1 000 habitants en milieu rural, contre 290 en ville. La mortalité des moins de cinq ans est de 35,4 ‰ en ville et de 54,2 ‰ à la campagne. La défécation à l’air libre est de 1 % en ville et de 8 % en zone rurale — figée depuis 2020.\n\nLa moyenne nationale, elle, ne décrit personne. Un taux d’électrification de 92,5 % est authentique et il est trompeur : dans un pays urbanisé à plus de 90 %, il mesure surtout les villes. C’est précisément ce que le rapport dit, et c’est précisément ce que la lecture par moyennes efface.",
-              en: "The poverty rate at the national line reaches 80.1% in rural areas, against 39.6% in urban areas. The figure appears in neither the key messages, nor the OSAA fact sheet, nor the old dashboard: it has to be dug out of Annex 2, under indicator 1.2.1, sourced to INSTAT (EGEP II). It is nonetheless the key to everything else.\n\nBecause every other divide lines up behind it. Electricity: 98.2% in the cities, 26.3% in the countryside — seventy-two points apart. Drinking water: 83% against 57%. Rural road access: 26.5% of rural people live within two kilometres of an all-season road. Skilled birth attendance: 96.3% urban, 76.0% rural. Malaria strikes at 515 cases per 1,000 people in rural areas, against 290 in the cities. Under-five mortality is 35.4 per 1,000 in the cities and 54.2 in the countryside. Open defecation is 1% urban and 8% rural — unchanged since 2020.\n\nThe national average describes nobody. An electrification rate of 92.5% is genuine and it is misleading: in a country more than 90% urban, it mostly measures the cities. That is exactly what the report says — and exactly what reading by averages erases."
+              fr: "Le taux de pauvreté au seuil national atteint 80,1 % en milieu rural, contre 39,6 % en milieu urbain. Ce chiffre figure dans l’annexe 2 du rapport, sous l’indicateur 1.2.1, source INSTAT (EGEP II).\n\nLe même écart rural-urbain se retrouve sur d’autres indicateurs. L’électricité : 98,2 % en ville, 26,3 % à la campagne — soixante-douze points d’écart. L’eau potable : 83 % contre 57 %. L’accès routier rural : 26,5 % de la population rurale à moins de deux kilomètres d’une route praticable toute l’année. Les accouchements assistés : 96,3 % en ville, 76,0 % en zone rurale. Le paludisme frappe à 515 cas pour 1 000 habitants en milieu rural, contre 290 en ville. La mortalité des moins de cinq ans est de 35,4 ‰ en ville et de 54,2 ‰ à la campagne. La défécation à l’air libre est de 1 % en ville et de 8 % en zone rurale — figée depuis 2020.\n\nLe pays étant urbanisé à plus de 90 %, le taux national d’électrification de 92,5 % reflète surtout les villes. La lecture séparée des niveaux ruraux et urbains, telle que le rapport la présente, fait apparaître les écarts.",
+              en: "The poverty rate at the national line reaches 80.1% in rural areas, against 39.6% in urban areas. The figure is in Annex 2, under indicator 1.2.1, sourced to INSTAT (EGEP II).\n\nThe same rural–urban pattern runs across other indicators. Electricity: 98.2% in the cities, 26.3% in the countryside — seventy-two points apart. Drinking water: 83% against 57%. Rural road access: 26.5% of rural people live within two kilometres of an all-season road. Skilled birth attendance: 96.3% urban, 76.0% rural. Malaria strikes at 515 cases per 1,000 people in rural areas, against 290 in the cities. Under-five mortality is 35.4 per 1,000 in the cities and 54.2 in the countryside. Open defecation is 1% urban and 8% rural — unchanged since 2020.\n\nBecause the country is more than 90% urban, the 92.5% national electrification rate mainly reflects the cities. Reading rural and urban levels separately, as the report does, shows where the gaps lie."
             },
             source: "ENV 2026 · annexe 2 — ODD 1.2.1, 3.1.2, 3.2.1, 3.3.3 · annexe 1 — ODD 6.1.1, 7.1.1, 9.1.1" },
 
@@ -624,8 +624,8 @@ window.VNR.register({
               { label: { fr: "Accouchements assistés — rural", en: "Skilled birth attendance — rural" }, value: 76.0, emphasis: true }
             ],
             insight: {
-              fr: "Quatre paires, une seule ligne de partage. La pauvreté rurale (80,1 %, seuil national, 2023) est le seul indicateur du rapport où le milieu rural dépasse le milieu urbain — parce que c’est le seul où la valeur haute est la mauvaise. Partout ailleurs, l’écart va dans le même sens. Les valeurs de pauvreté datent de 2023 (EGEP II) ; les autres, de 2024.",
-              en: "Four pairs, one dividing line. Rural poverty (80.1%, national line, 2023) is the only indicator in the report on which rural exceeds urban — because it is the only one where the high value is the bad one. Everywhere else, the gap runs the same way. Poverty figures are for 2023 (EGEP II); the others for 2024."
+              fr: "Quatre paires, une même ligne de partage. La pauvreté rurale (80,1 %, seuil national, 2023) est le seul indicateur où la valeur rurale dépasse la valeur urbaine ; pour les autres, les valeurs urbaines sont plus élevées. Les valeurs de pauvreté datent de 2023 (EGEP II) ; les autres, de 2024.",
+              en: "Four pairs, one dividing line. Rural poverty (80.1%, national line, 2023) is the only indicator here on which the rural value exceeds the urban value; for the others, urban values are higher. Poverty figures are for 2023 (EGEP II); the others for 2024."
             },
             source: "ENV 2026 · annexe 2 — ODD 1.2.1 et 3.1.2 (INSTAT · EDSG) · annexe 1 — ODD 6.1.1 et 7.1.1"
           } },
@@ -641,8 +641,8 @@ window.VNR.register({
               { label: { fr: "Milieu rural", en: "Rural" }, value: 515, emphasis: true }
             ],
             insight: {
-              fr: "L’incidence du paludisme recule partout — de 358 à 335 pour 1 000 habitants entre 2020 et 2024 — mais elle reste 1,8 fois plus élevée en zone rurale qu’en ville. La fracture ne se limite donc pas aux infrastructures : elle se lit dans les corps. Même écart pour la mortalité des moins de cinq ans (54,2 ‰ en milieu rural contre 35,4 ‰ en ville) et pour la natalité des adolescentes (145 ‰ contre 76,2 ‰).",
-              en: "Malaria incidence is falling everywhere — from 358 to 335 per 1,000 between 2020 and 2024 — but it remains 1.8 times higher in rural areas than in the cities. The fracture is not confined to infrastructure: it is legible in people's bodies. The same gap holds for under-five mortality (54.2 per 1,000 rural against 35.4 urban) and for adolescent births (145 per 1,000 against 76.2)."
+              fr: "L’incidence du paludisme recule — de 358 à 335 pour 1 000 habitants entre 2020 et 2024 — mais reste 1,8 fois plus élevée en zone rurale qu’en ville. Le même écart rural-urbain apparaît pour la mortalité des moins de cinq ans (54,2 ‰ en milieu rural contre 35,4 ‰ en ville) et pour la natalité des adolescentes (145 ‰ contre 76,2 ‰).",
+              en: "Malaria incidence is falling — from 358 to 335 per 1,000 between 2020 and 2024 — but remains 1.8 times higher in rural areas than in the cities. The same rural–urban gap appears in under-five mortality (54.2 per 1,000 rural against 35.4 urban) and adolescent births (145 per 1,000 against 76.2)."
             },
             source: "ENV 2026 · annexe 2 — ODD 3.3.3, 3.2.1, 3.7.2 (OMS · EDSG)"
           } },
@@ -681,11 +681,11 @@ window.VNR.register({
           ] },
 
           { type: "prose",
-            title: { fr: "Ce que la fracture coûte, en pratique",
-                     en: "What the divide costs, in practice" },
+            title: { fr: "Les services locaux sur le terrain",
+                     en: "Local services on the ground" },
             text: {
-              fr: "Le rapport documente la fracture jusqu’au niveau des localités, ce qu’aucune fiche de synthèse ne fait. À Fougamou, sur 25 bornes-fontaines installées en 1997, une seule reste opérationnelle. À Léconi et Bakoumba, les réseaux hérités des exploitations minières fonctionnent depuis plus de trente ans sans relève ; le départ de la Comilog a laissé Bakoumba avec des infrastructures vieillissantes et une dotation communale annuelle de 43 millions de FCFA. À Bitam, quatre cantons sur sept sont dans l’obscurité ; à Gamba, le taux de fonctionnalité de l’éclairage public avoisine 10 % ; à Lékoni-Lékori, 90 % du parc de lampadaires est obsolète.\n\nC’est pourquoi l’accélérateur que le Gabon retient n’est pas d’abord la construction, mais la gouvernance : « professionnaliser la maintenance locale » et sécuriser « une gouvernance locale pérenne des infrastructures ». Construire ne suffit pas si la commune ne peut ni exploiter ni entretenir. La décentralisation est d’ailleurs le premier des « trois leviers de rupture » exposés en partie III du rapport.",
-              en: "The report documents the divide down to the level of individual towns — something no summary sheet does. In Fougamou, of 25 standpipes installed in 1997, exactly one still works. In Léconi and Bakoumba, networks inherited from the mining companies have run for more than thirty years with no replacement; Comilog's departure left Bakoumba with ageing infrastructure and an annual municipal allocation of 43 million CFA francs. In Bitam, four of seven cantons are in darkness; in Gamba, street lighting functions at around 10%; in Lékoni-Lékori, 90% of the lamp stock is obsolete.\n\nThis is why the accelerator Gabon names is not construction first, but governance: \"professionalise local maintenance\" and secure \"durable local governance of the infrastructure\". Building is not enough if the commune can neither operate nor maintain. Decentralisation is, accordingly, the first of the \"three levers of rupture\" set out in Part III of the report."
+              fr: "Le rapport documente les conditions jusqu’au niveau des localités. À Fougamou, sur 25 bornes-fontaines installées en 1997, une seule reste opérationnelle. À Léconi et Bakoumba, les réseaux hérités des exploitations minières fonctionnent depuis plus de trente ans sans relève ; le départ de la Comilog a laissé Bakoumba avec des infrastructures vieillissantes et une dotation communale annuelle de 43 millions de FCFA. À Bitam, quatre cantons sur sept sont sans électricité ; à Gamba, le taux de fonctionnalité de l’éclairage public avoisine 10 % ; à Lékoni-Lékori, 90 % du parc de lampadaires est obsolète.\n\nC’est pourquoi l’accélérateur que le Gabon retient n’est pas d’abord la construction, mais la gouvernance : « professionnaliser la maintenance locale » et sécuriser « une gouvernance locale pérenne des infrastructures ». Construire ne suffit pas si la commune ne peut ni exploiter ni entretenir. La décentralisation est d’ailleurs le premier des « trois leviers de rupture » exposés en partie III du rapport.",
+              en: "The report documents conditions down to the level of individual towns. In Fougamou, of 25 standpipes installed in 1997, exactly one still works. In Léconi and Bakoumba, networks inherited from the mining companies have run for more than thirty years with no replacement; Comilog's departure left Bakoumba with ageing infrastructure and an annual municipal allocation of 43 million CFA francs. In Bitam, four of seven cantons are without electricity; in Gamba, street lighting functions at around 10%; in Lékoni-Lékori, 90% of the lamp stock is obsolete.\n\nThis is why the accelerator Gabon names is not construction first, but governance: \"professionalise local maintenance\" and secure \"durable local governance of the infrastructure\". Building is not enough if the commune can neither operate nor maintain. Decentralisation is, accordingly, the first of the \"three levers of rupture\" set out in Part III of the report."
             },
             source: "ENV 2026 · consultations des collectivités locales · partie III" }
         ] },
@@ -694,8 +694,8 @@ window.VNR.register({
       { id: "vision",
         label: { fr: "Vision GABON-2050 & PNCD", en: "GABON-2050 Vision & PNCD" },
         intro: {
-          fr: "Le plan s’appelle PNCD — Plan National de Croissance et de Développement. La fiche OSAA et l’ancien tableau de bord écrivaient « PNDC » : une inversion de lettres, propagée depuis le PDF des Messages clés. Le rapport, lui, écrit PNCD dans sa liste des sigles et une dizaine de fois dans le corps du texte.",
-          en: "The plan is the PNCD — Plan National de Croissance et de Développement (National Growth and Development Plan). The OSAA fact sheet and the old dashboard wrote \"PNDC\": a letter inversion, propagated from the Main Messages PDF. The report writes PNCD in its list of acronyms and roughly ten times in the body."
+          fr: "Le plan s’appelle PNCD — Plan National de Croissance et de Développement. Le rapport écrit PNCD dans sa liste des sigles et tout au long du texte.",
+          en: "The plan is the PNCD — Plan National de Croissance et de Développement (National Growth and Development Plan). The report writes PNCD in its list of acronyms and throughout the body of the text."
         },
         blocks: [
 
@@ -703,8 +703,8 @@ window.VNR.register({
             title: { fr: "De la stabilisation à l’accélération opérationnelle",
                      en: "From stabilisation to operational acceleration" },
             text: {
-              fr: "« Quatre ans après l’ENV 2022, axé sur la stabilisation, l’ENV 2026 marque la transition vers l’accélération opérationnelle. » C’est en ces termes que le rapport situe le cycle.\n\nL’architecture est simple. La Vision GABON-2050 fixe l’horizon : une économie diversifiée au-delà du pétrole, la résorption des fractures territoriales, et la conversion du capital naturel en prospérité partagée. Le PNCD en est « la première phase opérationnelle » : c’est le plan de mise en œuvre auquel l’ENV 2026 s’arrime explicitement. Autour d’eux gravitent les instruments programmatiques sectoriels — PNDT, PAT 2021-2023, Plan Directeur de l’Électricité, PAN-GIRE, SDAGE et Code de l’Eau, PASBAP, Plan National Climat, SNDS et PDSG.\n\nLe rapport opère ensuite une sélection : cinq « ODD moteurs » — 6, 7, 9, 11 et 17 — qualifiés d’« ossature physique, logistique et financière du développement national » et de « piliers de notre transformation pour briser les clivages spatiaux et sociaux ». Les douze autres ODD, y compris l’ODD 8, sont traités comme transversaux : ils forment « la matrice structurelle, humaine et environnementale » du pays. La fiche OSAA annonçait six thèmes en y ajoutant l’ODD 8 : le rapport en compte cinq.",
-              en: "\"Four years after the 2022 review, which focused on stabilisation, the 2026 VNR marks the transition to operational acceleration.\" That is how the report situates the cycle.\n\nThe architecture is straightforward. The GABON-2050 Vision sets the horizon: an economy diversified beyond oil, the closing of territorial divides, and the conversion of natural capital into shared prosperity. The PNCD is \"its first operational phase\": the implementation plan to which the 2026 VNR explicitly anchors itself. Around them sit the sectoral programming instruments — PNDT, PAT 2021-2023, the Electricity Master Plan, PAN-GIRE, SDAGE and the Water Code, PASBAP, the National Climate Plan, the SNDS and the PDSG.\n\nThe report then makes a selection: five \"driver goals\" — SDG 6, 7, 9, 11 and 17 — described as \"the physical, logistical and financial backbone of national development\" and as \"the pillars of our transformation, to break spatial and social cleavages\". The other twelve SDGs, SDG 8 included, are treated as cross-cutting: they form the country's \"structural, human and environmental matrix\". The OSAA fact sheet announced six themes by adding SDG 8: the report counts five."
+              fr: "« Quatre ans après l’ENV 2022, axé sur la stabilisation, l’ENV 2026 marque la transition vers l’accélération opérationnelle. » C’est en ces termes que le rapport situe le cycle.\n\nL’architecture est simple. La Vision GABON-2050 fixe l’horizon : une économie diversifiée au-delà du pétrole, la résorption des fractures territoriales, et la conversion du capital naturel en prospérité partagée. Le PNCD en est « la première phase opérationnelle » : c’est le plan de mise en œuvre auquel l’ENV 2026 s’arrime explicitement. Autour d’eux gravitent les instruments programmatiques sectoriels — PNDT, PAT 2021-2023, Plan Directeur de l’Électricité, PAN-GIRE, SDAGE et Code de l’Eau, PASBAP, Plan National Climat, SNDS et PDSG.\n\nLe rapport opère ensuite une sélection : cinq « ODD moteurs » — 6, 7, 9, 11 et 17 — qualifiés d’« ossature physique, logistique et financière du développement national » et de « piliers de notre transformation pour briser les clivages spatiaux et sociaux ». Les douze autres ODD, y compris l’ODD 8, sont traités comme transversaux : ils forment « la matrice structurelle, humaine et environnementale » du pays. Le rapport compte cinq ODD moteurs, l’ODD 8 relevant des ODD transversaux.",
+              en: "\"Four years after the 2022 review, which focused on stabilisation, the 2026 VNR marks the transition to operational acceleration.\" That is how the report situates the cycle.\n\nThe architecture is straightforward. The GABON-2050 Vision sets the horizon: an economy diversified beyond oil, the closing of territorial divides, and the conversion of natural capital into shared prosperity. The PNCD is \"its first operational phase\": the implementation plan to which the 2026 VNR explicitly anchors itself. Around them sit the sectoral programming instruments — PNDT, PAT 2021-2023, the Electricity Master Plan, PAN-GIRE, SDAGE and the Water Code, PASBAP, the National Climate Plan, the SNDS and the PDSG.\n\nThe report then makes a selection: five \"driver goals\" — SDG 6, 7, 9, 11 and 17 — described as \"the physical, logistical and financial backbone of national development\" and as \"the pillars of our transformation, to break spatial and social cleavages\". The other twelve SDGs, SDG 8 included, are treated as cross-cutting: they form the country's \"structural, human and environmental matrix\". The report counts five driver goals, with SDG 8 among the cross-cutting goals."
             },
             source: "ENV 2026 · Mot de la Ministre · parties I à III" },
 
@@ -721,8 +721,8 @@ window.VNR.register({
             { name: { fr: "PNCD — Plan National de Croissance et de Développement", en: "PNCD — National Growth and Development Plan" },
               kicker: { fr: "la première phase opérationnelle", en: "the first operational phase" },
               text: {
-                fr: "Le PNCD est « la première phase opérationnelle » de la Vision GABON-2050 : le plan de mise en œuvre auquel l’ENV 2026 s’arrime pour identifier les leviers d’une croissance inclusive et résiliente. Attention à l’acronyme : le rapport écrit PNCD (Croissance et Développement) ; la fiche OSAA et l’ancien tableau de bord écrivaient « PNDC ». C’est la même chose, mal orthographiée.",
-                en: "The PNCD is \"the first operational phase\" of the GABON-2050 Vision: the implementation plan to which the 2026 VNR anchors itself in identifying the levers of inclusive, resilient growth. Mind the acronym: the report writes PNCD (Croissance et Développement); the OSAA fact sheet and the old dashboard wrote \"PNDC\". Same plan, misspelt."
+                fr: "Le PNCD est « la première phase opérationnelle » de la Vision GABON-2050 : le plan de mise en œuvre auquel l’ENV 2026 s’arrime pour identifier les leviers d’une croissance inclusive et résiliente. Le rapport écrit PNCD (Croissance et Développement) dans sa liste des sigles et tout au long du texte.",
+                en: "The PNCD is \"the first operational phase\" of the GABON-2050 Vision: the implementation plan to which the 2026 VNR anchors itself in identifying the levers of inclusive, resilient growth. The report writes PNCD (Croissance et Développement) in its list of acronyms and throughout."
               },
               source: "ENV 2026 · liste des sigles" },
 
@@ -755,8 +755,8 @@ window.VNR.register({
             { name: { fr: "Les trois leviers de rupture (partie III)", en: "The three levers of rupture (Part III)" },
               kicker: { fr: "trois leviers pour 2030", en: "three levers to 2030" },
               text: {
-                fr: "La trajectoire stratégique 2030 repose sur trois leviers. La décentralisation, d’abord, comme moteur de l’équité territoriale — c’est la réponse directe à la fracture que tout le rapport décrit. La diversification inclusive et le dividende démographique, ensuite, pour transformer la croissance en emplois. La diplomatie financière et climatique souveraine, enfin : « basculer d’une diplomatie de plaidoyer vers une ingénierie financière offensive » et faire valoir le statut de « créancier écologique global » du Gabon.",
-                en: "The strategic trajectory to 2030 rests on three levers. Decentralisation first, as the engine of territorial equity — the direct answer to the fracture the whole report describes. Inclusive diversification and the demographic dividend next, to turn growth into jobs. And sovereign financial and climate diplomacy: \"shifting from a diplomacy of advocacy to offensive financial engineering\" and asserting Gabon's standing as a \"global ecological creditor\"."
+                fr: "La trajectoire stratégique 2030 repose sur trois leviers. La décentralisation, d’abord, comme moteur de l’équité territoriale — c’est la réponse directe aux écarts rural-urbain que le rapport décrit. La diversification inclusive et le dividende démographique, ensuite, pour transformer la croissance en emplois. La diplomatie financière et climatique souveraine, enfin : « basculer d’une diplomatie de plaidoyer vers une ingénierie financière offensive » et faire valoir le statut de « créancier écologique global » du Gabon.",
+                en: "The strategic trajectory to 2030 rests on three levers. Decentralisation first, as the engine of territorial equity — the direct answer to the rural–urban gaps the report describes. Inclusive diversification and the demographic dividend next, to turn growth into jobs. And sovereign financial and climate diplomacy: \"shifting from a diplomacy of advocacy to offensive financial engineering\" and asserting Gabon's standing as a \"global ecological creditor\"."
               },
               source: "ENV 2026 · partie III — trajectoire stratégique 2030" }
           ] }
@@ -766,8 +766,8 @@ window.VNR.register({
       { id: "responses",
         label: { fr: "Réponses politiques", en: "Policy Responses" },
         intro: {
-          fr: "Les projets hydroélectriques du cycle sont Kinguélé Aval, Ngoulmendjim et Dibwangui. Le barrage de Grand Poubara, que l’ancien tableau de bord présentait comme le projet phare, n’est mentionné nulle part dans l’ENV 2026.",
-          en: "The hydropower projects of this cycle are Kinguélé Aval, Ngoulmendjim and Dibwangui. The Grand Poubara dam, which the old dashboard presented as the flagship, is mentioned nowhere in the 2026 VNR."
+          fr: "Les projets hydroélectriques du cycle sont Kinguélé Aval, Ngoulmendjim et Dibwangui.",
+          en: "The hydropower projects of this cycle are Kinguélé Aval, Ngoulmendjim and Dibwangui."
         },
         blocks: [
 
@@ -819,16 +819,16 @@ window.VNR.register({
             { name: { fr: "Forages solaires et hydraulique villageoise", en: "Solar boreholes and village water supply" },
               kicker: { fr: "le nexus eau-énergie", en: "the water–energy nexus" },
               text: {
-                fr: "Explicitement retenus comme accélérateur de l’ODD 6 : « étendre les forages solaires ». Pilotés par le CNEE, ils couplent panneaux solaires et pompes immergées, supprimant le coût du gazole et servant des villages hors réseau — un seul investissement qui fait progresser l’ODD 6 et l’ODD 7. Le rapport ne cache pas le point faible : à Fougamou, une seule des 25 bornes-fontaines installées en 1997 fonctionne encore. D’où l’insistance sur la maintenance et la gouvernance locales, autant que sur l’équipement.",
-                en: "Explicitly named as the SDG 6 accelerator: \"extend solar boreholes\". Run by the CNEE, they pair solar panels with submersible pumps, removing diesel costs and serving off-grid villages — a single investment that advances SDG 6 and SDG 7 at once. The report does not hide the weak point: in Fougamou, just one of the 25 standpipes installed in 1997 still works. Hence the insistence on local maintenance and governance as much as on hardware."
+                fr: "Explicitement retenus comme accélérateur de l’ODD 6 : « étendre les forages solaires ». Pilotés par le CNEE, ils couplent panneaux solaires et pompes immergées, supprimant le coût du gazole et servant des villages hors réseau — un seul investissement qui fait progresser l’ODD 6 et l’ODD 7. Le rapport note aussi les enjeux de maintenance : à Fougamou, une seule des 25 bornes-fontaines installées en 1997 fonctionne encore. D’où l’insistance sur la maintenance et la gouvernance locales, autant que sur l’équipement.",
+                en: "Explicitly named as the SDG 6 accelerator: \"extend solar boreholes\". Run by the CNEE, they pair solar panels with submersible pumps, removing diesel costs and serving off-grid villages — a single investment that advances SDG 6 and SDG 7 at once. The report also notes maintenance gaps: in Fougamou, just one of the 25 standpipes installed in 1997 still works. Hence the insistence on local maintenance and governance as much as on hardware."
               },
               source: "ENV 2026 · ODD 6 (CNEE)" },
 
             { name: { fr: "PIEPAL — eau et assainissement du Grand Libreville", en: "PIEPAL — water and sanitation for Greater Libreville" },
               kicker: { fr: "cofinancé par la BAD", en: "co-financed by the AfDB" },
               text: {
-                fr: "Programme Intégré pour l’Alimentation en Eau Potable et l’Assainissement de Libreville : renouvellement et extension des réseaux de la capitale, avec une composante assainissement. Il vise le « déficit structurel » du Grand Libreville — que le rapport, contrairement à la fiche de synthèse, ne chiffre jamais. Il est complété par le PABV, projet d’aménagement des bassins versants de la Ntzem et de Mbomo.",
-                en: "The Integrated Programme for Drinking Water Supply and Sanitation in Libreville: renewal and extension of the capital's networks, with a sanitation component. It targets Greater Libreville's \"structural deficit\" — which the report, unlike the summary sheet, never quantifies. It is complemented by PABV, the watershed development project for the Ntzem and Mbomo basins."
+                fr: "Programme Intégré pour l’Alimentation en Eau Potable et l’Assainissement de Libreville : renouvellement et extension des réseaux de la capitale, avec une composante assainissement. Il vise le « déficit structurel » du Grand Libreville, que le rapport qualifie ainsi sans le chiffrer. Il est complété par le PABV, projet d’aménagement des bassins versants de la Ntzem et de Mbomo.",
+                en: "The Integrated Programme for Drinking Water Supply and Sanitation in Libreville: renewal and extension of the capital's networks, with a sanitation component. It targets Greater Libreville’s \"structural deficit\", which the report describes without quantifying. It is complemented by PABV, the watershed development project for the Ntzem and Mbomo basins."
               },
               source: "ENV 2026 · ODD 6 (BAD)" },
 
@@ -873,15 +873,15 @@ window.VNR.register({
       { id: "financing",
         label: { fr: "Financement", en: "Financing" },
         intro: {
-          fr: "Deux histoires simultanées. L’une est un succès : les recettes publiques passent de 17,6 % à 23,7 % du PIB et l’impôt intérieur finance désormais 53,7 % du budget. L’autre est un étau : le service de la dette absorbe 17 % du budget, l’aide est figée à 0,4 % du RNB, les IDE ont été divisés par deux. C’est de cette tension que naît la demande gabonaise de finance verte.",
-          en: "Two stories at once. The first is a success: government revenue rose from 17.6% to 23.7% of GDP, and domestic taxes now finance 53.7% of the budget. The second is a vice: debt service absorbs 17% of the budget, aid is frozen at 0.4% of GNI, FDI has halved. It is out of that tension that Gabon's demand for green finance arises."
+          fr: "Deux dynamiques simultanées. Les recettes publiques passent de 17,6 % à 23,7 % du PIB et l’impôt intérieur finance désormais 53,7 % du budget. Dans le même temps, le service de la dette absorbe 17 % du budget, l’aide se maintient à 0,4 % du RNB et les IDE ont été divisés par deux. C’est de cette tension que naît la demande gabonaise de finance verte.",
+          en: "Two trends at once. Government revenue rose from 17.6% to 23.7% of GDP, and domestic taxes now finance 53.7% of the budget. At the same time, debt service absorbs 17% of the budget, aid holds at 0.4% of GNI, and FDI has halved. It is out of that tension that Gabon’s demand for green finance arises."
         },
         blocks: [
 
           { type: "stats", items: [
             { sdg: 17, label: { fr: "Recettes publiques / PIB", en: "Government revenue / GDP" }, value: 23.7, unit: "%",
-              note: { fr: "2024 · contre 17,6 % en 2020 — la fiche affichait 15,2 %, un chiffre sans source",
-                      en: "2024 · up from 17.6% in 2020 — the fact sheet showed 15.2%, a figure with no source" },
+              note: { fr: "2024 · contre 17,6 % en 2020",
+                      en: "2024 · up from 17.6% in 2020" },
               source: "ENV 2026 · ODD 17.1.1" },
             { sdg: 17, label: { fr: "Budget financé par l’impôt intérieur", en: "Budget financed by domestic taxes" }, value: 53.7, unit: "%",
               note: { fr: "2024 · contre 43,5 % en 2020", en: "2024 · up from 43.5% in 2020" },
@@ -895,12 +895,12 @@ window.VNR.register({
                       en: "2024 · 9.5% in 2022 · 17.0% projected for 2025" },
               source: "ENV 2026 · ODD 17.4.1" },
             { sdg: 17, label: { fr: "APD nette / RNB", en: "Net ODA / GNI" }, value: 0.4, unit: "%",
-              note: { fr: "2024 · figée depuis 2022 ; le rapport la dit « stagnante » et « atone »",
-                      en: "2024 · frozen since 2022; the report calls it \"stagnant\" and \"listless\"" },
+              note: { fr: "2024 · stable depuis 2022",
+                      en: "2024 · unchanged since 2022" },
               source: "ENV 2026 · ODD 17.3.1" },
             { sdg: 17, label: { fr: "IDE nets / PIB", en: "Net FDI / GDP" }, value: 5.5, unit: "%",
-              note: { fr: "2024 · contre 11,2 % en 2020 — « plafonnant de manière endémique »",
-                      en: "2024 · down from 11.2% in 2020 — \"endemically capped\"" },
+              note: { fr: "2024 · contre 11,2 % en 2020",
+                      en: "2024 · down from 11.2% in 2020" },
               source: "ENV 2026 · ODD 17.3.1" }
           ] },
 
@@ -915,8 +915,8 @@ window.VNR.register({
                 points: [{ x: "2020", y: 17.6 }, { x: "2021", y: 15.3 }, { x: "2022", y: 21.1 }, { x: "2023", y: 24.6 }, { x: "2024", y: 23.7 }] }
             ],
             insight: {
-              fr: "C’est la performance qui rachète tout le reste. Après le creux de 2021 (15,3 % du PIB), les recettes publiques ont bondi à 24,6 % en 2023 puis se sont stabilisées à 23,7 %. Dans le même temps, la part du budget financée par l’impôt intérieur a gagné plus de dix points, portée par la dématérialisation des régies — e-t@x à la DGI, Sydonia World aux Douanes. Un pays qui finance plus de la moitié de son budget par son propre impôt ne demande pas la même chose qu’un pays qui n’y parvient pas : c’est le fondement du plaidoyer gabonais pour « l’investissement stratégique » plutôt que « l’assistance traditionnelle ».",
-              en: "This is the achievement that redeems the rest. After the 2021 trough (15.3% of GDP), government revenue jumped to 24.6% in 2023 and settled at 23.7%. Over the same period, the share of the budget financed by domestic taxes gained more than ten points, driven by the digitalisation of revenue administration — e-t@x at the tax directorate, Sydonia World at customs. A country that funds more than half its budget from its own taxes is not asking for the same thing as a country that cannot: this is the foundation of Gabon's case for \"strategic investment\" rather than \"traditional assistance\"."
+              fr: "Après le creux de 2021 (15,3 % du PIB), les recettes publiques ont atteint 24,6 % en 2023 puis se sont stabilisées à 23,7 %. Dans le même temps, la part du budget financée par l’impôt intérieur a gagné plus de dix points, portée par la dématérialisation des régies — e-t@x à la DGI, Sydonia World aux Douanes. C’est le fondement du plaidoyer gabonais pour « l’investissement stratégique » plutôt que « l’assistance traditionnelle ».",
+              en: "After the 2021 trough (15.3% of GDP), government revenue rose to 24.6% in 2023 and settled at 23.7%. Over the same period, the share of the budget financed by domestic taxes gained more than ten points, driven by the digitalisation of revenue administration — e-t@x at the tax directorate, Sydonia World at customs. This is the foundation of Gabon’s case for \"strategic investment\" rather than \"traditional assistance\"."
             },
             source: "ENV 2026 · annexe 1 — ODD 17.1.1 et 17.1.2 (DGEPF/TOFE · DGI · DGDDI · FMI)"
           } },
@@ -979,8 +979,8 @@ window.VNR.register({
             title: { fr: "« Un investissement stratégique, non une assistance »",
                      en: "\"Strategic investment, not assistance\"" },
             text: {
-              fr: "Le message diplomatique du rapport est inhabituellement direct : « Face aux limites des modèles d’assistance traditionnelle, la République Gabonaise appelle à une refonte du partenariat international… la réponse des mécanismes multilatéraux n’a pas été totalement proportionnelle aux efforts consentis… il est impératif de passer d’une logique de soutien ponctuel et d’assistance traditionnelle à une dynamique d’investissement stratégique et durable. »\n\nLes chiffres donnent à cette phrase sa force. Un pays qui a porté ses recettes de 17,6 % à 23,7 % du PIB en quatre ans, qui finance 53,7 % de son budget par l’impôt intérieur, qui exécute 95 % de sa loi de finances et qui a recouvré 350 milliards de FCFA d’avoirs illicites — et qui voit néanmoins l’aide se figer à 0,4 % du RNB et les IDE tomber à 5,5 % du PIB — a un argument à faire valoir à New York.",
-              en: "The report's diplomatic message is unusually direct: \"Faced with the limits of traditional assistance models, the Gabonese Republic calls for a redesign of international partnership… the response of multilateral mechanisms has not been wholly proportionate to the efforts made… it is imperative to move from a logic of one-off support and traditional assistance to one of strategic, lasting investment.\"\n\nThe figures give the sentence its force. A country that has lifted revenue from 17.6% to 23.7% of GDP in four years, that finances 53.7% of its budget from domestic taxes, that executes 95% of its budget law and has recovered 350 billion CFA francs in illicit assets — and that nonetheless watches aid freeze at 0.4% of GNI and FDI fall to 5.5% of GDP — has an argument to make in New York."
+              fr: "Le message diplomatique du rapport est direct : « Face aux limites des modèles d’assistance traditionnelle, la République Gabonaise appelle à une refonte du partenariat international… la réponse des mécanismes multilatéraux n’a pas été totalement proportionnelle aux efforts consentis… il est impératif de passer d’une logique de soutien ponctuel et d’assistance traditionnelle à une dynamique d’investissement stratégique et durable. »\n\nLes chiffres donnent à cette phrase sa force. Un pays qui a porté ses recettes de 17,6 % à 23,7 % du PIB en quatre ans, qui finance 53,7 % de son budget par l’impôt intérieur, qui exécute 95 % de sa loi de finances et qui a recouvré 350 milliards de FCFA d’avoirs illicites — et qui voit néanmoins l’aide se figer à 0,4 % du RNB et les IDE tomber à 5,5 % du PIB — a un argument à faire valoir à New York.",
+              en: "The report's diplomatic message is direct: \"Faced with the limits of traditional assistance models, the Gabonese Republic calls for a redesign of international partnership… the response of multilateral mechanisms has not been wholly proportionate to the efforts made… it is imperative to move from a logic of one-off support and traditional assistance to one of strategic, lasting investment.\"\n\nThe figures give the sentence its force. A country that has lifted revenue from 17.6% to 23.7% of GDP in four years, that finances 53.7% of its budget from domestic taxes, that executes 95% of its budget law and has recovered 350 billion CFA francs in illicit assets — and that nonetheless watches aid freeze at 0.4% of GNI and FDI fall to 5.5% of GDP — has an argument to make in New York."
             },
             source: "ENV 2026 · positionnement vis-à-vis des partenaires · partie III" }
         ] },
@@ -989,14 +989,14 @@ window.VNR.register({
       { id: "green",
         label: { fr: "Le paradoxe vert", en: "The Green Paradox" },
         intro: {
-          fr: "Le Gabon est l’un des rares pays au monde dont les émissions nettes de gaz à effet de serre sont négatives. Il n’éclaire pourtant que 26,3 % de ses villages, et le nombre de ses sinistrés climatiques augmente d’année en année. Tout le plaidoyer international du pays tient dans cet écart.",
-          en: "Gabon is one of the very few countries on earth whose net greenhouse-gas emissions are negative. Yet it lights only 26.3% of its villages, and the number of its climate-disaster victims rises year on year. The whole of the country's international case sits in that gap."
+          fr: "Le Gabon est l'un des rares pays dont les émissions nettes de gaz à effet de serre sont négatives. Dans le même temps, l’accès rural à l’électricité est de 26,3 %, et le nombre de sinistrés de catastrophes augmente d’année en année. C’est sur cet écart que repose le plaidoyer international du pays.",
+          en: "Gabon is one of the few countries whose net greenhouse-gas emissions are negative. At the same time, rural electricity access is 26.3%, and the number of disaster-affected people has risen year on year. The country’s international case rests on that gap."
         },
         blocks: [
 
           { type: "chart", chart: {
             type: "gap", sdg: 15, unit: "%",
-            title: { fr: "Le paradoxe, en une image (2024)", en: "The paradox, in one image (2024)" },
+            title: { fr: "Indicateurs environnementaux et accès rural à l’électricité (2024)", en: "Environmental indicators and rural electricity access (2024)" },
             items: [
               { label: { fr: "Renouvelables dans l’énergie finale", en: "Renewables in final energy" }, value: 91.2, emphasis: false },
               { label: { fr: "Couverture forestière", en: "Forest cover" }, value: 88.0, emphasis: false },
@@ -1005,8 +1005,8 @@ window.VNR.register({
               { label: { fr: "Accès rural à l’électricité", en: "Rural electricity access" }, value: 26.3, emphasis: true }
             ],
             insight: {
-              fr: "Cinq pourcentages, cinq dénominateurs différents — l’énergie finale, la surface émergée, les concessions forestières, le territoire maritime, la population rurale. Ils ne s’additionnent pas et ne se comparent pas terme à terme. Mais leur juxtaposition est exactement l’argument du rapport : un pays situé au premier rang mondial pour la préservation de son capital naturel se situe au dernier rang de lui-même pour l’accès de ses ruraux à l’électricité. L’excellence environnementale n’a pas encore été convertie en service public.",
-              en: "Five percentages, five different denominators — final energy, land area, forest concessions, marine territory, rural population. They do not add up and cannot be compared term for term. But their juxtaposition is precisely the report's argument: a country in the world's front rank for preserving its natural capital sits in its own last rank for rural electricity access. Environmental excellence has not yet been converted into public service."
+              fr: "Cinq pourcentages, cinq dénominateurs différents — l’énergie finale, la surface émergée, les concessions forestières, le territoire maritime, la population rurale. Ils ne s’additionnent pas et ne se comparent pas terme à terme. Ensemble, ils illustrent le propos du rapport : de solides indicateurs environnementaux, aux côtés d’un accès rural à l’électricité de 26,3 %.",
+              en: "Five percentages, five different denominators — final energy, land area, forest concessions, marine territory, rural population. They do not add up and cannot be compared term for term. Together they show the report’s point: strong environmental indicators alongside 26.3% rural electricity access."
             },
             source: "ENV 2026 · annexe 1 — ODD 7.1.1 et 7.2.1 · annexe 2 — ODD 14.5.1, 15.1.1 et 15.2.1"
           } },
@@ -1014,8 +1014,8 @@ window.VNR.register({
           { type: "prose",
             title: { fr: "Créancier écologique global", en: "A global ecological creditor" },
             text: {
-              fr: "Le bilan environnemental du Gabon est, à l’échelle du continent, sans équivalent. La couverture forestière atteint 88 % de la surface émergée — constante sur toute la série 2020-2026, et confirmée à plusieurs reprises dans le rapport ; la fiche OSAA indiquait 85 %. Les émissions nettes de gaz à effet de serre sont négatives : le pays absorbe plus qu’il n’émet. 91,2 % de la consommation finale d’énergie est renouvelable. 26 % du territoire maritime et 21,1 % du territoire terrestre sont protégés. 70 % des concessions forestières sont sous aménagement certifié, avec une cible de 80 % en 2026. L’indice Liste rouge de l’UICN se maintient à 0,924.\n\nEt pourtant. 26,3 % seulement des ruraux ont l’électricité. Les sinistrés de catastrophes passent de 245 pour 100 000 habitants en 2022 à 295 en 2024 — une aggravation, non un palier. Les particules fines urbaines montent de 35,0 à 38,5 µg/m³. Le taux de recyclage national atteint péniblement 4 %. 30,8 % des Gabonais vivent en zone inondable, et seules 15 % des collectivités locales sont dotées d’une stratégie de réduction des risques de catastrophe.\n\nC’est ce double constat qui fonde la position gabonaise : le pays doit « faire valoir son statut de créancier écologique global ». Il ne demande pas qu’on le félicite pour sa forêt ; il demande que cette forêt, qui rend un service climatique au monde entier, finance l’électrification de ses propres villages. Obligations vertes souveraines, crédits carbone certifiés, conversion de dette contre nature : le mécanisme importe moins que le principe — convertir un actif écologique mondial en capacité budgétaire nationale.",
-              en: "Gabon's environmental record has no continental equal. Forest cover stands at 88% of the land area — constant across the whole 2020–2026 series, and confirmed repeatedly in the report; the OSAA fact sheet said 85%. Net greenhouse-gas emissions are negative: the country absorbs more than it emits. 91.2% of final energy consumption is renewable. 26% of the marine territory and 21.1% of the land territory are protected. 70% of forest concessions are under certified management, with an 80% target for 2026. The IUCN Red List Index holds at 0.924.\n\nAnd yet. Only 26.3% of rural people have electricity. Disaster-affected people rose from 245 per 100,000 in 2022 to 295 in 2024 — a deterioration, not a plateau. Urban fine particulates climbed from 35.0 to 38.5 µg/m³. The national recycling rate has struggled to 4%. 30.8% of Gabonese live in flood-prone areas, and just 15% of local authorities have a disaster-risk-reduction strategy.\n\nIt is this double reading that grounds Gabon's position: the country must \"assert its standing as a global ecological creditor\". It is not asking to be congratulated on its forest; it is asking that the forest — which renders a climate service to the entire world — finance the electrification of its own villages. Sovereign green bonds, certified carbon credits, debt-for-nature swaps: the mechanism matters less than the principle — converting a global ecological asset into national fiscal capacity."
+              fr: "La couverture forestière atteint 88 % de la surface émergée — constante sur toute la série 2020-2026, et confirmée à plusieurs reprises dans le rapport. Les émissions nettes de gaz à effet de serre sont négatives : le pays absorbe plus qu’il n’émet. 91,2 % de la consommation finale d’énergie est renouvelable. 26 % du territoire maritime et 21,1 % du territoire terrestre sont protégés. 70 % des concessions forestières sont sous aménagement certifié, avec une cible de 80 % en 2026. L’indice Liste rouge de l’UICN se maintient à 0,924.\n\nEt pourtant. 26,3 % seulement des ruraux ont l’électricité. Les sinistrés de catastrophes passent de 245 pour 100 000 habitants en 2022 à 295 en 2024. Les particules fines urbaines montent de 35,0 à 38,5 µg/m³. Le taux de recyclage national atteint 4 %. 30,8 % des Gabonais vivent en zone inondable, et seules 15 % des collectivités locales sont dotées d’une stratégie de réduction des risques de catastrophe.\n\nC’est ce double constat qui fonde la position gabonaise : le pays doit « faire valoir son statut de créancier écologique global ». Il ne demande pas qu’on le félicite pour sa forêt ; il demande que cette forêt, qui rend un service climatique au monde entier, finance l’électrification de ses propres villages. Obligations vertes souveraines, crédits carbone certifiés, conversion de dette contre nature : le mécanisme importe moins que le principe — convertir un actif écologique mondial en capacité budgétaire nationale.",
+              en: "Forest cover stands at 88% of the land area — constant across the whole 2020–2026 series, and confirmed repeatedly in the report. Net greenhouse-gas emissions are negative: the country absorbs more than it emits. 91.2% of final energy consumption is renewable. 26% of the marine territory and 21.1% of the land territory are protected. 70% of forest concessions are under certified management, with an 80% target for 2026. The IUCN Red List Index holds at 0.924.\n\nAnd yet. Only 26.3% of rural people have electricity. Disaster-affected people rose from 245 per 100,000 in 2022 to 295 in 2024. Urban fine particulates climbed from 35.0 to 38.5 µg/m³. The national recycling rate reached 4%. 30.8% of Gabonese live in flood-prone areas, and just 15% of local authorities have a disaster-risk-reduction strategy.\n\nIt is this double reading that grounds Gabon's position: the country must \"assert its standing as a global ecological creditor\". It is not asking to be congratulated on its forest; it is asking that the forest — which renders a climate service to the entire world — finance the electrification of its own villages. Sovereign green bonds, certified carbon credits, debt-for-nature swaps: the mechanism matters less than the principle — converting a global ecological asset into national fiscal capacity."
             },
             source: "ENV 2026 · annexes 1 et 2 — ODD 7, 11, 12, 13, 14, 15 · partie III" },
 
@@ -1028,8 +1028,8 @@ window.VNR.register({
                 points: [{ x: "2020", y: 35.0 }, { x: "2021", y: 35.8 }, { x: "2022", y: 36.5 }, { x: "2023", y: 38.2 }, { x: "2024", y: 38.5 }] }
             ],
             insight: {
-              fr: "Dans le pays le plus forestier du continent, l’air des villes se dégrade : +3,5 µg/m³ en quatre ans, et une projection à 39,2 pour 2025. La forêt ne protège pas Libreville de sa propre circulation ni de ses propres décharges — 64,1 % des habitants signalent l’absence d’aménagements pour le dépôt des ordures, et le taux de recyclage national plafonne à 4 %. Le capital naturel est un actif national ; la qualité de l’air est un service urbain. L’un ne se substitue pas à l’autre.",
-              en: "In the continent's most forested country, urban air is deteriorating: +3.5 µg/m³ in four years, with a projection of 39.2 for 2025. The forest does not protect Libreville from its own traffic or its own dumps — 64.1% of residents report no facilities for depositing refuse, and the national recycling rate is stuck at 4%. Natural capital is a national asset; air quality is an urban service. One does not substitute for the other."
+              fr: "La qualité de l’air urbain s’est dégradée sur la période : +3,5 µg/m³ en quatre ans, avec une projection à 39,2 pour 2025. 64,1 % des habitants signalent l’absence d’aménagements pour le dépôt des ordures, et le taux de recyclage national est de 4 %.",
+              en: "Urban air quality declined over the period: +3.5 µg/m³ in four years, with a projection of 39.2 for 2025. 64.1% of residents report no facilities for depositing refuse, and the national recycling rate is 4%."
             },
             source: "ENV 2026 · annexe 1 — ODD 11.6.2 (OMS · Conseil National Climat · AGEOS)"
           } },
