@@ -1,6 +1,17 @@
 /* Tanzania — VNR 2023 → 2026. Source factsheet authored in English.
-   Fact-checked against factsheets.pdf p.18, the 2026 VNR key messages, Tanzania NBS
-   energy surveys and the 2026/27 Budget Speech. See `factcheck` at the bottom. */
+
+   AUTHORITATIVE SOURCE: the VNR 2026 Tanzania Report — its chapter tables and,
+   above all, its Selected Statistical Annex (Tables A1–A17), which carries the
+   full 2020–2025 series. The corrections ledger sits above the `dashboard`
+   block below; every deviation from the fact sheet is recorded there.
+
+   The factsheet, the Main Messages and the NBS/Budget-Speech figures the first
+   pass leaned on are NOT authoritative here: they are where 62.1% grid
+   connection, 80% renewables and 49% internet came from, and the annex
+   contradicts all three. Where the report's chapter tables disagree with the
+   annex, the ANNEX WINS — the chapters repeatedly print the annex's 2024 value
+   under a "2025" heading (verified on regional-centre water, electricity access
+   and renewables). */
 window.VNR.register({
   slug: "tanzania",
   iso: "TZ",
@@ -37,22 +48,22 @@ window.VNR.register({
     { sdg: 6,
       title: { en: "Water Access & Self-Reliance", fr: "Accès à l'eau et autonomie" },
       text: {
-        en: "Rural water coverage rose to 85% and regional centres to 92%, with non-revenue water and sanitation flagged as priorities for acceleration.",
-        fr: "La couverture rurale en eau a atteint 85 % et celle des centres régionaux 92 %, l'eau non facturée et l'assainissement étant désignés comme priorités d'accélération."
+        en: "Rural water coverage rose to 85.2% and regional centres to 92.5%, but sewer connectivity in those same centres is rated Regressing — non-revenue water and sanitation are the named acceleration priorities.",
+        fr: "La couverture rurale en eau a atteint 85,2 % et celle des centres régionaux 92,5 %, mais le raccordement aux égouts de ces mêmes centres est jugé « en régression » — l'eau non facturée et l'assainissement sont les priorités d'accélération désignées."
       },
-      metric: { value: 85, unit: "%", label: { en: "rural water coverage", fr: "couverture rurale en eau" } } },
+      metric: { value: 85.2, unit: "%", label: { en: "rural water coverage", fr: "couverture rurale en eau" } } },
     { sdg: 7,
       title: { en: "Energy Security as a Growth Engine", fr: "La sécurité énergétique, moteur de croissance" },
       text: {
         en: "The Julius Nyerere Hydropower Project doubled generation capacity in a year and connected all 26 regions; electricity access reached 86.2%, with renewables at 76.6% of electricity generation.",
         fr: "Le projet hydroélectrique Julius Nyerere a doublé la capacité de production en un an et raccordé les 26 régions ; l'accès à l'électricité atteint 86,2 %, les renouvelables représentant 76,6 % de la production électrique."
       },
-      metric: { value: 86, unit: "%", label: { en: "electricity access, any source", fr: "accès à l'électricité, toutes sources" } } },
+      metric: { value: 86.2, unit: "%", label: { en: "electricity access, any source", fr: "accès à l'électricité, toutes sources" } } },
     { sdg: 9,
       title: { en: "Connectivity Revolution", fr: "Révolution de la connectivité" },
       text: {
-        en: "The Standard Gauge Railway cut Dar–Dodoma travel from 12 hours to 3, carrying nearly 5 million passengers, while internet penetration surged from 48% to 85%.",
-        fr: "Le chemin de fer à écartement standard a réduit le trajet Dar-Dodoma de 12 heures à 3, transportant près de 5 millions de passagers, tandis que la pénétration d'Internet est passée de 48 % à 85 %."
+        en: "The Standard Gauge Railway cut Dar–Dodoma travel from 12 hours to 3, carrying 4.14 million passengers in 2025, while internet penetration surged from 48% to 85%.",
+        fr: "Le chemin de fer à écartement standard a réduit le trajet Dar-Dodoma de 12 heures à 3, transportant 4,14 millions de voyageurs en 2025, tandis que la pénétration d'Internet est passée de 48 % à 85 %."
       },
       metric: { value: 85, unit: "%", label: { en: "internet penetration, up from 48%", fr: "pénétration d'Internet, contre 48 % auparavant" } } },
     { sdg: 11,
@@ -116,40 +127,40 @@ window.VNR.register({
   indicators: [
     { id: "elec_access", sdg: 7,
       label: { en: "Electricity access, any source", fr: "Accès à l'électricité, toutes sources" },
-      value: 86, unit: "%",
-      note: { en: "Grid, mini-grid and off-grid solar combined. Not the same as a grid connection.",
-              fr: "Réseau, mini-réseaux et solaire hors réseau confondus. À distinguer du raccordement au réseau." },
-      source: "VNR 2026 · SDG indicator 7.1.1" },
+      value: 86.2, unit: "%",
+      note: { en: "Grid, mini-grid and off-grid solar combined. Not the same as a grid connection. The chapter table's 85.5% is the annex's 2024 value.",
+              fr: "Réseau, mini-réseaux et solaire hors réseau confondus. À distinguer du raccordement au réseau. Les 85,5 % du tableau du chapitre correspondent à la valeur 2024 de l'annexe." },
+      source: "VNR 2026 · Annexe A7 (ODD 7.1.1)" },
     { id: "elec_grid", sdg: 7,
       label: { en: "Households connected to the national grid", fr: "Ménages raccordés au réseau national" },
       value: 52.1, unit: "%",
-      note: { en: "Up from 45.8% in 2021/22. Every village has grid infrastructure; most households are not yet connected to it.",
-              fr: "Contre 45,8 % en 2021-2022. Tous les villages disposent d'une infrastructure de réseau ; la plupart des ménages n'y sont pas encore raccordés." },
-      source: "VNR 2026 · NBS Energy Access Survey" },
+      note: { en: "Rural connectivity remains below 36%. Every village now has access to electricity; most households are still not connected to the grid.",
+              fr: "Le raccordement rural reste inférieur à 36 %. Tous les villages ont désormais accès à l'électricité ; la plupart des ménages ne sont toujours pas raccordés au réseau." },
+      source: "VNR 2026 · ch. 4 (ODD 7)" },
     { id: "renew", sdg: 7,
-      label: { en: "Renewables in the generation mix", fr: "Part des renouvelables dans le mix de production" },
-      value: 80, unit: "%",
-      note: { en: "Driven by the 2,115 MW Julius Nyerere Hydropower Plant, which took installed capacity to 4,504.9 MW.",
-              fr: "Portée par la centrale hydroélectrique Julius Nyerere (2 115 MW), qui a porté la capacité installée à 4 504,9 MW." },
-      source: "VNR 2026" },
+      label: { en: "Renewables, % of electricity generated", fr: "Renouvelables, en % de l'électricité produite" },
+      value: 76.6, unit: "%",
+      note: { en: "Driven by the 2,115 MW Julius Nyerere Hydropower Plant, which took installed capacity to 4,504.9 MW. Renewables are 73.85% of total final energy consumption.",
+              fr: "Portée par la centrale hydroélectrique Julius Nyerere (2 115 MW), qui a porté la capacité installée à 4 504,9 MW. Les renouvelables représentent 73,85 % de la consommation finale totale d'énergie." },
+      source: "VNR 2026 · Annexe A7 (ODD 7.2.1)" },
     { id: "water_rural", sdg: 6,
       label: { en: "Rural water coverage", fr: "Couverture rurale en eau" },
-      value: 85, unit: "%",
-      note: { en: "Regional centres reach 92%. Non-revenue water and sanitation are named as the acceleration priorities.",
-              fr: "Les centres régionaux atteignent 92 %. L'eau non facturée et l'assainissement sont désignés comme priorités d'accélération." },
-      source: "VNR 2026 · SDG indicator 6.1.1" },
+      value: 85.2, unit: "%",
+      note: { en: "Regional centres reach 92.5%. Non-revenue water and sanitation are named as the acceleration priorities; sewer connectivity is rated Regressing.",
+              fr: "Les centres régionaux atteignent 92,5 %. L'eau non facturée et l'assainissement sont désignés comme priorités d'accélération ; le raccordement aux égouts est jugé « en régression »." },
+      source: "VNR 2026 · Annexe A6 (ODD 6.1.1)" },
     { id: "internet", sdg: 9,
       label: { en: "Internet penetration", fr: "Pénétration d'Internet" },
       value: 85, unit: "%",
-      note: { en: "Up from 49%, supported by 156 new 4G sites targeting rural and peri-urban areas.",
-              fr: "Contre 49 %, grâce à 156 nouveaux sites 4G ciblant les zones rurales et périurbaines." },
-      source: "VNR 2026" },
+      note: { en: "Up from 48%, supported by 156 new 4G sites targeting rural and peri-urban areas.",
+              fr: "Contre 48 %, grâce à 156 nouveaux sites 4G ciblant les zones rurales et périurbaines." },
+      source: "VNR 2026 · tableau 4.3" },
     { id: "selfreliance", sdg: 17,
       label: { en: "Budget financed by domestic revenue", fr: "Budget financé par les recettes intérieures" },
       value: 78, unit: "%",
-      note: { en: "Up from 58%. Tanzania's 2026/27 budget puts the domestic share at 74.2% and aid at 0.9%.",
-              fr: "Contre 58 %. Le budget 2026-2027 de la Tanzanie fixe la part intérieure à 74,2 % et l'aide à 0,9 %." },
-      source: "VNR 2026 · Budget Speech 2026/27" }
+      note: { en: "Up from 58.3% in 2020/21. This is the 2023/24 reading, the latest the report records. Domestic revenue itself peaked at 16.4% of GDP that year and eased to 15.1% in 2024/25.",
+              fr: "Contre 58,3 % en 2020-2021. Il s'agit du relevé de 2023-2024, le dernier consigné par le rapport. Les recettes intérieures elles-mêmes ont culminé à 16,4 % du PIB cette année-là avant de refluer à 15,1 % en 2024-2025." },
+      source: "VNR 2026 · tableau 1.1 et tableau 4.5" }
   ],
 
 

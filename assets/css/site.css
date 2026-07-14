@@ -1104,6 +1104,9 @@ footer.site {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 12px; margin-bottom: 16px;
 }
+/* Both countries carry 6 tiles; auto-fit packs 5 across and leaves an orphan.
+   A 3-up grid divides 6 evenly and gives each tile room for its subtitle. */
+@media (min-width: 980px) { .metric-tiles { grid-template-columns: repeat(3, 1fr); } }
 .metric-tile {
   text-align: left; background: var(--surface);
   border: 1px solid var(--line); border-top: 3px solid var(--sdg, var(--s1));

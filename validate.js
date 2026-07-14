@@ -313,7 +313,10 @@ for (const c of countries) {
   const checkChart = (ch, where) => {
     if (!ch) return;
     if (!["line", "gap", "bars"].includes(ch.type)) errors.push(`${c.slug}: ${where} bad chart type "${ch.type}"`);
-    if (!ch.unit) errors.push(`${c.slug}: ${where} chart MISSING UNIT — one unit per chart, always`);
+    // The rule is one DECLARED unit per chart. A rate chart ("per 100,000
+    // inhabitants") legitimately carries its unit in the title and declares
+    // unit: "" — that is deliberate. A missing key is the actual error.
+    if (typeof ch.unit !== "string") errors.push(`${c.slug}: ${where} chart MISSING UNIT — one unit per chart, always`);
     if (!isPair(ch.title)) errors.push(`${c.slug}: ${where} chart title not bilingual`);
     if (ch.type === "line") {
       if (!ch.series || !ch.series.length) return errors.push(`${c.slug}: ${where} line chart has no series`);
