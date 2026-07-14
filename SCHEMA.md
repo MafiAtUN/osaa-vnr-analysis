@@ -170,7 +170,13 @@ window.VNR.registerFaq({
 
       refs: ["GAB-R01", "GAB-R02"],      // every id must exist in refs[] below
       basis: { key: "direct",            // direct | synthesis
-               label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" } } }
+               label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" } },
+
+      // OPTIONAL. Present only where `evidence` departs from the OSAA workbook.
+      // Rendered as a visible callout on the entry and carried into the copied
+      // text, so a figure that differs from the workbook on the reader's desk
+      // never travels without the reason why.
+      correction: { en: "…", fr: "…" } }
   ],
 
   // The reference index, rendered as section 02 and jumped to when a reader
@@ -190,6 +196,28 @@ window.VNR.registerFaq({
 answer, **synthesis** means OSAA constructed it from several findings. Anyone
 briefing a minister needs to know which of the two they are holding, so the page
 labels every answer with it.
+
+### Why some FAQ entries carry a `correction`
+
+The workbook took its figures from the VNR reports' **chapter tables**. Those
+tables repeatedly print the Statistical Annex's **2024** value under a **"2025"**
+heading. Verified on three separate Tanzanian indicators:
+
+| Indicator | Annex 2024 | Annex 2025 | Chapter table / workbook says |
+|---|---|---|---|
+| Regional-centre water | 91.6 | **92.5** | "91.6% in 2025" |
+| Electricity access | 85.5 | **86.2** | "85.5 in 2025" |
+| Renewables (electricity) | 43.1 | **76.6** | "80% of the mix" (in no source) |
+
+The dashboards are built on the **annex**, so the annex wins — otherwise the FAQ
+tab and the Dashboard tab would show different numbers for the same indicator,
+one click apart. Annex Table A6 also shows sewer connectivity **falling from
+13.0% to 5.6%**, which the report's own status column rates *Regressing*; the
+workbook records it as having "remained 13%". The direction of travel is the
+finding, so it is not quietly dropped.
+
+Every such deviation is published on the entry via `correction`. Never correct a
+figure silently.
 
 ## Hard rules
 

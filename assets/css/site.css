@@ -819,6 +819,27 @@ table.data td.num { text-align: right; font-variant-numeric: tabular-nums; }
 }
 .faq-evidence { font-size: 13px; line-height: 1.75; color: var(--ink-2); }
 
+/* A correction: this figure departs from the OSAA workbook, and here is why.
+   Deliberately conspicuous — the site's whole premise is that a discrepancy is
+   published rather than quietly smoothed over. */
+.faq-correction {
+  margin-top: 10px;
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--warning);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 13px;
+  background: var(--surface-2);
+}
+.faq-correction-label {
+  font-family: var(--mono); font-size: 9.5px; font-weight: 600;
+  letter-spacing: .09em; text-transform: uppercase;
+  color: var(--warning); margin-bottom: 5px;
+}
+.faq-correction-text { font-size: 12.5px; line-height: 1.7; color: var(--ink-2); }
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  .faq-correction { background: color-mix(in srgb, var(--warning) 7%, var(--surface)); }
+}
+
 .faq-policy { list-style: none; display: flex; flex-direction: column; gap: 5px; }
 .faq-policy li {
   position: relative; padding-left: 17px;
@@ -983,6 +1004,14 @@ mark.faq-hit {
 .hero .provenance { color: rgba(255, 255, 255, .72); }
 .hero .provenance::before { background: rgba(255, 255, 255, .45); }
 
+/* The footer restates it on every page, including pages with no hero. */
+.footer-src {
+  margin-top: 7px; padding-top: 7px;
+  border-top: 1px solid var(--line);
+  display: inline-block;
+  color: var(--ink-2);
+}
+
 /* ── Footer ── */
 footer.site {
   background: var(--surface); border-top: 1px solid var(--line);
@@ -1069,8 +1098,18 @@ footer.site {
   .faq-bar, .faq-copy, .faq-caret, .faq-count { display: none !important; }
   .faq-body { grid-template-rows: 1fr !important; }
   .faq-body-inner { overflow: visible !important; }
-  .faq-item, .faq-ref-row, .faq-group-head { break-inside: avoid; }
+  .faq-item, .faq-ref-row, .faq-group-head, .faq-correction { break-inside: avoid; }
   .faq-item { border-color: #ccc; box-shadow: none; }
+
+  /* A printed page that has left the website still has to say where its
+     numbers came from — that is the whole point of the provenance line, and a
+     print-out is exactly the artefact that gets handed round a room. The site
+     footer is hidden above, so the source line is re-shown on its own. */
+  .provenance { color: #333 !important; break-inside: avoid; }
+  .provenance::before { background: #666 !important; }
+  footer.site { display: block !important; border: 0; padding: 12px 0 0; }
+  footer.site [data-i18n="footer"] { display: none; }
+  .footer-src { color: #333 !important; border-top: 1px solid #ccc; }
 }
 
 /* ============================================================

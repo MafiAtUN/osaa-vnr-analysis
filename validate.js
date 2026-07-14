@@ -233,9 +233,16 @@ for (const c of countries) {
         if (!refIds.has(rid)) bad(c, `faq ${id}: cites unknown reference "${rid}"`);
       });
 
+      // An entry may carry a `correction`: a figure that departs from the OSAA
+      // workbook because the report's Statistical Annex overrides the chapter
+      // table it was drawn from. It must be bilingual and it must be visible —
+      // a silent correction is exactly what this site exists not to do.
+      if (e.correction !== undefined && !isPair(e.correction))
+        bad(c, `faq ${id}: correction present but not bilingual`);
+
       // Every figure in the English must survive into the French. A dropped
       // digit in a briefing note is the failure with actual consequences.
-      ["a", "evidence"].forEach(field => {
+      ["a", "evidence", "correction"].filter(f => e[f]).forEach(field => {
         if (!isPair(e[field])) return;
         const digits = s => (s.match(/\d[\d.,   ]*\d|\d/g) || [])
           .map(x => x.replace(/\D/g, "")).sort();

@@ -20,9 +20,16 @@ The dashboards this project replaces were cloned from a single template, and the
 real damage. Some examples that are now corrected and documented in-app:
 
 - **Tanzania** headlined electricity access at `62.1%` while its own fact sheet said `86%`.
-  Both are right — they measure different things (grid connection vs. access from any source).
-  Neither page said which. Both are now shown, precisely labelled, and the gap between them is
-  presented as the finding.
+  These measure different things (grid connection vs. access from any source) and neither page
+  said which — but the `62.1%` was also simply wrong. The VNR report puts household grid
+  connectivity at `52.1%`; `62.1%` appears in no source. Both indicators are now shown at their
+  correct values, precisely labelled, and the gap between them is presented as the finding.
+- **Tanzania**'s chapter tables print the Statistical Annex's **2024** value under a **"2025"**
+  heading — confirmed on regional-centre water (`91.6` is 2024; 2025 is `92.5`), electricity
+  access (`85.5` is 2024; 2025 is `86.2`) and renewables. The dashboards follow the annex, and
+  the FAQ says so wherever it departs from the OSAA workbook, which followed the chapter tables.
+  Annex Table A6 also shows sewer connectivity **falling from `13.0%` to `5.6%`** — the report's
+  own status column rates it *Regressing*, where the workbook records it as flat at `13%`.
 - **Tanzania** headlined "budget on own taxes — `95.74%`" against a fact sheet reporting `78%`
   budget self-reliance. The `78%` figure is the defensible one (Tanzania's own 2026/27 Budget
   Speech puts the domestic share at 74.2%); `95.74%` measured a narrower base and was dropped.

@@ -122,6 +122,8 @@
                       fr: "Source : tous les chiffres de ce site proviennent des rapports nationaux volontaires (RNV) 2026 soumis par les États Membres au Forum politique de haut niveau." },
     prov_faq:       { en: "Every answer below is drawn from the country's 2026 Voluntary National Review submission, and cites the report section and page it rests on.",
                       fr: "Chaque réponse ci-dessous est tirée du rapport national volontaire 2026 soumis par le pays et cite la section et la page du rapport dont elle procède." },
+    prov_footer:    { en: "Source: 2026 Voluntary National Review (VNR) reports submitted by Member States to the High-Level Political Forum.",
+                      fr: "Source : rapports nationaux volontaires (RNV) 2026 soumis par les États Membres au Forum politique de haut niveau." },
 
     // ── FAQ ──
     faq_title:      { en: "Questions and answers", fr: "Questions et réponses" },
@@ -142,6 +144,7 @@
     faq_evidence:   { en: "Key evidence and figures", fr: "Données et chiffres clés" },
     faq_policy:     { en: "Policy implications and best practices", fr: "Implications pour l'action et bonnes pratiques" },
     faq_sources:    { en: "Sources", fr: "Sources" },
+    faq_correction: { en: "Correction to the OSAA workbook", fr: "Correction apportée au classeur de l'OSAA" },
     faq_copy:       { en: "Copy", fr: "Copier" },
     faq_copied:     { en: "Copied", fr: "Copié" },
     faq_copy_lbl:   { en: "Copy this question and answer", fr: "Copier cette question et sa réponse" },

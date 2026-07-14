@@ -54,8 +54,8 @@ window.VNR.registerFaq({
         fr: "La Tanzanie fait état d'une forte expansion des services d'eau en milieu rural et dans les centres régionaux, ainsi que d'une amélioration de l'assainissement. La fiabilité du service, les réseaux d'égouts, le traitement des eaux usées, l'hygiène, l'eau non facturée et la pression climatique demeurent les principales lacunes de mise en œuvre."
       },
       evidence: {
-        en: "Rural water access rose from 72.3% in 2020 to 85.2% in 2025. Regional-centre access reached 91.6% and safely managed sanitation 78.5%. Sewer connectivity in regional centres remained 13%, while Dar es Salaam non-revenue water was approximately 40%.",
-        fr: "L'accès à l'eau en milieu rural est passé de 72,3 % en 2020 à 85,2 % en 2025. L'accès dans les centres régionaux a atteint 91,6 % et l'assainissement géré en toute sécurité 78,5 %. Le raccordement aux réseaux d'égouts dans les centres régionaux est demeuré à 13 %, tandis que l'eau non facturée à Dar es Salaam s'établissait à environ 40 %."
+        en: "Rural water access rose from 72.3% in 2020 to 85.2% in 2025. Regional-centre access reached 92.5% and safely managed sanitation 64.6%. Sewer connectivity in regional centres fell from 13.0% in 2020 to 5.6% in 2024 — the report rates it Regressing — while Dar es Salaam non-revenue water was approximately 40%.",
+        fr: "L'accès à l'eau en milieu rural est passé de 72,3 % en 2020 à 85,2 % en 2025. L'accès dans les centres régionaux a atteint 92,5 % et l'assainissement géré en toute sécurité 64,6 %. Le raccordement aux réseaux d'égouts dans les centres régionaux est tombé de 13,0 % en 2020 à 5,6 % en 2024 — le rapport le juge « en régression » —, tandis que l'eau non facturée à Dar es Salaam s'établissait à environ 40 %."
       },
       policy: {
         kind: "list",
@@ -86,6 +86,10 @@ window.VNR.registerFaq({
       basis: {
         key: "direct",
         label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" }
+      },
+      correction: {
+        en: "Three figures here differ from the OSAA workbook, which followed the report's chapter table. Annex Table A6 gives regional-centre water at 92.5% for 2025 (91.6% is the 2024 value), safely managed sanitation at 64.6% (not 78.5%), and sewer connectivity falling from 13.0% to 5.6% — which the report's own status column rates Regressing, not flat at 13%.",
+        fr: "Trois chiffres diffèrent ici du classeur de l'OSAA, qui suivait le tableau du chapitre. Le tableau A6 de l'annexe donne l'eau des centres régionaux à 92,5 % pour 2025 (91,6 % étant la valeur de 2024), l'assainissement géré en toute sécurité à 64,6 % (et non 78,5 %), et le raccordement aux égouts en recul de 13,0 % à 5,6 % — que la colonne « statut » du rapport qualifie elle-même de « en régression », et non de stable à 13 %."
       }
     },
     {
@@ -100,8 +104,8 @@ window.VNR.registerFaq({
         fr: "La Julius Nyerere Hydropower Plant a sensiblement accru la capacité nationale de production et l'étendue du réseau. Le défi qui subsiste consiste à convertir cette capacité de production en raccordements fiables des ménages, en solutions de cuisson propre et en usages productifs de l'électricité."
       },
       evidence: {
-        en: "Installed capacity reached 4,504.9 MW in 2025. Electricity access was reported at 86% in the main messages and all 26 regions were connected to the grid. Household connectivity was 52.1%, rural connectivity remained below 36% and access to clean-cooking solutions reached 23.2%.",
-        fr: "La capacité installée a atteint 4 504,9 MW en 2025. L'accès à l'électricité est indiqué à 86 % dans les messages clés et les 26 régions sont toutes raccordées au réseau. Le taux de raccordement des ménages s'établissait à 52,1 %, le raccordement en milieu rural demeurait inférieur à 36 % et l'accès aux solutions de cuisson propre atteignait 23,2 %."
+        en: "Installed capacity reached 4,504.9 MW in 2025. Electricity access reached 86.2% and all 26 regions were connected to the grid. Household connectivity was 52.1%, rural connectivity remained below 36% and access to clean-cooking solutions reached 23.2%.",
+        fr: "La capacité installée a atteint 4 504,9 MW en 2025. L'accès à l'électricité a atteint 86,2 % et les 26 régions sont toutes raccordées au réseau. Le taux de raccordement des ménages s'établissait à 52,1 %, le raccordement en milieu rural demeurait inférieur à 36 % et l'accès aux solutions de cuisson propre atteignait 23,2 %."
       },
       policy: {
         kind: "list",
@@ -132,6 +136,10 @@ window.VNR.registerFaq({
       basis: {
         key: "direct",
         label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" }
+      },
+      correction: {
+        en: "Annex Table A7 gives electricity access at 86.2% for 2025; the chapter table's 85.5% is the annex's 2024 value, and the Main Messages' rounded \"86%\" is the same figure. Renewables are 76.6% of electricity generated — the \"80% of the mix\" quoted in the Main Messages appears nowhere in the report.",
+        fr: "Le tableau A7 de l'annexe donne l'accès à l'électricité à 86,2 % pour 2025 ; les 85,5 % du tableau du chapitre correspondent à la valeur 2024 de l'annexe, et les « 86 % » arrondis des messages clés désignent le même chiffre. Les renouvelables représentent 76,6 % de l'électricité produite — les « 80 % du mix » cités dans les messages clés ne figurent nulle part dans le rapport."
       }
     },
     {
@@ -146,8 +154,8 @@ window.VNR.registerFaq({
         fr: "La Tanzanie a enregistré des avancées majeures dans les domaines ferroviaire, portuaire et aérien ainsi qu'en matière de connectivité numérique. La lacune essentielle tient à la transformation structurelle : les infrastructures n'ont pas encore produit une croissance manufacturière, un emploi formel et une capacité d'innovation suffisants."
       },
       evidence: {
-        en: "Internet use rose from 49% in 2020 to 85% in 2025. Railway passengers reached 4.14 million and maritime freight 29.1 million tonnes. Manufacturing's share of GDP fell from 7.7% to 5.9%.",
-        fr: "L'utilisation d'Internet est passée de 49 % en 2020 à 85 % en 2025. Le trafic ferroviaire de voyageurs a atteint 4,14 millions de passagers et le fret maritime 29,1 millions de tonnes. La part de l'industrie manufacturière dans le PIB est tombée de 7,7 % à 5,9 %."
+        en: "Internet use rose from 48% in 2020 to 85% in 2025. Railway passengers reached 4.14 million and maritime freight 29.1 million tonnes. Manufacturing's share of GDP fell from 7.7% to 5.9%.",
+        fr: "L'utilisation d'Internet est passée de 48 % en 2020 à 85 % en 2025. Le trafic ferroviaire de voyageurs a atteint 4,14 millions de passagers et le fret maritime 29,1 millions de tonnes. La part de l'industrie manufacturière dans le PIB est tombée de 7,7 % à 5,9 %."
       },
       policy: {
         kind: "list",
@@ -178,6 +186,10 @@ window.VNR.registerFaq({
       basis: {
         key: "direct",
         label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" }
+      },
+      correction: {
+        en: "The 2020 internet baseline is 48%, not the 49% in the OSAA workbook. The report gives 48% in four places, including Table 4.3.",
+        fr: "La valeur de référence d'Internet pour 2020 est de 48 %, et non les 49 % du classeur de l'OSAA. Le rapport indique 48 % à quatre reprises, notamment au tableau 4.3."
       }
     },
     {
@@ -709,8 +721,8 @@ window.VNR.registerFaq({
         fr: "La principale réorientation consiste à passer de l'extension de la couverture à la sécurisation de services fiables, abordables, sûrs et résilients face au climat."
       },
       evidence: {
-        en: "Dar es Salaam non-revenue water is approximately 40%, sewer connectivity remains 13% in regional centres and wastewater and hygiene services lag behind water coverage.",
-        fr: "L'eau non facturée à Dar es Salaam s'établit à environ 40 %, le raccordement aux réseaux d'égouts demeure de 13 % dans les centres régionaux et les services d'eaux usées et d'hygiène accusent un retard sur la couverture en eau."
+        en: "Dar es Salaam non-revenue water is approximately 40%, sewer connectivity in regional centres fell from 13.0% in 2020 to 5.6% in 2024 — rated Regressing — and wastewater and hygiene services lag behind water coverage.",
+        fr: "L'eau non facturée à Dar es Salaam s'établit à environ 40 %, le raccordement aux réseaux d'égouts des centres régionaux est tombé de 13,0 % en 2020 à 5,6 % en 2024 — jugé « en régression » — et les services d'eaux usées et d'hygiène accusent un retard sur la couverture en eau."
       },
       policy: {
         kind: "list",
@@ -735,6 +747,10 @@ window.VNR.registerFaq({
       basis: {
         key: "direct",
         label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" }
+      },
+      correction: {
+        en: "The OSAA workbook records sewer connectivity as having \"remained 13%\". Annex Table A6 shows it falling to 5.6% by 2024, and the report's own status column rates the indicator Regressing. The direction of travel is the finding.",
+        fr: "Le classeur de l'OSAA indique que le raccordement aux égouts « est demeuré à 13 % ». Le tableau A6 de l'annexe montre un recul à 5,6 % en 2024, et la colonne « statut » du rapport qualifie l'indicateur de « en régression ». C'est le sens de l'évolution qui constitue le constat."
       }
     },
     {
