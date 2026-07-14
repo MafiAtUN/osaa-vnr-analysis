@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology · Africa VNR Analysis 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<div class="accent-bar"></div>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="eyebrow" data-i18n="site_sub"></span>
+      <h1 data-i18n="site_title"></h1>
+    </div>
+    <nav class="header-nav">
+      <a class="nav-btn" href="index.html" data-i18n="back_all"></a>
+      <div class="toggle-group" role="group" aria-label="Language">
+        <button data-lang="en">EN</button>
+        <button data-lang="fr">FR</button>
+      </div>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">☾</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="section" style="margin-top:8px;">
+      <div class="section-head">
+        <span class="eyebrow" id="m-eyebrow"></span>
+        <h3 id="m-title" style="font-size:28px;"></h3>
+      </div>
+      <div class="card">
+        <div class="prose" id="m-body"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="disclaimer" data-i18n="disclaimer"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap" data-i18n="footer"></div>
+</footer>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/manifest.js"></script>
+<script>
+const M = {
+  eyebrow: { en: "Methodology", fr: "Méthodologie" },
+  title:   { en: "How these fact sheets and dashboards were built",
+             fr: "Comment ces fiches et tableaux de bord ont été construits" },
+  body: {
+    en: `
+<p>Each one-page fact sheet presents a structured, comparable analysis of a country's sustainable development priorities and how they have evolved since its previous Voluntary National Review. Nineteen African countries are covered: Algeria, Burkina Faso, Burundi, Cabo Verde, Cameroon, DR Congo, Egypt, Gabon, Guinea, Guinea-Bissau, Liberia, Malawi, Mozambique, Rwanda, Senegal, Somalia, Tanzania, Togo and Tunisia.</p>
+
+<h4>Source material</h4>
+<p>The fact sheets draw on two primary sources: the <strong>2026 VNR Key Messages</strong> submitted by participating African Member States to the High-Level Political Forum, and each country's <strong>most recent previous VNR Key Messages</strong>. Analysis used the original language of submission — French, English or Portuguese — to preserve intent, terminology and framing across both cycles.</p>
+
+<h4>Section 1 — Six SDG themes</h4>
+<p>A qualitative review of the 2026 and previous Key Messages identified six priority themes per country, selected by prominence, strength of supporting evidence and relevance to the SDGs. Each was given a concise title, mapped to the most relevant Goal, and paired with a synthesised narrative.</p>
+
+<h4>Section 2 — Thematic continuity</h4>
+<p>The six 2026 themes were compared against the country's most recent previous VNR to assess how priorities and framing have evolved across cycles:</p>
+<ul>
+  <li><strong>Sustained</strong> — the priority remains substantively consistent and continues to feature prominently in national policy.</li>
+  <li><strong>Evolved</strong> — the priority has been reframed, expanded or adapted to changing contexts or new strategic priorities.</li>
+</ul>
+<p>These describe patterns of continuity and change. They are <em>not</em> assessments of progress or performance, and should not be read as a scorecard.</p>
+
+<h4>Section 3 — Recurring concepts</h4>
+<p>Key policy concepts were extracted from both cycles through qualitative content analysis. The most frequent are shown as a ranked bar chart, where <strong>bar length is strictly proportional to the number of times the concept is referenced</strong> in the Key Messages document.</p>
+
+<h4>How the dashboards differ from the fact sheets</h4>
+<p>The fact sheet is the document as submitted. The dashboard is the evidence beneath it: the indicators, time series and policy instruments that the themes rest on. Where the two disagreed — and they frequently did — the disagreement is recorded on each country's <strong>Fact-check</strong> tab rather than quietly resolved.</p>
+
+<h4>Data rules we imposed on ourselves</h4>
+<ul>
+  <li><strong>No number without a source.</strong> Every indicator and every chart carries a citation. Figures that could not be traced to the review or a citable external source were dropped, or kept and explicitly flagged as unverified.</li>
+  <li><strong>No two units on one axis.</strong> Dual-axis charts invent correlations that are not in the data, so none are used anywhere on this site.</li>
+  <li><strong>Labels must disambiguate.</strong> Several countries report similar-sounding indicators that measure different things — "electricity access" and "connection to the national grid", or "tax revenue" and "domestic revenue". Where these were previously conflated, both figures are now shown, each precisely named.</li>
+  <li><strong>Proportional marks.</strong> Bar length equals value divided by the maximum. No visual flattening of differences.</li>
+  <li><strong>Every chart has a table.</strong> No value is reachable only by hovering.</li>
+</ul>
+
+<h4>Accessibility and colour</h4>
+<p>The categorical palette was validated programmatically — not by eye — against a lightness band, a chroma floor, adjacent-pair separation under simulated colour-vision deficiency, and contrast with the page surface, in both light and dark modes. Colour never carries meaning alone: every series is also named in a legend and, where it matters, labelled directly.</p>
+
+<h4>Quality assurance</h4>
+<p>All classifications, continuity assessments, SDG mappings and concept labels were reviewed against the original submission. The methodology was applied consistently across all fact sheets to ensure comparability while preserving national context.</p>
+
+<h4>Credits</h4>
+<p>The VNR fact sheets were prepared by the Intergovernmental Support Team (IGS) of the United Nations Office of the Special Adviser on Africa (OSAA). Compilation and analysis were undertaken by Omotola Bamidele, with contributions from Kounady Ouattara, under the guidance of Utku Teksoz. For further information, contact Utku Teksoz at <a href="mailto:teksoz@un.org" style="color:var(--s1)">teksoz@un.org</a>.</p>
+`,
+    fr: `
+<p>Chaque fiche d'une page présente une analyse structurée et comparable des priorités de développement durable d'un pays et de leur évolution depuis son précédent Rapport national volontaire. Dix-neuf pays africains sont couverts : Algérie, Burkina Faso, Burundi, Cabo Verde, Cameroun, RD Congo, Égypte, Gabon, Guinée, Guinée-Bissau, Libéria, Malawi, Mozambique, Rwanda, Sénégal, Somalie, Tanzanie, Togo et Tunisie.</p>
+
+<h4>Sources</h4>
+<p>Les fiches s'appuient sur deux sources principales : les <strong>Messages clés des RNV 2026</strong> transmis au Forum politique de haut niveau par les États Membres africains participants, et les <strong>Messages clés du RNV précédent</strong> de chaque pays. L'analyse a été menée dans la langue originale de soumission — français, anglais ou portugais — afin de préserver l'intention, la terminologie et le cadrage d'un cycle à l'autre.</p>
+
+<h4>Section 1 — Six thèmes ODD</h4>
+<p>Un examen qualitatif des Messages clés de 2026 et du cycle précédent a permis d'identifier six thèmes prioritaires par pays, retenus selon leur importance, la solidité des éléments probants et leur pertinence au regard des ODD. Chacun a reçu un titre concis, a été rattaché à l'Objectif le plus pertinent et associé à un récit de synthèse.</p>
+
+<h4>Section 2 — Continuité thématique</h4>
+<p>Les six thèmes de 2026 ont été comparés au RNV précédent afin d'apprécier l'évolution des priorités et du cadrage entre les cycles :</p>
+<ul>
+  <li><strong>Maintenu</strong> — la priorité demeure substantiellement identique et continue d'occuper une place importante dans la politique nationale.</li>
+  <li><strong>Évolué</strong> — la priorité a été reformulée, élargie ou adaptée à un contexte nouveau ou à de nouvelles orientations stratégiques.</li>
+</ul>
+<p>Ces catégories décrivent des logiques de continuité et de changement. Elles ne constituent <em>pas</em> une évaluation des progrès ou des performances et ne doivent pas être lues comme un classement.</p>
+
+<h4>Section 3 — Concepts récurrents</h4>
+<p>Les concepts clés des politiques publiques ont été extraits des deux cycles par analyse de contenu qualitative. Les plus fréquents sont présentés sous forme de barres classées, dont <strong>la longueur est strictement proportionnelle au nombre de références</strong> au concept dans le document de Messages clés.</p>
+
+<h4>Ce qui distingue le tableau de bord de la fiche</h4>
+<p>La fiche est le document tel qu'il a été soumis. Le tableau de bord en expose le socle probant : les indicateurs, les séries chronologiques et les instruments de politique publique sur lesquels reposent les thèmes. Lorsque les deux divergeaient — ce qui fut fréquent — la divergence est consignée dans l'onglet <strong>Vérification</strong> de chaque pays plutôt que silencieusement arbitrée.</p>
+
+<h4>Les règles que nous nous sommes imposées</h4>
+<ul>
+  <li><strong>Aucun chiffre sans source.</strong> Chaque indicateur et chaque graphique porte une citation. Les chiffres qui n'ont pu être rattachés à la revue ou à une source externe citable ont été retirés, ou conservés et explicitement signalés comme invérifiables.</li>
+  <li><strong>Jamais deux unités sur un même axe.</strong> Les graphiques à double axe fabriquent des corrélations absentes des données : aucun n'est utilisé sur ce site.</li>
+  <li><strong>Les libellés doivent lever l'ambiguïté.</strong> Plusieurs pays rapportent des indicateurs aux noms proches mais de contenu différent — « accès à l'électricité » et « raccordement au réseau national », ou « recettes fiscales » et « recettes intérieures ». Là où ils étaient confondus, les deux chiffres sont désormais présentés, chacun précisément nommé.</li>
+  <li><strong>Des marques proportionnelles.</strong> La longueur d'une barre est égale à la valeur divisée par le maximum. Aucun aplatissement visuel des écarts.</li>
+  <li><strong>Chaque graphique a son tableau.</strong> Aucune valeur n'est accessible uniquement au survol.</li>
+</ul>
+
+<h4>Accessibilité et couleur</h4>
+<p>La palette catégorielle a été validée par un contrôle programmatique — et non à l'œil — portant sur une plage de luminosité, un seuil de chroma, la séparation des paires adjacentes en cas de déficience de la vision des couleurs, et le contraste avec le fond de page, en mode clair comme en mode sombre. La couleur ne porte jamais seule le sens : chaque série est également nommée dans une légende et, lorsque cela compte, étiquetée directement.</p>
+
+<h4>Assurance qualité</h4>
+<p>L'ensemble des classifications, appréciations de continuité, correspondances avec les ODD et libellés de concepts a été revu au regard de la soumission originale. La méthodologie a été appliquée de manière homogène à toutes les fiches afin d'assurer la comparabilité tout en préservant le contexte national.</p>
+
+<h4>Crédits</h4>
+<p>Les fiches RNV ont été préparées par l'Équipe d'appui intergouvernemental (IGS) du Bureau du Conseiller spécial pour l'Afrique des Nations Unies (OSAA). La compilation et l'analyse ont été réalisées par Omotola Bamidele, avec la contribution de Kounady Ouattara, sous la direction d'Utku Teksoz. Pour toute information complémentaire, contacter Utku Teksoz à l'adresse <a href="mailto:teksoz@un.org" style="color:var(--s1)">teksoz@un.org</a>.</p>
+`
+  }
+};
+
+function paint() {
+  document.getElementById("m-eyebrow").textContent = I18N.t(M.eyebrow);
+  document.getElementById("m-title").textContent   = I18N.t(M.title);
+  document.getElementById("m-body").innerHTML      = I18N.t(M.body);
+}
+document.addEventListener("DOMContentLoaded", () => {
+  VNR.initChrome();
+  paint();
+  I18N.onChange(paint);
+});
+</script>
+</body>
+</html>

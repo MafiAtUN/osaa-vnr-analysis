@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Country · Africa VNR Analysis 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<div class="accent-bar"></div>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="eyebrow" data-i18n="site_sub"></span>
+      <h1 data-i18n="site_title"></h1>
+    </div>
+    <nav class="header-nav">
+      <a class="nav-btn" href="index.html" data-i18n="back_all"></a>
+      <a class="nav-btn" href="methodology.html" data-i18n="nav_method"></a>
+      <div class="toggle-group" role="group" aria-label="Language">
+        <button data-lang="en">EN</button>
+        <button data-lang="fr">FR</button>
+      </div>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">☾</button>
+    </nav>
+  </div>
+</header>
+
+<div id="page">
+
+  <section class="country-hero">
+    <div class="wrap">
+      <h2 id="c-name"></h2>
+      <p class="country-tagline" id="c-tagline"></p>
+      <div class="country-meta" id="c-meta"></div>
+
+      <div class="sec-tabs" role="tablist">
+        <button class="sec-tab" data-sec="factsheet" role="tab" data-i18n="tab_factsheet"></button>
+        <button class="sec-tab" data-sec="dashboard" role="tab" data-i18n="tab_dashboard"></button>
+        <button class="sec-tab" data-sec="factcheck" role="tab" data-i18n="tab_factcheck"></button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+
+      <!-- ── FACT SHEET ─────────────────────────────── -->
+      <div data-sec-panel="factsheet" hidden>
+        <div class="section" style="margin-top:8px;">
+          <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;">
+            <div>
+              <span class="eyebrow">01</span>
+              <h3 data-i18n="fs_themes"></h3>
+            </div>
+            <a class="nav-btn primary" id="fs-pdf" download data-i18n="fs_download"></a>
+          </div>
+          <div class="theme-grid" id="fs-themes"></div>
+        </div>
+
+        <div class="section">
+          <div class="section-head">
+            <span class="eyebrow">02</span>
+            <h3 data-i18n="fs_continuity"></h3>
+          </div>
+          <div class="continuity" id="fs-continuity"></div>
+        </div>
+
+        <div class="section">
+          <div class="section-head">
+            <span class="eyebrow">03</span>
+            <h3 data-i18n="fs_concepts"></h3>
+            <p id="fs-concept-caption"></p>
+            <p class="mono" style="font-size:11px;color:var(--ink-muted);margin-top:4px;" data-i18n="fs_concepts_note"></p>
+          </div>
+          <div class="card" id="fs-concepts"></div>
+        </div>
+      </div>
+
+      <!-- ── DASHBOARD ──────────────────────────────── -->
+      <div data-sec-panel="dashboard" hidden>
+        <div class="section" style="margin-top:8px;">
+          <div class="section-head">
+            <span class="eyebrow">01</span>
+            <h3 data-i18n="db_indicators"></h3>
+            <p data-i18n="db_indicators_note"></p>
+          </div>
+          <div class="stat-grid" id="db-stats"></div>
+        </div>
+
+        <div class="section">
+          <div class="section-head">
+            <span class="eyebrow">02</span>
+            <h3 data-i18n="db_charts"></h3>
+          </div>
+          <div id="db-charts" style="display:flex;flex-direction:column;gap:14px;"></div>
+        </div>
+
+        <div class="section">
+          <div class="section-head">
+            <span class="eyebrow">03</span>
+            <h3 data-i18n="db_instruments"></h3>
+          </div>
+          <div class="inst-grid" id="db-instruments"></div>
+        </div>
+      </div>
+
+      <!-- ── FACT-CHECK ─────────────────────────────── -->
+      <div data-sec-panel="factcheck" hidden>
+        <div class="section" style="margin-top:8px;">
+          <div class="section-head">
+            <span class="eyebrow">01</span>
+            <h3 data-i18n="fc_title"></h3>
+            <p data-i18n="fc_intro"></p>
+          </div>
+          <div class="fc" id="fc-list"></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="disclaimer" data-i18n="disclaimer"></div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<footer class="site">
+  <div class="wrap" data-i18n="footer"></div>
+</footer>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/manifest.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/country.js"></script>
+</body>
+</html>
