@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Country · Africa VNR Analysis 2026</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +19,11 @@
 <header class="site">
   <div class="wrap header-inner">
     <div class="brand">
-      <span class="eyebrow" data-i18n="site_sub"></span>
+      <a class="brand-mark" href="index.html">
+        <img class="brand-logo" src="assets/img/osaa-logo.png" width="1000" height="190"
+             alt="United Nations Office of the Special Adviser on Africa" data-i18n-alt="logo_alt">
+      </a>
+      <span class="brand-rule" aria-hidden="true"></span>
       <h1 data-i18n="site_title"></h1>
     </div>
     <nav class="header-nav">
@@ -39,10 +46,13 @@
       <p class="country-tagline" id="c-tagline"></p>
       <div class="country-meta" id="c-meta"></div>
 
+      <p class="provenance" data-i18n="prov_country"></p>
+
       <div class="sec-tabs" role="tablist">
         <button class="sec-tab" data-sec="factsheet" role="tab" data-i18n="tab_factsheet"></button>
         <button class="sec-tab" data-sec="dashboard" role="tab" data-i18n="tab_dashboard"></button>
-        <button class="sec-tab" data-sec="factcheck" role="tab" data-i18n="tab_factcheck"></button>
+        <!-- Shown only for countries that have an FAQ block. country.js hides it. -->
+        <button class="sec-tab" data-sec="faq" role="tab" id="tab-faq" data-i18n="tab_faq" hidden></button>
       </div>
     </div>
   </section>
@@ -52,7 +62,16 @@
 
       <!-- ── FACT SHEET ─────────────────────────────── -->
       <div data-sec-panel="factsheet" hidden>
-        <div class="section" style="margin-top:8px;">
+
+        <!-- The lede. Countries carrying a `lede` block open on their finding
+             instead of on the theme grid; the rest start at section 01. -->
+        <div class="fs-lede reveal" id="fs-lede" hidden>
+          <span class="eyebrow" data-i18n="fs_finding"></span>
+          <p class="fs-statement" id="fs-statement"></p>
+          <div class="fs-figs" id="fs-figs"></div>
+        </div>
+
+        <div class="section">
           <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;">
             <div>
               <span class="eyebrow">01</span>
@@ -68,7 +87,7 @@
             <span class="eyebrow">02</span>
             <h3 data-i18n="fs_continuity"></h3>
           </div>
-          <div class="continuity" id="fs-continuity"></div>
+          <div id="fs-continuity"></div>
         </div>
 
         <div class="section">
@@ -84,42 +103,44 @@
 
       <!-- ── DASHBOARD ──────────────────────────────── -->
       <div data-sec-panel="dashboard" hidden>
-        <div class="section" style="margin-top:8px;">
-          <div class="section-head">
-            <span class="eyebrow">01</span>
-            <h3 data-i18n="db_indicators"></h3>
-            <p data-i18n="db_indicators_note"></p>
-          </div>
-          <div class="stat-grid" id="db-stats"></div>
-        </div>
 
-        <div class="section">
-          <div class="section-head">
-            <span class="eyebrow">02</span>
-            <h3 data-i18n="db_charts"></h3>
-          </div>
-          <div id="db-charts" style="display:flex;flex-direction:column;gap:14px;"></div>
-        </div>
+        <!-- Rich 7-tab dashboard. Used where the country has a `dashboard`
+             block (Tanzania, Gabon). dash.js fills this. -->
+        <div id="dash-host" class="section" style="margin-top:8px;"></div>
 
-        <div class="section">
-          <div class="section-head">
-            <span class="eyebrow">03</span>
-            <h3 data-i18n="db_instruments"></h3>
+        <!-- Fallback for countries not yet rebuilt on the rich structure. -->
+        <div id="dash-fallback" hidden>
+          <div class="section" style="margin-top:8px;">
+            <div class="section-head">
+              <span class="eyebrow">01</span>
+              <h3 data-i18n="db_indicators"></h3>
+            </div>
+            <div class="stat-grid" id="db-stats"></div>
           </div>
-          <div class="inst-grid" id="db-instruments"></div>
+
+          <div class="section">
+            <div class="section-head">
+              <span class="eyebrow">02</span>
+              <h3 data-i18n="db_charts"></h3>
+            </div>
+            <div id="db-charts" style="display:flex;flex-direction:column;gap:14px;"></div>
+          </div>
+
+          <div class="section">
+            <div class="section-head">
+              <span class="eyebrow">03</span>
+              <h3 data-i18n="db_instruments"></h3>
+            </div>
+            <div class="inst-grid" id="db-instruments"></div>
+          </div>
         </div>
       </div>
 
-      <!-- ── FACT-CHECK ─────────────────────────────── -->
-      <div data-sec-panel="factcheck" hidden>
-        <div class="section" style="margin-top:8px;">
-          <div class="section-head">
-            <span class="eyebrow">01</span>
-            <h3 data-i18n="fc_title"></h3>
-            <p data-i18n="fc_intro"></p>
-          </div>
-          <div class="fc" id="fc-list"></div>
-        </div>
+      <!-- ── FAQ ────────────────────────────────────── -->
+      <!-- Present only where the country has a `faq` block (Gabon, Tanzania).
+           faq.js fills this; country.js hides the tab otherwise. -->
+      <div data-sec-panel="faq" hidden>
+        <div id="faq-host" class="section" style="margin-top:8px;"></div>
       </div>
 
       <div class="section">
@@ -136,7 +157,9 @@
 
 <script src="assets/js/core.js"></script>
 <script src="assets/js/manifest.js"></script>
+<script src="assets/js/faq.js"></script>
 <script src="assets/js/charts.js"></script>
+<script src="assets/js/dash.js"></script>
 <script src="assets/js/country.js"></script>
 </body>
 </html>

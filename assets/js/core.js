@@ -8,11 +8,24 @@
   // ── Country registry ──────────────────────────────────────
   const COUNTRIES = [];
   const BY_SLUG = Object.create(null);
+  const FAQ = Object.create(null);
 
   window.VNR = {
     register(c) { COUNTRIES.push(c); BY_SLUG[c.slug] = c; },
     all() { return COUNTRIES.slice().sort((a, b) => a.name.en.localeCompare(b.name.en)); },
-    get(slug) { return BY_SLUG[slug] || null; }
+    get(slug) { return BY_SLUG[slug] || null; },
+
+    /* The FAQ registry lives here rather than in faq.js because the data files
+       are document.write()n by manifest.js and therefore execute BEFORE any
+       renderer script has loaded. Only some countries have an FAQ; the tab is
+       hidden for the rest. manifest.js writes every country file before any
+       FAQ file, so the country is always present by the time this runs. */
+    registerFaq(block) {
+      FAQ[block.slug] = block;
+      const c = BY_SLUG[block.slug];
+      if (c) c.faq = block;
+    },
+    getFaq(slug) { return FAQ[slug] || null; }
   };
 
   // ── Language ──────────────────────────────────────────────
@@ -71,6 +84,7 @@
   const UI = {
     site_title:     { en: "Africa VNR Analysis", fr: "Analyse des RNV africains" },
     site_sub:       { en: "Office of the Special Adviser on Africa · United Nations", fr: "Bureau du Conseiller spécial pour l'Afrique · Nations Unies" },
+    logo_alt:       { en: "United Nations Office of the Special Adviser on Africa", fr: "Nations Unies · Bureau du Conseiller spécial pour l'Afrique" },
     nav_countries:  { en: "Countries", fr: "Pays" },
     nav_method:     { en: "Methodology", fr: "Méthodologie" },
     nav_findings:   { en: "Fact-check", fr: "Vérification" },
@@ -95,7 +109,68 @@
 
     tab_factsheet:  { en: "Fact sheet", fr: "Fiche pays" },
     tab_dashboard:  { en: "Dashboard", fr: "Tableau de bord" },
-    tab_factcheck:  { en: "Fact-check", fr: "Vérification" },
+    tab_faq:        { en: "FAQ", fr: "FAQ" },
+
+    /* Provenance. Every figure on this site comes from a country's own VNR
+       submission to the HLPF — not from OSAA's estimates and not from a
+       third-party database. That is the single most important thing a reader
+       needs to know before quoting anything here, so it is stated on the page
+       rather than buried in the methodology. */
+    prov_country:   { en: "Source: figures on this page are drawn from the country's own 2026 Voluntary National Review (VNR) submission to the High-Level Political Forum.",
+                      fr: "Source : les chiffres de cette page proviennent du rapport national volontaire (RNV) 2026 soumis par le pays lui-même au Forum politique de haut niveau." },
+    prov_home:      { en: "Source: every figure on this site is drawn from the 2026 Voluntary National Review (VNR) reports submitted by Member States to the High-Level Political Forum.",
+                      fr: "Source : tous les chiffres de ce site proviennent des rapports nationaux volontaires (RNV) 2026 soumis par les États Membres au Forum politique de haut niveau." },
+    prov_faq:       { en: "Every answer below is drawn from the country's 2026 Voluntary National Review submission, and cites the report section and page it rests on.",
+                      fr: "Chaque réponse ci-dessous est tirée du rapport national volontaire 2026 soumis par le pays et cite la section et la page du rapport dont elle procède." },
+
+    // ── FAQ ──
+    faq_title:      { en: "Questions and answers", fr: "Questions et réponses" },
+    faq_intro:      { en: "Briefing-ready answers drawn from the country's Voluntary National Review, each one traced to the report section and page it rests on. Written for use in OSAA briefs, talking points and delegation Q&A.",
+                      fr: "Des réponses prêtes à l'emploi tirées du rapport national volontaire du pays, chacune rattachée à la section et à la page du rapport dont elle procède. Conçues pour les notes de synthèse, les éléments de langage et les questions-réponses des délégations de l'OSAA." },
+    faq_search_ph:  { en: "Search questions, evidence, figures…", fr: "Rechercher : questions, données, chiffres…" },
+    faq_search_lbl: { en: "Search the FAQ", fr: "Rechercher dans la FAQ" },
+    faq_all:        { en: "All", fr: "Tous" },
+    faq_expand:     { en: "Expand all", fr: "Tout déplier" },
+    faq_collapse:   { en: "Collapse all", fr: "Tout replier" },
+    faq_showing:    { en: "Showing", fr: "Affichage de" },
+    faq_of:         { en: "of", fr: "sur" },
+    faq_questions:  { en: "questions", fr: "questions" },
+    faq_none:       { en: "No question matches this search.", fr: "Aucune question ne correspond à cette recherche." },
+    faq_none_hint:  { en: "Try a broader term, or clear the filters.", fr: "Essayez un terme plus large ou réinitialisez les filtres." },
+    faq_clear:      { en: "Clear filters", fr: "Réinitialiser" },
+    faq_answer:     { en: "Suggested OSAA answer", fr: "Réponse suggérée de l'OSAA" },
+    faq_evidence:   { en: "Key evidence and figures", fr: "Données et chiffres clés" },
+    faq_policy:     { en: "Policy implications and best practices", fr: "Implications pour l'action et bonnes pratiques" },
+    faq_sources:    { en: "Sources", fr: "Sources" },
+    faq_copy:       { en: "Copy", fr: "Copier" },
+    faq_copied:     { en: "Copied", fr: "Copié" },
+    faq_copy_lbl:   { en: "Copy this question and answer", fr: "Copier cette question et sa réponse" },
+    faq_refs_title: { en: "Reference index", fr: "Index des sources" },
+    faq_refs_note:  { en: "Every answer above cites one or more of these. Page numbers are given both as the PDF page and as the page printed on the report itself.",
+                      fr: "Chaque réponse ci-dessus renvoie à une ou plusieurs de ces sources. La pagination est donnée à la fois en page PDF et en page imprimée sur le rapport." },
+    faq_ref_doc:    { en: "Source document", fr: "Document source" },
+    faq_ref_pdf:    { en: "PDF page", fr: "Page PDF" },
+    faq_ref_print:  { en: "Report page", fr: "Page du rapport" },
+    faq_ref_section:{ en: "Section", fr: "Section" },
+    faq_ref_covers: { en: "Evidence covered", fr: "Éléments couverts" },
+
+    fs_finding:     { en: "The finding", fr: "Le constat" },
+    fs_lede_note:   { en: "Figures below are the review's own, each carried through to the dashboard with its source.",
+                      fr: "Les chiffres ci-dessous sont ceux de la revue, repris tels quels dans le tableau de bord avec leur source." },
+    fs_goal:        { en: "Goal", fr: "Objectif" },
+    fs_rank:        { en: "Rank", fr: "Rang" },
+    fs_mentions:    { en: "Mentions", fr: "Occurrences" },
+    fs_concept:     { en: "Concept", fr: "Concept" },
+
+    // Rich dashboard blocks
+    achievement:    { en: "Achievement", fr: "Réalisation" },
+    priority:       { en: "Priority ahead", fr: "Priorité à venir" },
+    contrast:       { en: "The contrast", fr: "Le contraste" },
+    stake:          { en: "What is at stake", fr: "L'enjeu" },
+    accelerator:    { en: "The accelerator", fr: "L'accélérateur" },
+    baseline:       { en: "Baseline", fr: "Référence" },
+    latest:         { en: "Latest", fr: "Dernier relevé" },
+    assessment:     { en: "Assessment", fr: "Appréciation" },
 
     fs_themes:      { en: "Six themes driving the review", fr: "Six thèmes structurant la revue" },
     fs_continuity:  { en: "Theme continuity across review cycles", fr: "Continuité thématique entre les cycles" },
@@ -155,6 +230,9 @@
     document.querySelectorAll("[data-i18n-aria]").forEach(el => {
       el.setAttribute("aria-label", I18N.ui(el.getAttribute("data-i18n-aria")));
     });
+    document.querySelectorAll("[data-i18n-alt]").forEach(el => {
+      el.setAttribute("alt", I18N.ui(el.getAttribute("data-i18n-alt")));
+    });
   }
 
   function syncLangButtons() {
@@ -208,6 +286,27 @@
     6: "#26BDE2",  7: "#FCC30B",  8: "#A21942",  9: "#FD6925", 10: "#DD1367",
    11: "#FD9D24", 12: "#BF8B2E", 13: "#3F7E44", 14: "#0A97D9", 15: "#56C02B",
    16: "#00689D", 17: "#19486A"
+  };
+
+  /* Readable ink for text sitting ON an SDG colour.
+     The brand palette spans #FCC30B (SDG 7) to #19486A (SDG 17); a fixed white
+     foreground — which is what the old cards used — fails contrast badly on the
+     yellows and light greens. Pick whichever of white/near-black actually wins
+     the WCAG contrast ratio against the swatch. */
+  const srgb = ch => (ch <= 0.03928 ? ch / 12.92 : Math.pow((ch + 0.055) / 1.055, 2.4));
+  function luminance(hex) {
+    const n = parseInt(hex.slice(1), 16);
+    const [r, g, b] = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map(v => srgb(v / 255));
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  }
+  const ratio = (a, b) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+  const INK_ON_LIGHT = "#10202E";
+  window.VNR.sdgInk = function (sdg) {
+    const hex = window.VNR.SDG_COLORS[sdg];
+    if (!hex) return "#fff";
+    const L = luminance(hex);
+    return ratio(L, luminance("#FFFFFF")) >= ratio(L, luminance(INK_ON_LIGHT))
+      ? "#fff" : INK_ON_LIGHT;
   };
 
   window.VNR.SDG_NAMES = {

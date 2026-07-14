@@ -43,6 +43,11 @@
 
   --radius: 14px;
   --shadow: 0 1px 2px rgba(18,33,47,.04), 0 8px 24px rgba(18,33,47,.05);
+
+  /* The OSAA identifier ships with black wordmark type; on dark surfaces the
+     whole lockup is knocked out to white (a UN-approved monochrome usage). */
+  --logo-filter: none;
+
   --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, monospace;
 }
@@ -67,6 +72,7 @@
     --good: #2FA862;  --warning: #B98520;  --critical: #D0674B;
     --grid: #212933;  --axis: #37414D;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --logo-filter: brightness(0) invert(1);
   }
 }
 
@@ -89,6 +95,7 @@
   --good: #2FA862;  --warning: #B98520;  --critical: #D0674B;
   --grid: #212933;  --axis: #37414D;
   --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --logo-filter: brightness(0) invert(1);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -134,7 +141,13 @@ header.site {
   display: flex; align-items: center; justify-content: space-between;
   gap: 24px; padding: 16px 0;
 }
-.brand { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.brand-mark { display: flex; align-items: center; flex-shrink: 0; }
+.brand-logo {
+  height: 38px; width: auto; display: block;
+  filter: var(--logo-filter);
+}
+.brand-rule { width: 1px; align-self: stretch; margin: 3px 0; background: var(--line-strong); flex-shrink: 0; }
 .brand h1 { font-size: 18px; font-weight: 700; letter-spacing: -.01em; }
 .header-nav { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
 
@@ -315,11 +328,11 @@ main { padding: 36px 0 72px; }
 }
 .chart-src { font-family: var(--mono); font-size: 9.5px; color: var(--ink-muted); margin-top: 10px; }
 
-.axis-label { font-family: var(--mono); font-size: 10px; fill: var(--ink-muted); }
+.axis-label { font-family: var(--mono); font-size: 12px; fill: var(--ink-muted); }
 .grid-line  { stroke: var(--grid); stroke-width: 1; }
 .axis-line  { stroke: var(--axis); stroke-width: 1; }
 .dot-ring   { stroke: var(--surface); stroke-width: 2; }
-.val-label  { font-family: var(--sans); font-size: 11.5px; font-weight: 600; }
+.val-label  { font-family: var(--sans); font-size: 14px; font-weight: 700; }
 
 /* Table-view twin (every chart has one) */
 .table-toggle {
@@ -341,50 +354,220 @@ table.data th {
 table.data td.num { text-align: right; font-variant-numeric: tabular-nums; }
 [hidden] { display: none !important; }
 
-/* ── Factsheet: themes ── */
-.theme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 12px; }
-.theme {
-  background: var(--surface); border: 1px solid var(--line);
-  border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column;
-}
-.theme-head {
-  background: var(--surface-2); border-bottom: 1px solid var(--line);
-  padding: 8px 14px; font-family: var(--mono); font-size: 9px;
-  letter-spacing: .09em; text-transform: uppercase; color: var(--sdg);
-  font-weight: 500;
-}
-.theme-body { padding: 14px; display: flex; gap: 12px; align-items: flex-start; }
-.sdg-chip {
-  width: 34px; height: 34px; border-radius: 8px; flex-shrink: 0;
-  display: grid; place-items: center; font-weight: 700; font-size: 15px;
-  background: var(--sdg); color: #fff;
-}
-.theme-title { font-size: 15px; font-weight: 700; line-height: 1.25; margin-bottom: 5px; }
-.theme-text { font-size: 12.5px; line-height: 1.6; color: var(--ink-2); }
+/* ════════════════════════════════════════════════════════════
+   FACT SHEET
+   The fact sheet is the artefact OSAA actually submits, so it
+   leads with a finding rather than opening on a uniform grid of
+   six equal boxes. Three movements: the lede, the themes, the
+   change over time.
+   ════════════════════════════════════════════════════════════ */
 
-/* ── Factsheet: continuity ── */
-.continuity { display: flex; flex-direction: column; gap: 6px; }
-.cont-row {
-  display: grid; grid-template-columns: 1fr 118px 1fr; gap: 12px; align-items: center;
-  background: var(--surface); border: 1px solid var(--line);
-  border-radius: 10px; padding: 11px 16px;
+/* ── Lede: the finding ── */
+.fs-lede {
+  position: relative; overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 30px 34px 0;
+  margin-top: 8px;
 }
-.cont-prev { font-size: 13px; color: var(--ink-2); }
-.cont-now  { font-size: 13px; font-weight: 600; text-align: right; }
+/* Decorative wash keyed to the page accents. Purely ornamental: where
+   color-mix is unsupported the card is simply flat, which is fine. */
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  .fs-lede::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(60% 120% at 100% 0%, color-mix(in srgb, var(--s1) 13%, transparent), transparent 70%),
+      radial-gradient(50% 100% at 0% 100%, color-mix(in srgb, var(--s2) 9%, transparent), transparent 70%);
+  }
+}
+.fs-lede > * { position: relative; }
+
+.fs-statement {
+  font-size: clamp(19px, 2vw, 25px);
+  line-height: 1.5; letter-spacing: -.015em;
+  font-weight: 400; color: var(--ink);
+  max-width: 62ch; margin-top: 10px;
+}
+.fs-statement strong { font-weight: 700; }
+
+/* Signature figures — pulled by reference from the indicator list, never
+   retyped, so the fact sheet and the dashboard cannot drift apart. */
+.fs-figs {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line); margin-top: 26px;
+}
+.fs-fig { padding: 22px 26px 24px; border-left: 1px solid var(--line); min-width: 0; }
+.fs-fig:first-child { border-left: 0; padding-left: 0; }
+.fs-fig-val {
+  font-size: clamp(32px, 3.6vw, 42px); font-weight: 700;
+  letter-spacing: -.03em; line-height: 1;
+  font-variant-numeric: tabular-nums; color: var(--ink);
+}
+/* A counter-figure is the number that complicates the headline (the
+   connection rate under the access rate). It is set apart by weight and
+   by a rule, and its label always says what it is — colour never carries
+   the meaning on its own. */
+.fs-fig[data-tone="counter"] .fs-fig-val { color: var(--s4); }
+.fs-fig-label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--ink-muted);
+  margin-top: 10px; line-height: 1.5;
+}
+.fs-fig-rule { width: 30px; height: 3px; border-radius: 2px; background: var(--line-strong); margin-top: 14px; }
+.fs-fig[data-tone="counter"] .fs-fig-rule { background: var(--s4); }
+
+/* ── Themes ── */
+.theme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.theme {
+  position: relative; overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--sdg);
+  border-radius: 14px;
+  padding: 18px 22px 20px;
+  display: flex; flex-direction: column;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+/* The goal number as a watermark rather than a chip: it identifies the card
+   at a glance without spending a text colour that half the SDG palette cannot
+   render legibly. */
+.theme::after {
+  content: attr(data-sdg);
+  position: absolute; right: -6px; bottom: -30px;
+  font-size: 116px; font-weight: 700; line-height: 1;
+  letter-spacing: -.05em; color: var(--sdg); opacity: .08;
+  pointer-events: none; -webkit-user-select: none; user-select: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+.theme:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--line-strong); }
+.theme:hover::after { opacity: .14; transform: translateY(-4px); }
+
+.theme-head {
+  display: flex; align-items: center; gap: 7px;
+  font-family: var(--mono); font-size: 9.5px;
+  letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-muted); font-weight: 500; margin-bottom: 9px;
+}
+.sdg-dot { width: 9px; height: 9px; border-radius: 3px; background: var(--sdg); flex-shrink: 0; }
+.theme-title { font-size: 16.5px; font-weight: 700; line-height: 1.25; margin-bottom: 7px; letter-spacing: -.01em; }
+.theme-text { font-size: 12.5px; line-height: 1.65; color: var(--ink-2); }
+
+/* Surfaced metric — the number the theme text already states, lifted out of
+   the prose so the card can be read at a glance. Not every theme has one. */
+.theme-metric {
+  display: flex; align-items: baseline; gap: 10px;
+  margin-top: auto; padding-top: 14px;
+  border-top: 1px dashed var(--line-strong);
+}
+.theme-metric > * { position: relative; }
+.theme-metric-val {
+  font-size: 25px; font-weight: 700; letter-spacing: -.02em;
+  line-height: 1; color: var(--ink); font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.theme-metric-label { font-size: 11.5px; line-height: 1.4; color: var(--ink-muted); }
+.theme:not(:has(.theme-metric)) .theme-text { margin-bottom: 2px; }
+
+/* ── Continuity: a flow, not a table ── */
+.cont-axis {
+  display: grid; grid-template-columns: 1fr 176px 1fr; gap: 0;
+  margin-bottom: 10px;
+}
+.cont-axis-cell { display: flex; flex-direction: column; gap: 2px; }
+.cont-axis-cell:last-child { text-align: right; align-items: flex-end; }
+.cont-axis-year { font-family: var(--mono); font-size: 17px; font-weight: 600; color: var(--ink); letter-spacing: -.01em; }
+.cont-axis-note { font-family: var(--mono); font-size: 9.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-muted); }
+
+.continuity { display: flex; flex-direction: column; gap: 8px; }
+.cont-row {
+  display: grid; grid-template-columns: 1fr 176px 1fr; align-items: stretch;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; overflow: hidden;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+.cont-row[data-status="sustained"] { --c: var(--s2); }
+.cont-row[data-status="evolved"]   { --c: var(--s5); }
+.cont-row:hover { border-color: var(--c); box-shadow: var(--shadow); }
+
+.cont-prev {
+  display: flex; align-items: center;
+  padding: 15px 18px; background: var(--surface-2);
+  font-size: 13px; line-height: 1.5; color: var(--ink-2);
+}
+.cont-now {
+  display: flex; align-items: center; justify-content: flex-end;
+  padding: 15px 18px; text-align: right;
+  font-size: 13.5px; line-height: 1.5; font-weight: 600; color: var(--ink);
+}
+
+/* The connector carries the status twice over: in its colour AND in its line
+   form — solid for a theme the country sustained, dashed with a step for one
+   it reworked. A reader who cannot separate the two hues still reads it. */
+.cont-link { position: relative; display: grid; place-items: center; padding: 0 10px; }
+.cont-link::before {
+  content: ""; position: absolute; left: 0; right: 9px; top: 50%;
+  border-top: 2px solid var(--c);
+}
+.cont-row[data-status="evolved"] .cont-link::before { border-top-style: dashed; }
+.cont-link::after {
+  content: ""; position: absolute; right: 0; top: 50%;
+  transform: translateY(-50%);
+  border-left: 9px solid var(--c);
+  border-top: 5.5px solid transparent;
+  border-bottom: 5.5px solid transparent;
+}
 .pill {
+  position: relative; z-index: 1;
   display: inline-block; font-family: var(--mono); font-size: 8.5px;
   letter-spacing: .11em; font-weight: 600; text-transform: uppercase;
-  padding: 4px 11px; border-radius: 999px; border: 1.5px solid currentColor;
-  white-space: nowrap;
+  padding: 4px 10px; border-radius: 999px;
+  border: 1.5px solid currentColor; background: var(--surface);
+  white-space: nowrap; color: var(--c);
 }
 .pill.sustained { color: var(--s2); }
 .pill.evolved   { color: var(--s5); }
-.cont-axis {
-  display: grid; grid-template-columns: 1fr 118px 1fr; gap: 12px;
-  font-family: var(--mono); font-size: 12px; font-weight: 600;
-  color: var(--ink-muted); margin-bottom: 8px;
+
+/* ── Concepts: ranked frequency ── */
+.concept-row {
+  display: grid; grid-template-columns: 26px 200px 1fr 38px;
+  gap: 14px; align-items: center; padding: 3px 0;
 }
-.cont-axis span:last-child { text-align: right; }
+.concept-rank {
+  font-family: var(--mono); font-size: 10.5px; color: var(--ink-muted);
+  text-align: right; font-variant-numeric: tabular-nums;
+}
+.concept-label { font-size: 12.5px; color: var(--ink-2); text-align: right; line-height: 1.35; }
+.concept-track { background: var(--surface-2); border-radius: 5px; height: 24px; overflow: hidden; }
+.concept-bar {
+  height: 100%; background: var(--s1);
+  border-radius: 0 5px 5px 0;
+  width: var(--w);
+  transform-origin: left center;
+  transition: transform .8s cubic-bezier(.2,.75,.3,1);
+}
+/* Grow the bar on reveal without animating `width`, which would relayout every
+   frame. The track is fixed; only the fill is transformed. */
+.reveal:not(.in) .concept-bar { transform: scaleX(0); }
+.concept-row:hover .concept-label { color: var(--ink); }
+.concept-val {
+  font-family: var(--mono); font-size: 13px; font-weight: 600;
+  font-variant-numeric: tabular-nums; color: var(--ink);
+}
+.concept-row:first-child .concept-label { color: var(--ink); font-weight: 600; }
+
+/* ── Reveal ── */
+.reveal {
+  opacity: 0; transform: translateY(12px);
+  transition: opacity .55s cubic-bezier(.2,.7,.3,1) var(--d, 0ms),
+              transform .55s cubic-bezier(.2,.7,.3,1) var(--d, 0ms);
+}
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal.in { opacity: 1; transform: none; transition: none; }
+  .concept-bar { transition: none; }
+  .reveal:not(.in) .concept-bar { transform: none; }
+}
 
 /* ── Fact-check ledger ── */
 .fc { display: flex; flex-direction: column; gap: 10px; }
@@ -433,12 +616,372 @@ table.data td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .inst-text { font-size: 12.5px; line-height: 1.65; color: var(--ink-2); }
 .inst-src  { font-family: var(--mono); font-size: 9.5px; color: var(--ink-muted); margin-top: 10px; }
 
-/* Concepts bar chart */
-.concept-row { display: grid; grid-template-columns: 190px 1fr 34px; gap: 12px; align-items: center; margin-bottom: 5px; }
-.concept-label { font-size: 12.5px; color: var(--ink-2); text-align: right; line-height: 1.35; }
-.concept-track { background: var(--surface-2); border-radius: 4px; height: 22px; overflow: hidden; }
-.concept-bar { height: 100%; background: var(--s1); border-radius: 0 4px 4px 0; }
-.concept-val { font-family: var(--mono); font-size: 12.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
+/* The concept-frequency bars are defined once, in the FACT SHEET block above.
+   The earlier duplicate that lived here overrode it with a 3-column grid,
+   which wrapped the value onto its own row and crushed the bars. */
+
+/* ============================================================
+   FAQ — briefing-ready Q&A, searchable.
+
+   Colour is deliberately restrained here. The five categorical series are
+   reserved for data; the FAQ has six themes, and inventing a sixth series
+   colour to label them would spend the palette on navigation rather than on
+   evidence. Themes are told apart by type and rule instead, and the one
+   accent that remains — --s1 — is spent on the two things a reader is
+   actually hunting: the matched search term, and the figures.
+   ============================================================ */
+
+/* ── Toolbar ──
+   The site header is itself sticky at top:0, so the toolbar has to come to
+   rest BELOW it or the chips slide underneath and get clipped. faq.js measures
+   the header and publishes its height as --faq-top; the 0px fallback only ever
+   applies for the instant before that runs. */
+.faq-bar {
+  position: sticky; top: var(--faq-top, 0px); z-index: 20;
+  background: var(--bg);
+  padding: 14px 0 12px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.faq-bar-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+.faq-search {
+  position: relative; flex: 1 1 300px; min-width: 220px;
+}
+.faq-search input {
+  width: 100%; font-family: var(--sans); font-size: 13.5px; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line-strong);
+  border-radius: 10px; padding: 10px 34px 10px 34px;
+  transition: border-color .16s ease, box-shadow .16s ease;
+}
+.faq-search input::placeholder { color: var(--ink-muted); }
+.faq-search input:focus {
+  outline: none; border-color: var(--s1);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--s1) 16%, transparent);
+}
+.faq-search-icon {
+  position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+  width: 14px; height: 14px; color: var(--ink-muted); pointer-events: none;
+}
+/* The `/` affordance, hidden the moment it stops being true. */
+.faq-slash {
+  position: absolute; right: 9px; top: 50%; transform: translateY(-50%);
+  font-family: var(--mono); font-size: 10px; color: var(--ink-muted);
+  border: 1px solid var(--line-strong); border-radius: 5px;
+  padding: 2px 6px; pointer-events: none;
+  background: var(--surface-2);
+}
+.faq-search input:focus ~ .faq-slash,
+.faq-search input:not(:placeholder-shown) ~ .faq-slash { display: none; }
+
+.faq-x {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  display: none; border: 0; background: transparent; cursor: pointer;
+  color: var(--ink-muted); font-size: 15px; line-height: 1;
+  padding: 4px 6px; border-radius: 6px;
+}
+.faq-x:hover { color: var(--ink); background: var(--surface-2); }
+.faq-search input:not(:placeholder-shown) ~ .faq-x { display: block; }
+
+.faq-tools { display: flex; gap: 6px; align-items: center; margin-left: auto; }
+.faq-btn {
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  color: var(--ink-2); background: var(--surface);
+  border: 1px solid var(--line-strong); border-radius: 8px;
+  padding: 8px 12px; cursor: pointer; white-space: nowrap;
+  transition: color .16s ease, border-color .16s ease, background .16s ease;
+}
+.faq-btn:hover { color: var(--ink); border-color: var(--ink-muted); }
+
+/* ── Theme chips ── */
+.faq-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.faq-chip {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--sans); font-size: 12px; font-weight: 500;
+  color: var(--ink-2); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 6px 12px; cursor: pointer;
+  transition: color .16s ease, border-color .16s ease, background .16s ease;
+}
+.faq-chip:hover { color: var(--ink); border-color: var(--line-strong); }
+.faq-chip-n {
+  font-family: var(--mono); font-size: 10px; font-variant-numeric: tabular-nums;
+  color: var(--ink-muted); background: var(--surface-2);
+  border-radius: 999px; padding: 1px 6px;
+}
+.faq-chip[aria-pressed="true"] {
+  color: #fff; background: var(--s1); border-color: var(--s1);
+}
+.faq-chip[aria-pressed="true"] .faq-chip-n {
+  color: #fff; background: rgba(255, 255, 255, .22);
+}
+/* A chip with nothing left behind it is still shown — a count of 0 is a
+   finding, not a reason to hide the filter and make the row jump. */
+.faq-chip[data-empty="true"] { opacity: .4; }
+
+.faq-count {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-muted);
+  margin-top: 10px; letter-spacing: .02em;
+}
+.faq-count b { color: var(--ink); font-weight: 600; }
+
+/* ── Theme group heading ── */
+.faq-group { margin-top: 26px; }
+.faq-group-head {
+  display: flex; align-items: baseline; gap: 10px;
+  padding-bottom: 8px; margin-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.faq-group-title {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  letter-spacing: -.005em;
+}
+.faq-group-n {
+  font-family: var(--mono); font-size: 10px; color: var(--ink-muted);
+  letter-spacing: .06em;
+}
+
+/* ── Entry ── */
+.faq-list { display: flex; flex-direction: column; gap: 8px; }
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+.faq-item:hover { border-color: var(--line-strong); }
+.faq-item[data-open="1"] {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+}
+
+.faq-q {
+  display: grid; grid-template-columns: auto 1fr auto;
+  align-items: center; gap: 13px;
+  width: 100%; text-align: left; cursor: pointer;
+  background: transparent; border: 0;
+  padding: 15px 17px;
+  font-family: var(--sans);
+}
+.faq-q:focus-visible {
+  outline: 2px solid var(--s1); outline-offset: -2px; border-radius: 12px;
+}
+.faq-id {
+  font-family: var(--mono); font-size: 10px; font-weight: 600;
+  color: var(--ink-muted); background: var(--surface-2);
+  border: 1px solid var(--line); border-radius: 6px;
+  padding: 4px 7px; letter-spacing: .03em; white-space: nowrap;
+}
+.faq-item[data-open="1"] .faq-id {
+  color: #fff; background: var(--s1); border-color: var(--s1);
+}
+.faq-q-text {
+  font-size: 14.5px; font-weight: 600; line-height: 1.45;
+  color: var(--ink); letter-spacing: -.005em;
+}
+.faq-caret {
+  width: 11px; height: 11px; flex-shrink: 0;
+  border-right: 1.8px solid var(--ink-muted);
+  border-bottom: 1.8px solid var(--ink-muted);
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform .22s cubic-bezier(.4, 0, .2, 1);
+}
+.faq-item[data-open="1"] .faq-caret {
+  transform: rotate(225deg) translate(-2px, -2px);
+  border-color: var(--s1);
+}
+
+/* The grid-rows 0fr → 1fr trick animates to the content's true height without
+   measuring it in JS, so a long answer and a short one both open correctly. */
+.faq-body {
+  display: grid; grid-template-rows: 0fr;
+  transition: grid-template-rows .26s cubic-bezier(.4, 0, .2, 1);
+}
+.faq-item[data-open="1"] .faq-body { grid-template-rows: 1fr; }
+.faq-body-inner { overflow: hidden; }
+.faq-body-pad { padding: 2px 17px 17px; }
+
+/* ── Answer blocks ── */
+.faq-block + .faq-block { margin-top: 15px; }
+.faq-label {
+  font-family: var(--mono); font-size: 9.5px; font-weight: 500;
+  letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-muted); margin-bottom: 6px;
+}
+/* The suggested answer is the thing a drafter lifts, so it gets the weight. */
+.faq-answer {
+  font-size: 14px; line-height: 1.7; color: var(--ink);
+  border-left: 3px solid var(--s1);
+  background: var(--surface-2);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 15px;
+}
+.faq-evidence { font-size: 13px; line-height: 1.75; color: var(--ink-2); }
+
+.faq-policy { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+.faq-policy li {
+  position: relative; padding-left: 17px;
+  font-size: 13px; line-height: 1.65; color: var(--ink-2);
+}
+.faq-policy li::before {
+  content: ""; position: absolute; left: 0; top: .58em;
+  width: 5px; height: 5px; border-radius: 1.5px;
+  background: var(--s2);
+}
+.faq-policy-prose { font-size: 13px; line-height: 1.75; color: var(--ink-2); }
+
+/* A figure, lifted out of the prose. This is the whole reason the evidence
+   block is readable at a glance in a room. --seq-1 is the lightest step of the
+   sequential ramp and is defined in both themes, so the flat fallback still
+   reads as a tinted pill rather than disappearing. */
+.fig {
+  font-family: var(--mono); font-size: .93em; font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  background: var(--seq-1);
+  border-radius: 4px; padding: 1px 4px;
+  white-space: nowrap;
+}
+/* Set by faq.js when the figure is followed immediately by punctuation, so the
+   full stop sits against the number instead of drifting away from it. */
+.fig-tight { margin-right: -3px; }
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  .fig { background: color-mix(in srgb, var(--s1) 12%, transparent); }
+}
+
+/* ── Footer of an entry: sources + basis + copy ── */
+.faq-foot {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin-top: 15px; padding-top: 12px;
+  border-top: 1px dashed var(--line-strong);
+}
+.faq-foot-label {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--ink-muted);
+}
+.faq-ref {
+  font-family: var(--mono); font-size: 10px; font-weight: 600;
+  color: var(--s1); background: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  border-radius: 6px; padding: 3px 7px; cursor: pointer;
+  transition: background .16s ease, border-color .16s ease;
+}
+.faq-ref:hover { border-color: var(--s1); }
+
+.faq-basis {
+  font-family: var(--mono); font-size: 9.5px; font-weight: 500;
+  letter-spacing: .05em; text-transform: uppercase;
+  border-radius: 999px; padding: 3px 9px;
+  border: 1px solid var(--line-strong); color: var(--ink-muted);
+}
+/* Direct evidence is quantified in the report; synthesis is OSAA's own
+   construction. A reader briefing a minister needs to know which is which.
+   The border and text colour carry that on their own; the tints below are an
+   enhancement, so nothing is lost where color-mix() is unsupported. */
+.faq-basis[data-basis="direct"]    { color: var(--good);    border-color: var(--good); }
+.faq-basis[data-basis="synthesis"] { color: var(--warning); border-color: var(--warning); }
+
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  .faq-ref {
+    background: color-mix(in srgb, var(--s1) 9%, transparent);
+    border-color: color-mix(in srgb, var(--s1) 28%, transparent);
+  }
+  .faq-ref:hover { background: color-mix(in srgb, var(--s1) 20%, transparent); }
+  .faq-basis[data-basis="direct"] {
+    border-color: color-mix(in srgb, var(--good) 40%, transparent);
+    background: color-mix(in srgb, var(--good) 8%, transparent);
+  }
+  .faq-basis[data-basis="synthesis"] {
+    border-color: color-mix(in srgb, var(--warning) 40%, transparent);
+    background: color-mix(in srgb, var(--warning) 8%, transparent);
+  }
+}
+
+.faq-copy {
+  margin-left: auto;
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--sans); font-size: 11.5px; font-weight: 600;
+  color: var(--ink-2); background: var(--surface);
+  border: 1px solid var(--line-strong); border-radius: 7px;
+  padding: 5px 10px; cursor: pointer;
+  transition: color .16s ease, border-color .16s ease;
+}
+.faq-copy:hover { color: var(--ink); border-color: var(--ink-muted); }
+.faq-copy[data-done="1"] { color: var(--good); border-color: var(--good); }
+
+/* ── Search hit ── */
+mark.faq-hit {
+  background: var(--seq-2);
+  color: var(--ink); border-radius: 3px; padding: 0 1px;
+}
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  mark.faq-hit { background: color-mix(in srgb, var(--s3) 34%, transparent); }
+}
+
+/* ── Empty state ── */
+.faq-empty {
+  text-align: center; padding: 54px 24px;
+  background: var(--surface); border: 1px dashed var(--line-strong);
+  border-radius: 12px;
+}
+.faq-empty-title { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+.faq-empty-hint { font-size: 13px; color: var(--ink-muted); margin-bottom: 16px; }
+
+/* ── Reference index ── */
+.faq-refs { margin-top: 34px; }
+.faq-ref-row {
+  display: grid; grid-template-columns: 92px 1fr 150px;
+  gap: 14px; align-items: start;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 10px; padding: 13px 15px;
+  transition: border-color .2s ease, background .2s ease;
+}
+.faq-ref-row + .faq-ref-row { margin-top: 6px; }
+/* Clicking a source chip in an answer jumps here and flags the row, so the
+   citation resolves without the reader losing their place. */
+.faq-ref-row[data-flash="1"] {
+  border-color: var(--s1);
+  background: var(--surface-2);
+}
+@supports (background: color-mix(in srgb, red 10%, white)) {
+  .faq-ref-row[data-flash="1"] { background: color-mix(in srgb, var(--s1) 7%, var(--surface)); }
+}
+.faq-ref-id {
+  font-family: var(--mono); font-size: 10.5px; font-weight: 600;
+  color: var(--s1); padding-top: 1px;
+}
+.faq-ref-section { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+.faq-ref-covers { font-size: 12px; line-height: 1.6; color: var(--ink-2); }
+.faq-ref-doc { font-family: var(--mono); font-size: 9.5px; color: var(--ink-muted); margin-top: 6px; }
+.faq-ref-pages { display: flex; flex-direction: column; gap: 3px; }
+.faq-ref-page {
+  font-family: var(--mono); font-size: 10px; color: var(--ink-muted);
+  display: flex; justify-content: space-between; gap: 8px;
+}
+.faq-ref-page b { color: var(--ink-2); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-body, .faq-caret, .faq-item, .faq-chip, .faq-btn { transition: none; }
+}
+
+/* ── Provenance ──
+   Where the numbers came from. Stated on the page, not buried in the
+   methodology: a reader about to quote a figure at the HLPF needs to know it
+   is the Member State's own submission. */
+.provenance {
+  display: flex; align-items: stretch; gap: 9px;
+  margin-top: 16px; max-width: 92ch;
+  font-family: var(--mono); font-size: 10.5px; line-height: 1.65;
+  letter-spacing: .015em; color: var(--ink-muted);
+}
+.provenance::before {
+  content: ""; width: 3px; border-radius: 2px;
+  background: var(--s2); flex-shrink: 0;
+}
+/* On the hero's photographic gradient the muted ink disappears. */
+.hero .provenance { color: rgba(255, 255, 255, .72); }
+.hero .provenance::before { background: rgba(255, 255, 255, .45); }
 
 /* ── Footer ── */
 footer.site {
@@ -468,19 +1011,238 @@ footer.site {
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; gap: 28px; }
   .hero-stats { flex-wrap: wrap; }
-  .cont-row, .cont-axis { grid-template-columns: 1fr; gap: 6px; }
-  .cont-now { text-align: left; }
-  .cont-axis span:last-child { text-align: left; }
-  .concept-row { grid-template-columns: 120px 1fr 30px; }
+
+  /* The continuity flow turns vertical: prev on top, the connector rotated to
+     point down, now beneath. The status still reads in colour AND line form. */
+  .cont-axis { display: none; }
+  .cont-row { grid-template-columns: 1fr; }
+  .cont-now { justify-content: flex-start; text-align: left; }
+  .cont-link { padding: 12px 18px; justify-items: start; }
+  .cont-link::before { left: 27px; right: auto; top: 0; bottom: 0; width: 0; border-top: 0; border-left: 2px solid var(--c); }
+  .cont-row[data-status="evolved"] .cont-link::before { border-left-style: dashed; }
+  .cont-link::after {
+    left: 22px; right: auto; top: auto; bottom: -1px; transform: none;
+    border-left: 5.5px solid transparent; border-right: 5.5px solid transparent;
+    border-top: 9px solid var(--c); border-bottom: 0;
+  }
+  .cont-link .pill { margin-left: 46px; }
+
+  .fs-figs { grid-template-columns: 1fr; }
+  .fs-fig { border-left: 0; border-top: 1px solid var(--line); padding: 18px 0 16px; }
+  .fs-fig:first-child { border-top: 0; }
+  .fs-lede { padding: 26px 24px 0; }
+  .concept-row { grid-template-columns: 22px 120px 1fr 32px; gap: 10px; }
 }
 @media (max-width: 620px) {
   .wrap { padding: 0 18px; }
   .header-inner { flex-wrap: wrap; }
+
+  /* Narrow screens: the identifier keeps the top line to itself and the site
+     title drops beneath it, so neither gets squeezed. */
+  .brand { flex-wrap: wrap; gap: 6px 12px; }
+  .brand-logo { height: 30px; }
+  .brand-rule { display: none; }
+  .brand h1 { font-size: 15px; flex-basis: 100%; }
+
   .sec-tabs { overflow-x: auto; }
+  .concept-row { grid-template-columns: 1fr; gap: 3px; padding: 7px 0; }
+  .concept-label, .concept-rank { text-align: left; }
+  .concept-rank { display: none; }
+
+  .faq-tools { margin-left: 0; width: 100%; }
+  .faq-btn { flex: 1; }
+  .faq-q { padding: 13px 14px; gap: 10px; }
+  .faq-q-text { font-size: 13.5px; }
+  .faq-body-pad { padding: 2px 14px 14px; }
+  .faq-copy { margin-left: 0; }
+  .faq-ref-row { grid-template-columns: 1fr; gap: 8px; }
+  .faq-ref-pages { flex-direction: row; gap: 14px; }
 }
 
 @media print {
   header.site, footer.site, .sec-tabs, .toggle-group, .icon-btn, .table-toggle { display: none !important; }
   body { background: #fff; }
   .card, .chart-card, .theme, .stat { break-inside: avoid; }
+
+  /* A printed FAQ is a briefing pack: every answer open, no controls, and no
+     entry split across a page break. */
+  .faq-bar, .faq-copy, .faq-caret, .faq-count { display: none !important; }
+  .faq-body { grid-template-rows: 1fr !important; }
+  .faq-body-inner { overflow: visible !important; }
+  .faq-item, .faq-ref-row, .faq-group-head { break-inside: avoid; }
+  .faq-item { border-color: #ccc; box-shadow: none; }
+}
+
+/* ============================================================
+   RICH DASHBOARD — the 7-tab structure, rebuilt larger.
+   The previous pass shrank these panels to a fraction of their
+   original size; everything here is sized to be read from a
+   projector at the back of a room.
+   ============================================================ */
+
+.dash-tabs {
+  display: flex; gap: 2px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line); margin-bottom: 24px;
+}
+.dash-tab {
+  font-size: 13.5px; font-weight: 600; color: var(--ink-muted);
+  background: transparent; border: 0; border-bottom: 2px solid transparent;
+  padding: 12px 16px; margin-bottom: -1px; white-space: nowrap;
+  transition: color .15s;
+}
+.dash-tab:hover { color: var(--ink); }
+.dash-tab[aria-selected="true"] { color: var(--s1); border-bottom-color: var(--s1); }
+
+.dash-intro {
+  font-size: 14.5px; line-height: 1.7; color: var(--ink-2);
+  max-width: 84ch; margin-bottom: 22px;
+}
+.block { margin-bottom: 22px; }
+
+/* ── Metric tiles ── */
+.metric-tiles {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px; margin-bottom: 16px;
+}
+.metric-tile {
+  text-align: left; background: var(--surface);
+  border: 1px solid var(--line); border-top: 3px solid var(--sdg, var(--s1));
+  border-radius: var(--radius); padding: 16px 18px;
+  display: flex; flex-direction: column; gap: 5px;
+  transition: border-color .15s, box-shadow .15s, transform .12s;
+}
+.metric-tile:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+.metric-tile[aria-pressed="true"] {
+  border-color: var(--sdg, var(--s1));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--sdg, var(--s1)) 22%, transparent), var(--shadow);
+}
+@supports not (background: color-mix(in srgb, red 10%, white)) {
+  .metric-tile[aria-pressed="true"] { border-color: var(--sdg, var(--s1)); border-width: 2px; }
+}
+.metric-label {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-muted); line-height: 1.35;
+}
+.metric-value {
+  font-size: 32px; font-weight: 700; letter-spacing: -.025em;
+  line-height: 1.02; color: var(--sdg, var(--s1));
+}
+.metric-sub { font-size: 11.5px; line-height: 1.45; color: var(--ink-2); }
+
+.metric-panels .metric-panel { animation: rise .3s ease both; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* ── Goal rail ── */
+.goal-rail { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.goal-btn {
+  display: flex; align-items: center; gap: 9px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; padding: 7px 15px 7px 7px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.goal-btn:hover { border-color: var(--sdg); }
+.goal-btn[aria-pressed="true"] { border-color: var(--sdg); box-shadow: 0 0 0 2px var(--sdg) inset; }
+.goal-num {
+  width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0;
+  display: grid; place-items: center; font-size: 13px; font-weight: 700;
+  background: var(--sdg); color: #fff;
+}
+.goal-name { font-size: 12.5px; font-weight: 500; color: var(--ink-2); }
+.goal-btn[aria-pressed="true"] .goal-name { color: var(--ink); font-weight: 600; }
+
+.goal-panel {
+  background: var(--surface); border: 1px solid var(--line);
+  border-top: 3px solid var(--sdg); border-radius: var(--radius);
+  padding: 24px 26px; animation: rise .3s ease both;
+}
+.goal-head { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
+.goal-title { font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
+.goal-headline { font-size: 14px; color: var(--ink-2); margin-top: 4px; line-height: 1.55; }
+.sdg-chip {
+  width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+  display: grid; place-items: center; font-weight: 700; font-size: 17px;
+  background: var(--sdg); color: #fff;
+}
+.gstat-row {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px; margin-bottom: 18px;
+}
+.gstat {
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: 10px; padding: 13px 15px;
+}
+.gstat-value { font-size: 26px; font-weight: 700; letter-spacing: -.02em; color: var(--sdg); line-height: 1.05; }
+.gstat-label {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--ink-muted); margin-top: 5px; line-height: 1.4;
+}
+.goal-split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 6px; }
+.goal-col { border-radius: 10px; padding: 15px 17px; border: 1px solid var(--line); }
+.goal-col.good { border-left: 3px solid var(--good); }
+.goal-col.warn { border-left: 3px solid var(--warning); }
+.goal-col-label {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em;
+  text-transform: uppercase; font-weight: 600; margin-bottom: 7px;
+}
+.goal-col.good .goal-col-label { color: var(--good); }
+.goal-col.warn .goal-col-label { color: var(--warning); }
+.goal-col p { font-size: 13px; line-height: 1.65; color: var(--ink-2); }
+
+/* ── Triptych (Gabon: Contraste / Enjeu / Accélérateur) ── */
+.tript {
+  background: var(--surface); border: 1px solid var(--line);
+  border-top: 3px solid var(--sdg); border-radius: var(--radius);
+  padding: 24px 26px; margin-bottom: 14px;
+}
+.tript-head { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
+.tript-title { font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
+.tript-headline { font-size: 14px; color: var(--ink-2); margin-top: 4px; line-height: 1.55; }
+.tript-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.tript-col { border-radius: 10px; padding: 16px 18px; border: 1px solid var(--line); background: var(--surface-2); }
+.tript-col p { font-size: 13px; line-height: 1.68; color: var(--ink-2); }
+.tript-label {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em;
+  text-transform: uppercase; font-weight: 600; margin-bottom: 8px;
+}
+.t-contrast { border-left: 3px solid var(--s1); }
+.t-contrast .tript-label { color: var(--s1); }
+.t-stake { border-left: 3px solid var(--critical); }
+.t-stake .tript-label { color: var(--critical); }
+.t-accel { border-left: 3px solid var(--good); }
+.t-accel .tript-label { color: var(--good); }
+
+/* ── Narrative cards ── */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 13px; }
+.ncard {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 19px 21px;
+  display: flex; flex-direction: column;
+}
+.ncard-kicker {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--s1); margin-bottom: 6px;
+}
+.ncard-title { font-size: 15.5px; font-weight: 700; margin-bottom: 10px; letter-spacing: -.005em; }
+.ncard-text { font-size: 12.8px; line-height: 1.68; color: var(--ink-2); }
+.cstat-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 11px; }
+.cstat { display: flex; flex-direction: column; }
+.cstat-v { font-size: 20px; font-weight: 700; color: var(--s1); letter-spacing: -.02em; line-height: 1.1; }
+.cstat-l {
+  font-family: var(--mono); font-size: 9px; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ink-muted); margin-top: 3px;
+}
+
+/* ── Indicator table ── */
+table.data.ind td { font-size: 13px; vertical-align: middle; }
+table.data.ind td .yr { font-family: var(--mono); font-size: 10px; color: var(--ink-muted); }
+.trend { font-size: 10px; margin-right: 5px; }
+.trend.up { color: var(--good); }
+.trend.down { color: var(--critical); }
+.trend.flat { color: var(--ink-muted); }
+
+.prose-card .prose-body { font-size: 14px; line-height: 1.75; color: var(--ink-2); }
+.prose-card .prose-body p { margin-bottom: 10px; }
+
+@media (max-width: 900px) {
+  .goal-split, .tript-grid { grid-template-columns: 1fr; }
 }

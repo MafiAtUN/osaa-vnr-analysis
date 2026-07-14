@@ -41,9 +41,22 @@
     return niceStep(v / 4) * 4;
   }
 
-  /* ── Shared card shell: title, SDG chip, legend, table toggle ── */
+  /* ── Shared card shell: title, SDG chip, legend, table toggle ──
+     `bare: true` is used when the chart sits inside a panel that already
+     supplies its own title, narrative and source (the metric-tile panels),
+     so the chrome is not drawn twice. */
   function shell(spec) {
     const t = window.I18N.t.bind(window.I18N);
+
+    if (spec.bare) {
+      const card = document.createElement("div");
+      const plot = document.createElement("div");
+      const table = document.createElement("div");
+      table.hidden = true;
+      card.append(plot, table);
+      return { card, plot, table };
+    }
+
     const card = document.createElement("div");
     card.className = "chart-card";
     if (spec.sdg) card.style.setProperty("--sdg", window.VNR.SDG_COLORS[spec.sdg]);
@@ -151,7 +164,8 @@
     // already names it, and the endpoint is direct-labelled.
     if (spec.series.length > 1) plot.appendChild(legend(spec.series));
 
-    const W = 760, H = 260, P = { t: 18, r: 58, b: 34, l: 46 };
+    // Sized to be legible from the back of a room, not to fit a thumbnail.
+    const W = 1140, H = 380, P = { t: 24, r: 78, b: 44, l: 62 };
     const xs = spec.series[0].points.map(p => p.x);
     const allY = spec.series.flatMap(s => s.points.map(p => p.y));
     const max = niceMax(Math.max(...allY) * 1.12);
@@ -183,15 +197,15 @@
       const color = `var(${SERIES_VARS[si % 5]})`;
       const d = s.points.map((p, i) => `${i ? "L" : "M"}${px(i)},${py(p.y)}`).join(" ");
       svg.appendChild(el("path", {
-        d, fill: "none", stroke: color, "stroke-width": 2,
+        d, fill: "none", stroke: color, "stroke-width": 2.5,
         "stroke-linecap": "round", "stroke-linejoin": "round"
       }));
 
       s.points.forEach((p, i) => {
-        const c = el("circle", { cx: px(i), cy: py(p.y), r: 4.5, fill: color, class: "dot-ring" });
+        const c = el("circle", { cx: px(i), cy: py(p.y), r: 6, fill: color, class: "dot-ring" });
         svg.appendChild(c);
         // Generous invisible hit target (≥24px), per interaction spec.
-        const hit = el("circle", { cx: px(i), cy: py(p.y), r: 14, fill: "transparent", style: "cursor:pointer" });
+        const hit = el("circle", { cx: px(i), cy: py(p.y), r: 20, fill: "transparent", style: "cursor:pointer" });
         hit.addEventListener("mousemove", ev => showTip(
           `<strong>${esc(t(s.label))}</strong><br>${esc(p.x)} — ${esc(window.I18N.num(p.y, spec.unit))}`,
           ev.clientX, ev.clientY));
@@ -202,7 +216,7 @@
       // Direct-label the endpoint only — never every point.
       const last = s.points[s.points.length - 1];
       const lab = el("text", {
-        x: px(s.points.length - 1) + 10, y: py(last.y) + 4,
+        x: px(s.points.length - 1) + 13, y: py(last.y) + 5,
         class: "val-label", fill: color
       });
       lab.textContent = window.I18N.num(last.y, spec.unit);
@@ -234,8 +248,8 @@
     const { card, plot, table } = shell(spec);
 
     const max = niceMax(Math.max(...spec.items.map(i => i.value)));
-    const rowH = 42, W = 760, L = 250, R = 62;
-    const H = spec.items.length * rowH + 26;
+    const rowH = 54, W = 1140, L = 330, R = 86;
+    const H = spec.items.length * rowH + 34;
 
     const svg = el("svg", {
       viewBox: `0 0 ${W} ${H}`, class: "chart-svg",
@@ -245,8 +259,8 @@
     // Vertical gridlines
     for (let i = 0; i <= 4; i++) {
       const x = L + (i / 4) * (W - L - R);
-      svg.appendChild(el("line", { x1: x, y1: 4, x2: x, y2: H - 22, class: i ? "grid-line" : "axis-line" }));
-      const lab = el("text", { x, y: H - 6, "text-anchor": "middle", class: "axis-label" });
+      svg.appendChild(el("line", { x1: x, y1: 4, x2: x, y2: H - 28, class: i ? "grid-line" : "axis-line" }));
+      const lab = el("text", { x, y: H - 8, "text-anchor": "middle", class: "axis-label" });
       lab.textContent = window.I18N.num((max / 4) * i, spec.unit);
       svg.appendChild(lab);
     }
@@ -258,18 +272,18 @@
       // not a value-ramp across nominal categories.
       const color = it.emphasis ? "var(--s4)" : "var(--s1)";
 
-      const lab = el("text", { x: L - 12, y: y + 19, "text-anchor": "end", class: "axis-label" });
-      lab.setAttribute("font-size", "12");
+      const lab = el("text", { x: L - 16, y: y + 27, "text-anchor": "end", class: "axis-label" });
+      lab.setAttribute("font-size", "14");
       lab.setAttribute("fill", "var(--ink-2)");
       lab.textContent = t(it.label);
       svg.appendChild(lab);
 
       svg.appendChild(el("rect", {
-        x: L, y: y + 5, width: Math.max(w, 2), height: 22,
+        x: L, y: y + 7, width: Math.max(w, 2), height: 30,
         rx: 4, fill: color, opacity: it.emphasis ? 1 : 0.82
       }));
 
-      const val = el("text", { x: L + w + 10, y: y + 20, class: "val-label", fill: color });
+      const val = el("text", { x: L + w + 13, y: y + 28, class: "val-label", fill: color });
       val.textContent = window.I18N.num(it.value, spec.unit);
       svg.appendChild(val);
 
@@ -303,25 +317,51 @@
     const t = window.I18N.t.bind(window.I18N);
     const max = Math.max(...items.map(i => i.value));
     const box = document.createElement("div");
-    items.forEach(it => {
+    box.className = "reveal";
+    items.forEach((it, i) => {
       const row = document.createElement("div");
       row.className = "concept-row";
+
+      const rank = document.createElement("div");
+      rank.className = "concept-rank";
+      rank.textContent = String(i + 1).padStart(2, "0");
+
       const label = document.createElement("div");
       label.className = "concept-label";
       label.textContent = t(it.label);
+
       const track = document.createElement("div");
       track.className = "concept-track";
       const bar = document.createElement("div");
       bar.className = "concept-bar";
-      bar.style.width = (it.value / max * 100) + "%";  // strictly proportional
+      bar.style.setProperty("--w", (it.value / max * 100) + "%");  // strictly proportional
       track.appendChild(bar);
+
       const val = document.createElement("div");
       val.className = "concept-val";
       val.textContent = it.value;
-      row.append(label, track, val);
+
+      row.append(rank, label, track, val);
       box.appendChild(row);
     });
-    return box;
+
+    // The count is on every row already, so nothing here is hover-only — but the
+    // rows are marks, not a table, and a screen reader deserves the real thing.
+    const tbl = document.createElement("table");
+    tbl.className = "data";
+    tbl.style.cssText = "position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;";
+    tbl.innerHTML =
+      `<caption>${esc(window.I18N.ui("fs_concepts"))}</caption>
+       <thead><tr>
+         <th>${esc(window.I18N.ui("fs_concept"))}</th>
+         <th>${esc(window.I18N.ui("fs_mentions"))}</th>
+       </tr></thead><tbody>${items.map(it =>
+        `<tr><td>${esc(t(it.label))}</td><td>${it.value}</td></tr>`).join("")}</tbody>`;
+
+    const wrap = document.createElement("div");
+    wrap.style.position = "relative";
+    wrap.append(box, tbl);
+    return wrap;
   }
 
   window.Charts = {

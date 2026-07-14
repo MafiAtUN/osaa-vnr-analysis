@@ -130,6 +130,67 @@ native UN register, not machine output.
 }
 ```
 
+## The FAQ block — `site/assets/js/data/faq/<slug>.js`
+
+The FAQ is the country page's third section, alongside the fact sheet and the
+dashboard. It lives in its own file, not in the country object, because it is
+long and only some countries have one — at the time of writing, Gabon and
+Tanzania, the two countries covered by
+`data/OSAA_HLPF_2026_Gabon_Tanzania_FAQ.xlsx`.
+
+A country gets an FAQ tab **if and only if** a file exists here. There is nothing
+else to switch on: `build-manifest.js` picks the file up, and `country.js` hides
+the tab when there is no block. These files are GENERATED from the workbook —
+edit the workbook and regenerate, rather than hand-editing the output.
+
+```js
+window.VNR.registerFaq({
+  slug: "gabon",                         // must match an existing country
+
+  // The workbook's themes, in its own order. Used for the filter chips and to
+  // group the list.
+  themes: [
+    { key: "sdg-progress", label: { en: "SDG progress and gaps", fr: "Progrès et lacunes au titre des ODD" } }
+    // … 6 in total
+  ],
+
+  entries: [
+    { id: "GAB-01",                      // the workbook's FAQ ID; also the deep link (#faq/GAB-01)
+      theme: "sdg-progress",             // must match a themes[].key
+      q:        { en: "…", fr: "…" },    // the question
+      a:        { en: "…", fr: "…" },    // the suggested OSAA answer — the text a drafter lifts
+      evidence: { en: "…", fr: "…" },    // key evidence and figures; figures are auto-pilled on render
+
+      // Policy implications arrive as ONE sentence in the workbook, in one of
+      // two shapes. A list of imperative actions becomes bullets; a sentence
+      // carrying an embedded noun list would be destroyed by splitting, so it
+      // stays prose. Exactly one of these two forms, never both.
+      policy: { kind: "list",  items: [ { en: "…", fr: "…" } ] },
+      //   or: { kind: "prose", text:  { en: "…", fr: "…" } },
+
+      refs: ["GAB-R01", "GAB-R02"],      // every id must exist in refs[] below
+      basis: { key: "direct",            // direct | synthesis
+               label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" } } }
+  ],
+
+  // The reference index, rendered as section 02 and jumped to when a reader
+  // clicks a source chip. This is what makes an answer checkable.
+  refs: [
+    { id: "GAB-R01",
+      doc: "VNR 2026 Gabon Report.pdf",
+      pdfPages: "8–9",                   // page in the PDF
+      printPages: "7–8",                 // page printed on the report itself
+      section: { en: "Messages clés", fr: "Messages clés" },
+      covers:  { en: "…", fr: "…" } }
+  ]
+});
+```
+
+`basis` matters editorially: **direct** means the report states or quantifies the
+answer, **synthesis** means OSAA constructed it from several findings. Anyone
+briefing a minister needs to know which of the two they are holding, so the page
+labels every answer with it.
+
 ## Hard rules
 
 1. **Never invent a number.** If the old dashboard has a figure you cannot trace to
@@ -140,6 +201,11 @@ native UN register, not machine output.
    strictly proportional to the count.
 4. **Labels must disambiguate.** "Electricity access" and "grid connection" are
    different indicators; say which one you mean, every time.
-5. **Every chart and indicator needs a `source`.**
+5. **Every chart and indicator needs a `source`.** Every FAQ answer needs a `refs`
+   entry that resolves to a page of the report. An answer a reader cannot look up
+   is an assertion, not evidence.
 6. French uses the narrow no-break space before `%`, `:`, `;`, `!`, `?` and inside
    `« »` — write `92,8 %`, not `92.8%`. French decimals use a comma.
+7. **A figure must survive translation.** `validate.js` compares the digits in the
+   English and French of every FAQ answer and evidence block and fails on a
+   mismatch. A dropped digit in a briefing note is the failure with consequences.
