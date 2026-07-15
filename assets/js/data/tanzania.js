@@ -281,8 +281,8 @@ window.VNR.register({
                   source: "VNR 2026, Annex Table A9 (9.2.1)"
                 },
                 text: {
-                  en: "The report names structural transformation as \"the central implementation gap\". Over the five years in which Tanzania doubled generation capacity, put every region on the grid and quadrupled rail passengers, the manufacturing share of GDP fell by nearly two points, with the sharpest drop in the final year. The SME share of industrial value added rose from 7.2% to 11.6%.",
-                  fr: "Le rapport désigne la transformation structurelle comme « la principale lacune de mise en œuvre ». Pendant les cinq années où la Tanzanie a doublé sa capacité de production, raccordé toutes ses régions au réseau et quadruplé le trafic ferroviaire de voyageurs, la part de l'industrie manufacturière dans le PIB a reculé de près de deux points, la chute la plus marquée intervenant la dernière année. La part des PME dans la valeur ajoutée industrielle est passée de 7,2 % à 11,6 %."
+                  en: "The report names structural transformation as \"the central implementation gap\". Over the five years in which Tanzania doubled generation capacity, put every region on the grid and quadrupled rail passengers, the manufacturing share of GDP fell by nearly two percentage points, with the sharpest drop in the final year. The SME share of industrial value added rose from 7.2% to 11.6%.",
+                  fr: "Le rapport désigne la transformation structurelle comme « la principale lacune de mise en œuvre ». Pendant les cinq années où la Tanzanie a doublé sa capacité de production, raccordé toutes ses régions au réseau et quadruplé le trafic ferroviaire de voyageurs, la part de l'industrie manufacturière dans le PIB a reculé de près de deux points de pourcentage, la chute la plus marquée intervenant la dernière année. La part des PME dans la valeur ajoutée industrielle est passée de 7,2 % à 11,6 %."
                 },
                 source: "VNR 2026, Table 4.3 · Annex Table A9"
               } },
@@ -335,8 +335,8 @@ window.VNR.register({
                   source: "VNR 2026, Annex Table A17 (17.1.1)"
                 },
                 text: {
-                  en: "Domestic revenue rose by three points of GDP in three years, then fell back in 2024/25 to 15.1%. The 16.4% cited in the Main Messages is the 2023/24 peak; 15.1% is the latest reading. Tax revenue has the same shape, peaking at 14.9% of GDP in 2022/23 before easing to about 13.3%. The base strengthened over the period and has begun to ease, while FYDP IV is costed on the assumption that it will not.",
-                  fr: "Les recettes intérieures ont gagné trois points de PIB en trois ans, avant de refluer à 15,1 % en 2024-2025. Les 16,4 % cités dans les messages clés correspondent au sommet de 2023-2024 ; 15,1 % est le dernier relevé. Les recettes fiscales suivent la même courbe : culminant à 14,9 % du PIB en 2022-2023, elles retombent à environ 13,3 %. La base s'est renforcée sur la période et a commencé à fléchir, alors que le 4e Plan quinquennal est chiffré sur l'hypothèse inverse."
+                  en: "Domestic revenue rose by three percentage points of GDP in three years, then fell back in 2024/25 to 15.1%. The 16.4% cited in the Main Messages is the 2023/24 peak; 15.1% is the latest reading. Tax revenue has the same shape, peaking at 14.9% of GDP in 2022/23 before easing to about 13.3%. The base strengthened over the period and has begun to ease, while FYDP IV is costed on the assumption that it will not.",
+                  fr: "Les recettes intérieures ont gagné trois points de pourcentage du PIB en trois ans, avant de refluer à 15,1 % en 2024-2025. Les 16,4 % cités dans les messages clés correspondent au sommet de 2023-2024 ; 15,1 % est le dernier relevé. Les recettes fiscales suivent la même courbe : culminant à 14,9 % du PIB en 2022-2023, elles retombent à environ 13,3 %. La base s'est renforcée sur la période et a commencé à fléchir, alors que le 4e Plan quinquennal est chiffré sur l'hypothèse inverse."
                 },
                 source: "VNR 2026, Table 1.1 · Annex Table A17"
               } },
@@ -793,8 +793,8 @@ window.VNR.register({
                 { label: { en: "Manufacturing employment, % of total", fr: "Emploi manufacturier, en % du total" }, value: 5.5, unit: "%" }
               ],
               text: {
-                en: "SEZs, industrial parks and the corridor programme are the instruments Tanzania is counting on to convert infrastructure into industry — and on the evidence of this review they have not yet done so: manufacturing fell to 5.9% of GDP even as FDI registered through TISEZA rose from USD 944 million to 1,656 million. The report's figures differ here — Table 4.5 puts 2024 FDI at USD 2,679.7 million while two annex tables give 1,656 million; the difference is most likely gross registered investment versus net inflows. Manufacturing employment and the SME share are both rising, which suggests the industrial base is broadening even as its share of output shrinks.",
-                fr: "Les ZES, les parcs industriels et le programme de corridors sont les instruments sur lesquels la Tanzanie compte pour convertir les infrastructures en industrie — et, à l'aune de cette revue, ils n'y sont pas encore parvenus : l'industrie manufacturière est tombée à 5,9 % du PIB alors même que les IDE enregistrés via la TISEZA passaient de 944 à 1 656 millions d'USD. Les chiffres du rapport diffèrent ici : le tableau 4.5 situe les IDE de 2024 à 2 679,7 millions d'USD, tandis que deux tableaux de l'annexe retiennent 1 656 millions ; l'écart tient très probablement à la distinction entre investissements bruts enregistrés et flux nets. L'emploi manufacturier et la part des PME progressent tous deux, ce qui suggère que la base industrielle s'élargit alors même que son poids dans la production se contracte."
+                en: "SEZs, industrial parks and the corridor programme are the instruments Tanzania is counting on to convert infrastructure into industry — and on the evidence of this review they have not yet done so: manufacturing fell to 5.9% of GDP even as FDI registered through TISEZA rose from USD 944 million to 1,656 million. The report's figures differ here — Table 4.5 puts 2024 FDI at USD 2,679.7 million while two annex tables give 1,656 million, a difference the report does not reconcile. Manufacturing employment and the SME share are both rising, which suggests the industrial base is broadening even as its share of output shrinks.",
+                fr: "Les ZES, les parcs industriels et le programme de corridors sont les instruments sur lesquels la Tanzanie compte pour convertir les infrastructures en industrie — et, à l'aune de cette revue, ils n'y sont pas encore parvenus : l'industrie manufacturière est tombée à 5,9 % du PIB alors même que les IDE enregistrés via la TISEZA passaient de 944 à 1 656 millions d'USD. Les chiffres du rapport diffèrent ici : le tableau 4.5 situe les IDE de 2024 à 2 679,7 millions d'USD, tandis que deux tableaux de l'annexe retiennent 1 656 millions, un écart que le rapport ne réconcilie pas. L'emploi manufacturier et la part des PME progressent tous deux, ce qui suggère que la base industrielle s'élargit alors même que son poids dans la production se contracte."
               },
               source: "VNR 2026, Table 4.5 · Annex Tables A9, A17" }
           ] }
@@ -905,8 +905,8 @@ window.VNR.register({
                 { label: { en: "Remittances, % of GDP (2024/25)", fr: "Transferts de fonds, en % du PIB (2024-2025)" }, value: 1.5, unit: "%" }
               ],
               text: {
-                en: "Two annex tables independently record FDI at USD 1,656 million for the latest year, up from USD 944 million in 2020. Table 4.5 and the body text give USD 2,679.7 million for 2024 — a 62% difference, most likely a gross-registered versus net-inflow distinction. This dashboard uses the annex figure. Remittances are 1.5% of GDP.",
-                fr: "Deux tableaux de l'annexe consignent indépendamment des IDE de 1 656 millions d'USD pour le dernier exercice, contre 944 millions en 2020. Le tableau 4.5 et le corps du texte retiennent 2 679,7 millions d'USD pour 2024 — une différence de 62 %, qui tient très probablement à la distinction entre investissements bruts enregistrés et flux nets. Ce tableau de bord retient le chiffre de l'annexe. Les transferts de fonds représentent 1,5 % du PIB."
+                en: "Two annex tables independently record FDI at USD 1,656 million for the latest year, up from USD 944 million in 2020. Table 4.5 and the body text give USD 2,679.7 million for 2024 — a 62% difference that the report does not reconcile. This dashboard uses the annex figure. Remittances are 1.5% of GDP.",
+                fr: "Deux tableaux de l'annexe consignent indépendamment des IDE de 1 656 millions d'USD pour le dernier exercice, contre 944 millions en 2020. Le tableau 4.5 et le corps du texte retiennent 2 679,7 millions d'USD pour 2024 — une différence de 62 % que le rapport ne réconcilie pas. Ce tableau de bord retient le chiffre de l'annexe. Les transferts de fonds représentent 1,5 % du PIB."
               },
               source: "VNR 2026, Table 4.5 · Annex Tables A9, A17" },
 
@@ -926,8 +926,8 @@ window.VNR.register({
         id: "debt",
         label: { en: "Debt & Revenue", fr: "Dette et recettes" },
         intro: {
-          en: "Public debt rose almost ten points of GDP in five years. The review presents this as the cost of the infrastructure programme and names tax effort, debt-service discipline and rigorous project preparation as the conditions for keeping it sustainable. The three charts below show the underlying series.",
-          fr: "La dette publique a progressé de près de dix points de PIB en cinq ans. La revue y voit le coût du programme d'infrastructures et désigne l'effort fiscal, la discipline du service de la dette et une préparation rigoureuse des projets comme les conditions de sa soutenabilité. Les trois graphiques ci-dessous présentent les séries sous-jacentes."
+          en: "Public debt rose almost ten percentage points of GDP in five years. The review presents this as the cost of the infrastructure programme and names tax effort, debt-service discipline and rigorous project preparation as the conditions for keeping it sustainable. The three charts below show the underlying series.",
+          fr: "La dette publique a progressé de près de dix points de pourcentage du PIB en cinq ans. La revue y voit le coût du programme d'infrastructures et désigne l'effort fiscal, la discipline du service de la dette et une préparation rigoureuse des projets comme les conditions de sa soutenabilité. Les trois graphiques ci-dessous présentent les séries sous-jacentes."
         },
         blocks: [
           { type: "chart",
@@ -941,8 +941,8 @@ window.VNR.register({
                             { x: "2023/24", y: 47.8 }, { x: "2024/25", y: 51.0 } ] }
               ],
               insight: {
-                en: "The rise is steady, not sudden — roughly two points of GDP a year, every year, tracking the investment cycle that delivered the hydropower plant, the railway and the grid. The report classifies the indicator as monitored rather than at risk, and asks the international community for debt-architecture reform and concessional terms. Whether the assets financed by that debt generate the growth to service it is an open question at the HLPF; manufacturing's share has fallen over the period.",
-                fr: "La progression est régulière, non brutale — environ deux points de PIB par an, chaque année, au rythme du cycle d'investissement qui a livré la centrale hydroélectrique, le chemin de fer et le réseau. Le rapport classe l'indicateur comme surveillé plutôt qu'à risque, et demande à la communauté internationale une réforme de l'architecture de la dette et des conditions concessionnelles. La question de savoir si les actifs financés par cette dette généreront la croissance permettant de les servir reste ouverte au FPHN ; la part de l'industrie manufacturière a reculé sur la période."
+                en: "The rise is steady, not sudden — roughly two percentage points of GDP a year, every year, tracking the investment cycle that delivered the hydropower plant, the railway and the grid. The report classifies the indicator as monitored rather than at risk, and asks the international community for debt-architecture reform and concessional terms. Whether the assets financed by that debt generate the growth to service it is an open question at the HLPF; manufacturing's share has fallen over the period.",
+                fr: "La progression est régulière, non brutale — environ deux points de pourcentage du PIB par an, chaque année, au rythme du cycle d'investissement qui a livré la centrale hydroélectrique, le chemin de fer et le réseau. Le rapport classe l'indicateur comme surveillé plutôt qu'à risque, et demande à la communauté internationale une réforme de l'architecture de la dette et des conditions concessionnelles. La question de savoir si les actifs financés par cette dette généreront la croissance permettant de les servir reste ouverte au FPHN ; la part de l'industrie manufacturière a reculé sur la période."
               },
               source: "VNR 2026, Table 1.1 · Annex Table A17 (17.4.1)"
             } },
@@ -961,8 +961,8 @@ window.VNR.register({
                             { x: "2023/24", y: 14.6 }, { x: "2024/25", y: 13.3 } ] }
               ],
               insight: {
-                en: "Both series are shares of GDP and both have turned down. Domestic revenue — which includes non-tax receipts and therefore sits above tax revenue — peaked at 16.4% in 2023/24 and fell to 15.1%; tax revenue peaked earlier, at 14.9% in 2022/23, and has lost 1.6 points since. The report labels tax revenue \"improving\" on the five-year endpoints; the intervening trajectory peaks and eases. Debt has risen about two points of GDP a year while the revenue ratio has stopped climbing.",
-                fr: "Les deux séries sont exprimées en parts de PIB et toutes deux se sont retournées. Les recettes intérieures — qui incluent les recettes non fiscales et se situent donc au-dessus des recettes fiscales — ont culminé à 16,4 % en 2023-2024 avant de retomber à 15,1 % ; les recettes fiscales ont culminé plus tôt, à 14,9 % en 2022-2023, et ont perdu 1,6 point depuis. Le rapport qualifie les recettes fiscales d'« en amélioration » sur les points extrêmes à cinq ans ; la trajectoire intermédiaire culmine puis reflue. La dette progresse d'environ deux points de PIB par an tandis que le ratio de recettes a cessé de progresser."
+                en: "Both series are shares of GDP and both have turned down. Domestic revenue — which includes non-tax receipts and therefore sits above tax revenue — peaked at 16.4% in 2023/24 and fell to 15.1%; tax revenue peaked earlier, at 14.9% in 2022/23, and has lost 1.6 percentage points since. The report labels tax revenue \"improving\" on the five-year endpoints; the intervening trajectory peaks and eases. Debt has risen about two percentage points of GDP a year while the revenue ratio has stopped climbing.",
+                fr: "Les deux séries sont exprimées en parts de PIB et toutes deux se sont retournées. Les recettes intérieures — qui incluent les recettes non fiscales et se situent donc au-dessus des recettes fiscales — ont culminé à 16,4 % en 2023-2024 avant de retomber à 15,1 % ; les recettes fiscales ont culminé plus tôt, à 14,9 % en 2022-2023, et ont perdu 1,6 point de pourcentage depuis. Le rapport qualifie les recettes fiscales d'« en amélioration » sur les points extrêmes à cinq ans ; la trajectoire intermédiaire culmine puis reflue. La dette progresse d'environ deux points de pourcentage du PIB par an tandis que le ratio de recettes a cessé de progresser."
               },
               source: "VNR 2026, Annex Table A17 (17.1.1)"
             } },
@@ -978,8 +978,8 @@ window.VNR.register({
                             { x: "2022/23", y: 70.7 }, { x: "2023/24", y: 78.0 } ] }
               ],
               insight: {
-                en: "Nearly twenty points in three years, and SDG 17 is rated on track. Two clarifications. The baseline is 58.3%, confirmed in four places in the report; 68.5% is the 2021/22 value. And the series stops at 2023/24: the annex records no 2024/25 observation, so none is shown.",
-                fr: "Près de vingt points en trois ans, et l'ODD 17 est jugé en bonne voie. Deux précisions. La référence est 58,3 %, confirmée à quatre endroits du rapport ; 68,5 % correspond à l'exercice 2021-2022. Et la série s'arrête en 2023-2024 : l'annexe ne consigne aucune observation pour 2024-2025, aucune n'est donc affichée."
+                en: "Nearly twenty percentage points in three years, and SDG 17 is rated on track. Two clarifications. The baseline is 58.3%, confirmed in four places in the report; 68.5% is the 2021/22 value. And the series stops at 2023/24: the annex records no 2024/25 observation, so none is shown.",
+                fr: "Près de vingt points de pourcentage en trois ans, et l'ODD 17 est jugé en bonne voie. Deux précisions. La référence est 58,3 %, confirmée à quatre endroits du rapport ; 68,5 % correspond à l'exercice 2021-2022. Et la série s'arrête en 2023-2024 : l'annexe ne consigne aucune observation pour 2024-2025, aucune n'est donc affichée."
               },
               source: "VNR 2026, Annex Table A17 (17.1.2)"
             } },
@@ -1002,12 +1002,12 @@ window.VNR.register({
                           fr: "Sommet de 16,4 % en 2023-2024 ; le dernier exercice marque un recul" } },
               { label: { en: "Budget self-reliance", fr: "Autonomie budgétaire" },
                 from: 58.3, fromYear: "2020/21", to: 78.0, toYear: "2023/24", unit: "%", dir: "up",
-                status: { en: "On track; up nearly twenty points since 2020/21",
-                          fr: "En bonne voie ; en hausse de près de vingt points depuis 2020-2021" } },
+                status: { en: "On track; up nearly twenty percentage points since 2020/21",
+                          fr: "En bonne voie ; en hausse de près de vingt points de pourcentage depuis 2020-2021" } },
               { label: { en: "Public debt, % of GDP", fr: "Dette publique, en % du PIB" },
                 from: 41.3, fromYear: "2020/21", to: 51.0, toYear: "2024/25", unit: "%", dir: "up",
-                status: { en: "Monitored. Roughly two points of GDP a year, every year",
-                          fr: "Surveillée. Environ deux points de PIB par an, chaque année" } },
+                status: { en: "Monitored. Roughly two percentage points of GDP a year, every year",
+                          fr: "Surveillée. Environ deux points de pourcentage du PIB par an, chaque année" } },
               { label: { en: "Total national budget, TZS trillion", fr: "Budget national total, en billions de TZS" },
                 from: 37.98, fromYear: "2020/21", to: 49.35, toYear: "2024/25", unit: "", dir: "up",
                 status: { en: "The 2025/26 budget is set at TZS 56.49 trillion",
@@ -1091,8 +1091,8 @@ window.VNR.register({
                 { label: { en: "Domestic revenue, % of GDP", fr: "Recettes intérieures, en % du PIB" }, value: 15.1, unit: "%" }
               ],
               text: {
-                en: "Revenue effort remains below what SDG acceleration requires, and it has begun to fall. Debt has climbed ten points of GDP. Adaptation needs exceed available climate finance. And FYDP IV assumes 70% private financing at a moment when the report itself says bankability gaps constrain investment. The financing problem is not primarily an aid problem — it is a formalization and project-preparation problem.",
-                fr: "L'effort de recettes demeure inférieur à ce qu'exige l'accélération des ODD, et il a commencé à décliner. La dette a gagné dix points de PIB. Les besoins d'adaptation excèdent la finance climatique disponible. Et le FYDP IV postule un financement privé à hauteur de 70 %, au moment même où le rapport constate que les lacunes de bancabilité freinent l'investissement. Le problème de financement n'est pas d'abord un problème d'aide : c'est un problème de formalisation et de préparation des projets."
+                en: "Revenue effort remains below what SDG acceleration requires, and it has begun to fall. Debt has climbed ten percentage points of GDP. Adaptation needs exceed available climate finance. And FYDP IV assumes 70% private financing at a moment when the report itself says bankability gaps constrain investment. The financing problem is not primarily an aid problem — it is a formalization and project-preparation problem.",
+                fr: "L'effort de recettes demeure inférieur à ce qu'exige l'accélération des ODD, et il a commencé à décliner. La dette a gagné dix points de pourcentage du PIB. Les besoins d'adaptation excèdent la finance climatique disponible. Et le FYDP IV postule un financement privé à hauteur de 70 %, au moment même où le rapport constate que les lacunes de bancabilité freinent l'investissement. Le problème de financement n'est pas d'abord un problème d'aide : c'est un problème de formalisation et de préparation des projets."
               },
               source: "VNR 2026, Ch. 7 · Table 5.1 · Annex Table A17" },
 

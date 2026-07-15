@@ -228,8 +228,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 9.2.1 et 9.2.2 (DGEPF · BM)"
                 },
                 text: {
-                  fr: "La diversification produit de la valeur ajoutée : +1,3 point de PIB en quatre ans, portée par les Zones d’Investissement Spéciales. La part de l’emploi manufacturier a gagné 0,3 point sur la même période et reste stable depuis 2023, aux côtés d’un chômage de 20,0 %, d’un emploi informel de 47,0 % et de 36,2 % de jeunes ni en emploi, ni en études, ni en formation.",
-                  en: "Diversification is adding value: +1.3 points of GDP in four years, driven by the Special Investment Zones. Manufacturing’s share of employment gained 0.3 points over the same period and has been flat since 2023, alongside 20.0% unemployment, 47.0% informal employment and 36.2% of young people not in employment, education or training."
+                  fr: "La diversification produit de la valeur ajoutée : +1,3 point de pourcentage du PIB en quatre ans, portée par les Zones d’Investissement Spéciales. La part de l’emploi manufacturier a gagné 0,3 point sur la même période et reste stable depuis 2023, aux côtés d’un chômage de 20,0 %, d’un emploi informel de 47,0 % et de 36,2 % de jeunes ni en emploi, ni en études, ni en formation.",
+                  en: "Diversification is adding value: +1.3 percentage points of GDP in four years, driven by the Special Investment Zones. Manufacturing’s share of employment gained 0.3 points over the same period and has been flat since 2023, alongside 20.0% unemployment, 47.0% informal employment and 36.2% of young people not in employment, education or training."
                 },
                 source: "ENV 2026 · annexes 1 et 2 — ODD 9.2.1, 9.2.2, 8.3.1, 8.5.2, 8.6.1"
               } },
@@ -281,8 +281,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 17.1.1 (DGEPF/TOFE · FMI)"
                 },
                 text: {
-                  fr: "Du creux post-COVID de 15,3 % en 2021 au pic de 24,6 % en 2023, les recettes publiques ont gagné plus de neuf points de PIB en deux ans, avant de se stabiliser à 23,7 %. C’est le socle du plaidoyer gabonais à New York : l’investissement plutôt que l’assistance.",
-                  en: "From the post-COVID trough of 15.3% in 2021 to the 24.6% peak of 2023, government revenue gained more than nine points of GDP in two years before settling at 23.7%. This underpins Gabon’s case in New York: investment rather than assistance."
+                  fr: "Du creux post-COVID de 15,3 % en 2021 au pic de 24,6 % en 2023, les recettes publiques ont gagné plus de neuf points de pourcentage du PIB en deux ans, avant de se stabiliser à 23,7 %. C’est le socle du plaidoyer gabonais à New York : l’investissement plutôt que l’assistance.",
+                  en: "From the post-COVID trough of 15.3% in 2021 to the 24.6% peak of 2023, government revenue gained more than nine percentage points of GDP in two years before settling at 23.7%. This underpins Gabon’s case in New York: investment rather than assistance."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 17.1.1 (DGEPF/TOFE · FMI)"
               } }
@@ -342,12 +342,12 @@ window.VNR.register({
                           en: "Up from 185 per 100,000 in 2020." } },
               { label: { fr: "Recettes publiques / PIB", en: "Government revenue / GDP" },
                 from: 17.6, fromYear: "2020", to: 23.7, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "En hausse de plus de six points depuis 2020, après un creux à 15,3 % en 2021.",
-                          en: "Up more than six points since 2020, after a 15.3% trough in 2021." } },
+                status: { fr: "En hausse de plus de six points de pourcentage depuis 2020, après un creux à 15,3 % en 2021.",
+                          en: "Up more than six percentage points since 2020, after a 15.3% trough in 2021." } },
               { label: { fr: "Part du budget financée par l’impôt intérieur", en: "Share of the budget financed by domestic taxes" },
                 from: 43.5, fromYear: "2020", to: 53.7, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "Dématérialisation des régies (e-t@x, Sydonia World) : plus de dix points gagnés.",
-                          en: "Digitalised revenue administration (e-t@x, Sydonia World): more than ten points gained." } },
+                status: { fr: "Dématérialisation des régies (e-t@x, Sydonia World) : plus de dix points de pourcentage gagnés.",
+                          en: "Digitalised revenue administration (e-t@x, Sydonia World): more than ten percentage points gained." } },
               { label: { fr: "APD nette / RNB", en: "Net ODA / GNI" },
                 from: 0.7, fromYear: "2020", to: 0.4, toYear: "2024", unit: "%", dir: "down",
                 status: { fr: "Stable à 0,4 % depuis 2022.",
@@ -915,8 +915,8 @@ window.VNR.register({
                 points: [{ x: "2020", y: 17.6 }, { x: "2021", y: 15.3 }, { x: "2022", y: 21.1 }, { x: "2023", y: 24.6 }, { x: "2024", y: 23.7 }] }
             ],
             insight: {
-              fr: "Après le creux de 2021 (15,3 % du PIB), les recettes publiques ont atteint 24,6 % en 2023 puis se sont stabilisées à 23,7 %. Dans le même temps, la part du budget financée par l’impôt intérieur a gagné plus de dix points, portée par la dématérialisation des régies — e-t@x à la DGI, Sydonia World aux Douanes. C’est le fondement du plaidoyer gabonais pour « l’investissement stratégique » plutôt que « l’assistance traditionnelle ».",
-              en: "After the 2021 trough (15.3% of GDP), government revenue rose to 24.6% in 2023 and settled at 23.7%. Over the same period, the share of the budget financed by domestic taxes gained more than ten points, driven by the digitalisation of revenue administration — e-t@x at the tax directorate, Sydonia World at customs. This is the foundation of Gabon’s case for \"strategic investment\" rather than \"traditional assistance\"."
+              fr: "Après le creux de 2021 (15,3 % du PIB), les recettes publiques ont atteint 24,6 % en 2023 puis se sont stabilisées à 23,7 %. Dans le même temps, la part du budget financée par l'impôt intérieur a gagné plus de dix points de pourcentage, portée par la dématérialisation des régies — e-t@x à la DGI, Sydonia World aux Douanes. C’est le fondement du plaidoyer gabonais pour « l’investissement stratégique » plutôt que « l’assistance traditionnelle ».",
+              en: "After the 2021 trough (15.3% of GDP), government revenue rose to 24.6% in 2023 and settled at 23.7%. Over the same period, the share of the budget financed by domestic taxes gained more than ten percentage points, driven by the digitalisation of revenue administration — e-t@x at the tax directorate, Sydonia World at customs. This is the foundation of Gabon’s case for \"strategic investment\" rather than \"traditional assistance\"."
             },
             source: "ENV 2026 · annexe 1 — ODD 17.1.1 et 17.1.2 (DGEPF/TOFE · DGI · DGDDI · FMI)"
           } },
