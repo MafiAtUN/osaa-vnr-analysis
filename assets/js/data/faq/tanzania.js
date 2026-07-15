@@ -88,8 +88,8 @@ window.VNR.registerFaq({
         label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" }
       },
       correction: {
-        en: "Three figures here differ from the OSAA workbook, which followed the report's chapter table. Annex Table A6 gives regional-centre water at 92.5% for 2025 (91.6% is the 2024 value), safely managed sanitation at 64.6% (not 78.5%), and sewer connectivity falling from 13.0% to 5.6% — which the report's own status column rates Regressing, not flat at 13%.",
-        fr: "Trois chiffres diffèrent ici du classeur de l'OSAA, qui suivait le tableau du chapitre. Le tableau A6 de l'annexe donne l'eau des centres régionaux à 92,5 % pour 2025 (91,6 % étant la valeur de 2024), l'assainissement géré en toute sécurité à 64,6 % (et non 78,5 %), et le raccordement aux égouts en recul de 13,0 % à 5,6 % — que la colonne « statut » du rapport qualifie elle-même de « en régression », et non de stable à 13 %."
+        en: "The figures shown follow the report's Statistical Annex (Table A6), which carries the full 2020–2025 series. Regional-centre water is 92.5% for 2025 (91.6% is the 2024 value); safely managed sanitation is 64.6%; and sewer connectivity falls from 13.0% to 5.6%, which the report's status column rates Regressing.",
+        fr: "Les chiffres présentés suivent l'annexe statistique du rapport (tableau A6), qui porte la série complète 2020-2025. L'eau des centres régionaux est de 92,5 % pour 2025 (91,6 % étant la valeur de 2024) ; l'assainissement géré en toute sécurité est de 64,6 % ; et le raccordement aux égouts recule de 13,0 % à 5,6 %, que la colonne « statut » du rapport qualifie de « en régression »."
       }
     },
     {
@@ -138,8 +138,8 @@ window.VNR.registerFaq({
         label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" }
       },
       correction: {
-        en: "Annex Table A7 gives electricity access at 86.2% for 2025; the chapter table's 85.5% is the annex's 2024 value, and the Main Messages' rounded \"86%\" is the same figure. Renewables are 76.6% of electricity generated — the \"80% of the mix\" quoted in the Main Messages appears nowhere in the report.",
-        fr: "Le tableau A7 de l'annexe donne l'accès à l'électricité à 86,2 % pour 2025 ; les 85,5 % du tableau du chapitre correspondent à la valeur 2024 de l'annexe, et les « 86 % » arrondis des messages clés désignent le même chiffre. Les renouvelables représentent 76,6 % de l'électricité produite — les « 80 % du mix » cités dans les messages clés ne figurent nulle part dans le rapport."
+        en: "The figures shown follow the report's Statistical Annex (Table A7): electricity access is 86.2% for 2025 (85.5% is the annex's 2024 value; the Main Messages' rounded \"86%\" is the same figure). Renewables are 76.6% of electricity generated and 73.85% of final energy consumption.",
+        fr: "Les chiffres présentés suivent l'annexe statistique du rapport (tableau A7) : l'accès à l'électricité est de 86,2 % pour 2025 (85,5 % étant la valeur 2024 de l'annexe ; les « 86 % » arrondis des messages clés désignent le même chiffre). Les renouvelables représentent 76,6 % de l'électricité produite et 73,85 % de la consommation finale d'énergie."
       }
     },
     {
@@ -188,8 +188,8 @@ window.VNR.registerFaq({
         label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" }
       },
       correction: {
-        en: "The 2020 internet baseline is 48%, not the 49% in the OSAA workbook. The report gives 48% in four places, including Table 4.3.",
-        fr: "La valeur de référence d'Internet pour 2020 est de 48 %, et non les 49 % du classeur de l'OSAA. Le rapport indique 48 % à quatre reprises, notamment au tableau 4.3."
+        en: "The 2020 internet baseline shown is 48%, the value the report gives in four places, including Table 4.3.",
+        fr: "La valeur de référence d'Internet pour 2020 présentée est de 48 %, valeur que le rapport indique à quatre reprises, notamment au tableau 4.3."
       }
     },
     {
@@ -749,8 +749,8 @@ window.VNR.registerFaq({
         label: { en: "Direct evidence and synthesis", fr: "Preuves directes et synthèse" }
       },
       correction: {
-        en: "The OSAA workbook records sewer connectivity as having \"remained 13%\". Annex Table A6 shows it falling to 5.6% by 2024, and the report's own status column rates the indicator Regressing. The direction of travel is the finding.",
-        fr: "Le classeur de l'OSAA indique que le raccordement aux égouts « est demeuré à 13 % ». Le tableau A6 de l'annexe montre un recul à 5,6 % en 2024, et la colonne « statut » du rapport qualifie l'indicateur de « en régression ». C'est le sens de l'évolution qui constitue le constat."
+        en: "The figure shown follows Annex Table A6: sewer connectivity falls to 5.6% by 2024, and the report's status column rates the indicator Regressing.",
+        fr: "Le chiffre présenté suit le tableau A6 de l'annexe : le raccordement aux égouts recule à 5,6 % en 2024, et la colonne « statut » du rapport qualifie l'indicateur de « en régression »."
       }
     },
     {

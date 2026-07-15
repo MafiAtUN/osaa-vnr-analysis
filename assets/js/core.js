@@ -144,7 +144,7 @@
     faq_evidence:   { en: "Key evidence and figures", fr: "Données et chiffres clés" },
     faq_policy:     { en: "Policy implications and best practices", fr: "Implications pour l'action et bonnes pratiques" },
     faq_sources:    { en: "Sources", fr: "Sources" },
-    faq_correction: { en: "Correction to the OSAA workbook", fr: "Correction apportée au classeur de l'OSAA" },
+    faq_correction: { en: "Note on the figures shown", fr: "Note sur les chiffres présentés" },
     faq_copy:       { en: "Copy", fr: "Copier" },
     faq_copied:     { en: "Copied", fr: "Copié" },
     faq_copy_lbl:   { en: "Copy this question and answer", fr: "Copier cette question et sa réponse" },
