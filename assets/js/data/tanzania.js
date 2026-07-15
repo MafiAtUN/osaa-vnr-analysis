@@ -253,8 +253,8 @@ window.VNR.register({
                   source: "VNR 2026, Annex Table A6 · Ch. 4 (SDG 6) narrative"
                 },
                 text: {
-                  en: "Water supply advanced across the period: rural coverage up nearly thirteen points, regional centres at 92.5%, Dar es Salaam at 94.5%. Sanitation moved differently. Sewer connectivity in regional centres is rated \"regressing\" — 13.0% in 2020 against 5.6% in 2024 — about a quarter of the population has adequate hygiene services, and non-revenue water in Dar es Salaam is about 40%, the one SDG 6 indicator rated \"not on track\".",
-                  fr: "L'approvisionnement en eau a progressé sur la période : la couverture rurale gagne près de treize points, les centres régionaux atteignent 92,5 % et Dar es Salaam 94,5 %. L'assainissement a évolué différemment. Le raccordement aux égouts dans les centres régionaux est classé « en régression » — 13,0 % en 2020 contre 5,6 % en 2024 —, environ un quart de la population dispose de services d'hygiène adéquats et l'eau non facturée à Dar es Salaam avoisine 40 %, seul indicateur de l'ODD 6 jugé « hors trajectoire »."
+                  en: "Water supply advanced across the period: rural coverage up nearly thirteen percentage points, regional centres at 92.5%, Dar es Salaam at 94.5%. Sanitation moved differently. Sewer connectivity in regional centres is rated \"regressing\" — 13.0% in 2020 against 5.6% in 2024 — about a quarter of the population has adequate hygiene services, and non-revenue water in Dar es Salaam is about 40%, the one SDG 6 indicator rated \"not on track\".",
+                  fr: "L'approvisionnement en eau a progressé sur la période : la couverture rurale gagne près de treize points de pourcentage, les centres régionaux atteignent 92,5 % et Dar es Salaam 94,5 %. L'assainissement a évolué différemment. Le raccordement aux égouts dans les centres régionaux est classé « en régression » — 13,0 % en 2020 contre 5,6 % en 2024 —, environ un quart de la population dispose de services d'hygiène adéquats et l'eau non facturée à Dar es Salaam avoisine 40 %, seul indicateur de l'ODD 6 jugé « hors trajectoire »."
                 },
                 source: "VNR 2026, Table 4.1 · Annex Table A6"
               } },
@@ -463,8 +463,8 @@ window.VNR.register({
                               { x: "2023", y: 79.6 }, { x: "2024", y: 83.0 }, { x: "2025", y: 85.2 } ] }
                 ],
                 insight: {
-                  en: "The rural line climbs almost thirteen points and closes roughly half the gap with the towns. Note that the chapter table reports regional centres at 91.6% \"in 2025\" — that is the annex's 2024 value; the 2025 figure is 92.5%.",
-                  fr: "La courbe rurale gagne près de treize points et comble environ la moitié de l'écart avec les villes. À noter : le tableau du chapitre situe les centres régionaux à 91,6 % « en 2025 » — il s'agit de la valeur 2024 de l'annexe ; le chiffre de 2025 est 92,5 %."
+                  en: "The rural line climbs almost thirteen percentage points and closes roughly half the gap with the towns. Note that the chapter table reports regional centres at 91.6% \"in 2025\" — that is the annex's 2024 value; the 2025 figure is 92.5%.",
+                  fr: "La courbe rurale gagne près de treize points de pourcentage et comble environ la moitié de l'écart avec les villes. À noter : le tableau du chapitre situe les centres régionaux à 91,6 % « en 2025 » — il s'agit de la valeur 2024 de l'annexe ; le chiffre de 2025 est 92,5 %."
                 },
                 source: "VNR 2026, Annex Table A6 (6.1.1)"
               },
@@ -571,8 +571,8 @@ window.VNR.register({
                               { x: "2023", y: 50.2 }, { x: "2024", y: 51.8 }, { x: "2025", y: 53.5 } ] }
                 ],
                 insight: {
-                  en: "Both lines rise by roughly ten points, and the gap between them narrows only marginally — from 4.3 points to 2.7. Expanding the network has helped women and men about equally; it has not, on its own, closed the gender gap in urban mobility.",
-                  fr: "Les deux courbes gagnent une dizaine de points et l'écart entre elles ne se resserre que marginalement, de 4,3 à 2,7 points. L'extension du réseau a profité à peu près également aux femmes et aux hommes ; elle n'a pas, à elle seule, comblé l'écart entre les sexes dans la mobilité urbaine."
+                  en: "Both lines rise by roughly ten percentage points, and the gap between them narrows only marginally — from 4.3 percentage points to 2.7. Expanding the network has helped women and men about equally; it has not, on its own, closed the gender gap in urban mobility.",
+                  fr: "Les deux courbes gagnent une dizaine de points de pourcentage et l'écart entre elles ne se resserre que marginalement, de 4,3 à 2,7 points de pourcentage. L'extension du réseau a profité à peu près également aux femmes et aux hommes ; elle n'a pas, à elle seule, comblé l'écart entre les sexes dans la mobilité urbaine."
                 },
                 source: "VNR 2026, Annex Table A11 (11.2.1)"
               },
@@ -780,8 +780,8 @@ window.VNR.register({
                 { label: { en: "Gazetted water sources", fr: "Sources d'eau classées" }, value: 80, unit: "" }
               ],
               text: {
-                en: "Rural water access rose almost thirteen points while the population nearly doubled over the longer period. The institutional side matched it: nine Basin Water Boards reinforced, seven of nine basins now holding integrated water resources management plans, monitoring networks up from 16 to 38, and 100% of transboundary basins under cooperation arrangements. The unfinished half of the mandate is sanitation and utility efficiency — the report proposes a bankable non-revenue water programme for Dar es Salaam built on district metering, pressure management, active leakage control and performance-based contracts.",
-                fr: "L'accès à l'eau en milieu rural a gagné près de treize points alors que la population a quasiment doublé sur la période longue. Le volet institutionnel a suivi : neuf offices de bassin renforcés, sept bassins sur neuf dotés d'un plan de gestion intégrée des ressources en eau, des réseaux de surveillance portés de 16 à 38 et 100 % des bassins transfrontaliers couverts par des accords de coopération. La moitié inachevée du mandat porte sur l'assainissement et l'efficience des services : le rapport propose un programme bancable de réduction de l'eau non facturée à Dar es Salaam, fondé sur la sectorisation des compteurs, la gestion de la pression, la recherche active de fuites et des contrats de performance."
+                en: "Rural water access rose almost thirteen percentage points while the population nearly doubled over the longer period. The institutional side matched it: nine Basin Water Boards reinforced, seven of nine basins now holding integrated water resources management plans, monitoring networks up from 16 to 38, and 100% of transboundary basins under cooperation arrangements. The unfinished half of the mandate is sanitation and utility efficiency — the report proposes a bankable non-revenue water programme for Dar es Salaam built on district metering, pressure management, active leakage control and performance-based contracts.",
+                fr: "L'accès à l'eau en milieu rural a gagné près de treize points de pourcentage alors que la population a quasiment doublé sur la période longue. Le volet institutionnel a suivi : neuf offices de bassin renforcés, sept bassins sur neuf dotés d'un plan de gestion intégrée des ressources en eau, des réseaux de surveillance portés de 16 à 38 et 100 % des bassins transfrontaliers couverts par des accords de coopération. La moitié inachevée du mandat porte sur l'assainissement et l'efficience des services : le rapport propose un programme bancable de réduction de l'eau non facturée à Dar es Salaam, fondé sur la sectorisation des compteurs, la gestion de la pression, la recherche active de fuites et des contrats de performance."
               },
               source: "VNR 2026, Table 4.1 · Annex Table A6 · Case Box 4.1" },
 

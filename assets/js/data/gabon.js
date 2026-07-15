@@ -143,8 +143,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 7.1.1 (BM/WDI · SEEG · INSTAT)"
                 },
                 text: {
-                  fr: "Deux courbes, un seul pays. La moyenne nationale approche la saturation, tandis que l’accès rural a gagné 1,6 point en cinq ans — de 24,7 % en 2020 à 26,3 % en 2024. L’accès urbain atteint 98,2 % en 2024. La valeur 2024 est de 92,5 % ; 92,8 % est la projection 2025.",
-                  en: "Two lines, one country. The national average is close to saturation, while rural access gained 1.6 points in five years — from 24.7% in 2020 to 26.3% in 2024. Urban access reached 98.2% in 2024. The 2024 value is 92.5%; 92.8% is the 2025 projection."
+                  fr: "Deux courbes, un seul pays. La moyenne nationale approche la saturation, tandis que l'accès rural a gagné 1,6 point de pourcentage en cinq ans — de 24,7 % en 2020 à 26,3 % en 2024. L’accès urbain atteint 98,2 % en 2024. La valeur 2024 est de 92,5 % ; 92,8 % est la projection 2025.",
+                  en: "Two lines, one country. The national average is close to saturation, while rural access gained 1.6 percentage points in five years — from 24.7% in 2020 to 26.3% in 2024. Urban access reached 98.2% in 2024. The 2024 value is 92.5%; 92.8% is the 2025 projection."
                 },
                 source: "ENV 2026 · Messages clés (rapport intégral) · annexe 1, ODD 7.1.1"
               } },
@@ -228,8 +228,8 @@ window.VNR.register({
                   source: "ENV 2026 · annexe 1 — ODD 9.2.1 et 9.2.2 (DGEPF · BM)"
                 },
                 text: {
-                  fr: "La diversification produit de la valeur ajoutée : +1,3 point de pourcentage du PIB en quatre ans, portée par les Zones d’Investissement Spéciales. La part de l’emploi manufacturier a gagné 0,3 point sur la même période et reste stable depuis 2023, aux côtés d’un chômage de 20,0 %, d’un emploi informel de 47,0 % et de 36,2 % de jeunes ni en emploi, ni en études, ni en formation.",
-                  en: "Diversification is adding value: +1.3 percentage points of GDP in four years, driven by the Special Investment Zones. Manufacturing’s share of employment gained 0.3 points over the same period and has been flat since 2023, alongside 20.0% unemployment, 47.0% informal employment and 36.2% of young people not in employment, education or training."
+                  fr: "La diversification produit de la valeur ajoutée : +1,3 point de pourcentage du PIB en quatre ans, portée par les Zones d’Investissement Spéciales. La part de l'emploi manufacturier a gagné 0,3 point de pourcentage sur la même période et reste stable depuis 2023, aux côtés d’un chômage de 20,0 %, d’un emploi informel de 47,0 % et de 36,2 % de jeunes ni en emploi, ni en études, ni en formation.",
+                  en: "Diversification is adding value: +1.3 percentage points of GDP in four years, driven by the Special Investment Zones. Manufacturing's share of employment gained 0.3 percentage points over the same period and has been flat since 2023, alongside 20.0% unemployment, 47.0% informal employment and 36.2% of young people not in employment, education or training."
                 },
                 source: "ENV 2026 · annexes 1 et 2 — ODD 9.2.1, 9.2.2, 8.3.1, 8.5.2, 8.6.1"
               } },
@@ -298,12 +298,12 @@ window.VNR.register({
                           en: "Urban access is near saturation (98.2%); the remaining gap is almost entirely rural." } },
               { label: { fr: "Accès à l’électricité — milieu rural", en: "Electricity access — rural" },
                 from: 24.7, fromYear: "2020", to: 26.3, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "+1,6 point en cinq ans.",
-                          en: "+1.6 points in five years." } },
+                status: { fr: "+1,6 point de pourcentage en cinq ans.",
+                          en: "+1.6 percentage points in five years." } },
               { label: { fr: "Eau de base — milieu rural", en: "Basic water — rural" },
                 from: 53, fromYear: "2020", to: 57, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "Progression continue depuis 2020 (+4 points).",
-                          en: "Continuous progress since 2020 (+4 points)." } },
+                status: { fr: "Progression continue depuis 2020 (+4 points de pourcentage).",
+                          en: "Continuous progress since 2020 (+4 percentage points)." } },
               { label: { fr: "Eau de base — milieu urbain", en: "Basic water — urban" },
                 from: 83, fromYear: "2020", to: 83, toYear: "2024", unit: "%", dir: "flat",
                 status: { fr: "Stable depuis 2020.",
@@ -322,16 +322,16 @@ window.VNR.register({
                           en: "Diversification is creating value (proj. 2025: 7.1%)." } },
               { label: { fr: "Emploi manufacturier / emploi total", en: "Manufacturing employment / total employment" },
                 from: 4.2, fromYear: "2020", to: 4.5, toYear: "2024", unit: "%", dir: "up",
-                status: { fr: "+0,3 point, et stable depuis 2023.",
-                          en: "+0.3 points, and flat since 2023." } },
+                status: { fr: "+0,3 point de pourcentage, et stable depuis 2023.",
+                          en: "+0.3 percentage points, and flat since 2023." } },
               { label: { fr: "Accès routier rural (< 2 km d’une route praticable)", en: "Rural road access (within 2 km of an all-season road)" },
                 from: 25, fromYear: "2020", to: 26.5, toYear: "2024", unit: "%", dir: "up",
                 status: { fr: "Les routes sont la 2ᵉ priorité des Gabonais (18,2 %).",
                           en: "Roads are citizens’ second-highest priority (18.2%)." } },
               { label: { fr: "Population urbaine en quartiers précaires", en: "Urban population in slums or inadequate housing" },
                 from: 40.0, fromYear: "2020", to: 38.5, toYear: "2024", unit: "%", dir: "down",
-                status: { fr: "−1,5 point en cinq ans ; 90 % jugent le logement décent hors de portée.",
-                          en: "−1.5 points in five years; 90% find decent housing out of reach." } },
+                status: { fr: "−1,5 point de pourcentage en cinq ans ; 90 % jugent le logement décent hors de portée.",
+                          en: "−1.5 percentage points in five years; 90% find decent housing out of reach." } },
               { label: { fr: "Accès aisé aux transports publics", en: "Easy access to public transport" },
                 from: 18.0, fromYear: "2020", to: 19.5, toYear: "2024", unit: "%", dir: "up",
                 status: { fr: "19,5 % d’accès aisé en 2024 (proj. 2025 : 20,1 %).",
@@ -358,8 +358,8 @@ window.VNR.register({
                           en: "Down from 11.2% to 5.5% since 2020." } },
               { label: { fr: "Taux de chômage", en: "Unemployment rate" },
                 from: 21.0, fromYear: "2020", to: 20.0, toYear: "2024", unit: "%", dir: "down",
-                status: { fr: "Un point en cinq ans, avec 47,0 % d’emploi informel. 53,4 % des citoyens en font la priorité n° 1.",
-                          en: "One point in five years, with 47.0% informal employment. 53.4% of citizens make it priority number one." } },
+                status: { fr: "Un point de pourcentage en cinq ans, avec 47,0 % d'emploi informel. 53,4 % des citoyens en font la priorité n° 1.",
+                          en: "One percentage point in five years, with 47.0% informal employment. 53.4% of citizens make it priority number one." } },
               { label: { fr: "Jeunes de 15-24 ans ni en emploi, ni en études (NEET)", en: "Youth 15–24 not in employment, education or training" },
                 from: 38.5, fromYear: "2020", to: 36.2, toYear: "2024", unit: "%", dir: "down",
                 status: { fr: "Plus d’un jeune sur trois.",
@@ -462,8 +462,8 @@ window.VNR.register({
                   { label: { fr: "Milieu rural", en: "Rural" }, value: 26.3, emphasis: true }
                 ],
                 insight: {
-                  fr: "Soixante-douze points séparent l’accès urbain (98,2 %) de l’accès rural (26,3 %). Sur la qualité : 57,3 % des personnes raccordées jugent la fourniture mauvaise, et 55,2 % des ruraux cuisinent encore au bois de coupe familiale.",
-                  en: "Seventy-two points separate urban access (98.2%) from rural access (26.3%). On quality: 57.3% of connected households rate supply as poor, and 55.2% of rural people still cook with self-cut firewood."
+                  fr: "Soixante-douze points de pourcentage séparent l'accès urbain (98,2 %) de l'accès rural (26,3 %). Sur la qualité : 57,3 % des personnes raccordées jugent la fourniture mauvaise, et 55,2 % des ruraux cuisinent encore au bois de coupe familiale.",
+                  en: "Seventy-two percentage points separate urban access (98.2%) from rural access (26.3%). On quality: 57.3% of connected households rate supply as poor, and 55.2% of rural people still cook with self-cut firewood."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 7.1.1 (BM/WDI · SEEG · INSTAT) · ENP GABON-2050"
               },
@@ -527,8 +527,8 @@ window.VNR.register({
                     points: [{ x: "2020", y: 18.0 }, { x: "2021", y: 18.2 }, { x: "2022", y: 18.5 }, { x: "2023", y: 19.0 }, { x: "2024", y: 19.5 }] }
                 ],
                 insight: {
-                  fr: "Trois services urbains. La collecte des déchets progresse par paliers, alors que 64,1 % des habitants notent l’absence d’aménagements pour le dépôt des ordures ; la part des quartiers précaires recule d’un point et demi en cinq ans, quand 90 % des Gabonais jugent le logement décent hors de portée ; l’accès aisé aux transports publics reste sous les 20 %, avec 74 % d’usagers insatisfaits. Le rapport donne une urbanisation « supérieure à 90 % ».",
-                  en: "Three urban services. Waste collection improves in steps, while 64.1% of residents report no facilities for depositing refuse; the slum share falls by a point and a half in five years, while 90% of Gabonese find decent housing out of reach; easy access to public transport stays below 20%, with 74% of users dissatisfied. The report gives urbanisation as \"above 90%\"."
+                  fr: "Trois services urbains. La collecte des déchets progresse par paliers, alors que 64,1 % des habitants notent l’absence d’aménagements pour le dépôt des ordures ; la part des quartiers précaires recule de 1,5 point de pourcentage en cinq ans, quand 90 % des Gabonais jugent le logement décent hors de portée ; l’accès aisé aux transports publics reste sous les 20 %, avec 74 % d’usagers insatisfaits. Le rapport donne une urbanisation « supérieure à 90 % ».",
+                  en: "Three urban services. Waste collection improves in steps, while 64.1% of residents report no facilities for depositing refuse; the slum share falls by 1.5 percentage points in five years, while 90% of Gabonese find decent housing out of reach; easy access to public transport stays below 20%, with 74% of users dissatisfied. The report gives urbanisation as \"above 90%\"."
                 },
                 source: "ENV 2026 · annexe 1 — ODD 11.1.1, 11.2.1, 11.6.1 (ONU-Habitat · INSTAT) · ENP GABON-2050"
               },
@@ -604,8 +604,8 @@ window.VNR.register({
             title: { fr: "Huit ruraux sur dix vivent sous le seuil de pauvreté",
                      en: "Eight rural people in ten live below the poverty line" },
             text: {
-              fr: "Le taux de pauvreté au seuil national atteint 80,1 % en milieu rural, contre 39,6 % en milieu urbain. Ce chiffre figure dans l’annexe 2 du rapport, sous l’indicateur 1.2.1, source INSTAT (EGEP II).\n\nLe même écart rural-urbain se retrouve sur d’autres indicateurs. L’électricité : 98,2 % en ville, 26,3 % à la campagne — soixante-douze points d’écart. L’eau potable : 83 % contre 57 %. L’accès routier rural : 26,5 % de la population rurale à moins de deux kilomètres d’une route praticable toute l’année. Les accouchements assistés : 96,3 % en ville, 76,0 % en zone rurale. Le paludisme frappe à 515 cas pour 1 000 habitants en milieu rural, contre 290 en ville. La mortalité des moins de cinq ans est de 35,4 ‰ en ville et de 54,2 ‰ à la campagne. La défécation à l’air libre est de 1 % en ville et de 8 % en zone rurale — figée depuis 2020.\n\nLe pays étant urbanisé à plus de 90 %, le taux national d’électrification de 92,5 % reflète surtout les villes. La lecture séparée des niveaux ruraux et urbains, telle que le rapport la présente, fait apparaître les écarts.",
-              en: "The poverty rate at the national line reaches 80.1% in rural areas, against 39.6% in urban areas. The figure is in Annex 2, under indicator 1.2.1, sourced to INSTAT (EGEP II).\n\nThe same rural–urban pattern runs across other indicators. Electricity: 98.2% in the cities, 26.3% in the countryside — seventy-two points apart. Drinking water: 83% against 57%. Rural road access: 26.5% of rural people live within two kilometres of an all-season road. Skilled birth attendance: 96.3% urban, 76.0% rural. Malaria strikes at 515 cases per 1,000 people in rural areas, against 290 in the cities. Under-five mortality is 35.4 per 1,000 in the cities and 54.2 in the countryside. Open defecation is 1% urban and 8% rural — unchanged since 2020.\n\nBecause the country is more than 90% urban, the 92.5% national electrification rate mainly reflects the cities. Reading rural and urban levels separately, as the report does, shows where the gaps lie."
+              fr: "Le taux de pauvreté au seuil national atteint 80,1 % en milieu rural, contre 39,6 % en milieu urbain. Ce chiffre figure dans l’annexe 2 du rapport, sous l’indicateur 1.2.1, source INSTAT (EGEP II).\n\nLe même écart rural-urbain se retrouve sur d’autres indicateurs. L’électricité : 98,2 % en ville, 26,3 % à la campagne — soixante-douze points de pourcentage d'écart. L’eau potable : 83 % contre 57 %. L’accès routier rural : 26,5 % de la population rurale à moins de deux kilomètres d’une route praticable toute l’année. Les accouchements assistés : 96,3 % en ville, 76,0 % en zone rurale. Le paludisme frappe à 515 cas pour 1 000 habitants en milieu rural, contre 290 en ville. La mortalité des moins de cinq ans est de 35,4 ‰ en ville et de 54,2 ‰ à la campagne. La défécation à l’air libre est de 1 % en ville et de 8 % en zone rurale — figée depuis 2020.\n\nLe pays étant urbanisé à plus de 90 %, le taux national d’électrification de 92,5 % reflète surtout les villes. La lecture séparée des niveaux ruraux et urbains, telle que le rapport la présente, fait apparaître les écarts.",
+              en: "The poverty rate at the national line reaches 80.1% in rural areas, against 39.6% in urban areas. The figure is in Annex 2, under indicator 1.2.1, sourced to INSTAT (EGEP II).\n\nThe same rural–urban pattern runs across other indicators. Electricity: 98.2% in the cities, 26.3% in the countryside — seventy-two percentage points apart. Drinking water: 83% against 57%. Rural road access: 26.5% of rural people live within two kilometres of an all-season road. Skilled birth attendance: 96.3% urban, 76.0% rural. Malaria strikes at 515 cases per 1,000 people in rural areas, against 290 in the cities. Under-five mortality is 35.4 per 1,000 in the cities and 54.2 in the countryside. Open defecation is 1% urban and 8% rural — unchanged since 2020.\n\nBecause the country is more than 90% urban, the 92.5% national electrification rate mainly reflects the cities. Reading rural and urban levels separately, as the report does, shows where the gaps lie."
             },
             source: "ENV 2026 · annexe 2 — ODD 1.2.1, 3.1.2, 3.2.1, 3.3.3 · annexe 1 — ODD 6.1.1, 7.1.1, 9.1.1" },
 
@@ -781,8 +781,8 @@ window.VNR.register({
               { label: { fr: "Dibwangui", en: "Dibwangui" }, value: 15, emphasis: false }
             ],
             insight: {
-              fr: "Cent vingt-trois mégawatts au total. Kinguélé Aval, mené en partenariat public-privé, est le plus avancé. Ces trois aménagements, complétés par le programme d’hybridation solaire (Ndjolé, Ovan, Booué, Bitam), constituent l’accélérateur que le rapport retient pour l’ODD 7 : sécuriser « une énergie verte et fiable pour tous ». Ils ne suffiront pas à eux seuls à combler les 72 points d’écart entre la ville et le village, mais ils sont ce que le pays a mis sur la table.",
-              en: "One hundred and twenty-three megawatts in all. Kinguélé Aval, delivered as a public-private partnership, is the furthest advanced. Together with the solar hybridisation programme (Ndjolé, Ovan, Booué, Bitam), these three schemes constitute the accelerator the report names for SDG 7: securing \"green, reliable energy for all\". They will not on their own close the 72-point gap between city and village, but they are what the country has put on the table."
+              fr: "Cent vingt-trois mégawatts au total. Kinguélé Aval, mené en partenariat public-privé, est le plus avancé. Ces trois aménagements, complétés par le programme d’hybridation solaire (Ndjolé, Ovan, Booué, Bitam), constituent l’accélérateur que le rapport retient pour l’ODD 7 : sécuriser « une énergie verte et fiable pour tous ». Ils ne suffiront pas à eux seuls à combler l'écart de 72 points de pourcentage entre la ville et le village, mais ils sont ce que le pays a mis sur la table.",
+              en: "One hundred and twenty-three megawatts in all. Kinguélé Aval, delivered as a public-private partnership, is the furthest advanced. Together with the solar hybridisation programme (Ndjolé, Ovan, Booué, Bitam), these three schemes constitute the accelerator the report names for SDG 7: securing \"green, reliable energy for all\". They will not on their own close the 72-percentage-point gap between city and village, but they are what the country has put on the table."
             },
             source: "ENV 2026 · corps du rapport, ODD 7 (Plan Directeur de l’Électricité)"
           } },
@@ -811,8 +811,8 @@ window.VNR.register({
               kicker: { fr: "15 MW · programmé", en: "15 MW · planned" },
               stats: [{ label: { fr: "puissance", en: "capacity" }, value: 15, unit: " MW" }],
               text: {
-                fr: "Le plus petit des trois, et le plus directement territorial. C’est le type d’ouvrage qui déplace la courbe rurale — celle qui n’a gagné que 1,6 point en cinq ans, de 24,7 % à 26,3 %.",
-                en: "The smallest of the three, and the most directly territorial. This is the kind of scheme that moves the rural curve — the one that has gained just 1.6 points in five years, from 24.7% to 26.3%."
+                fr: "Le plus petit des trois, et le plus directement territorial. C’est le type d’ouvrage qui déplace la courbe rurale — celle qui n'a gagné que 1,6 point de pourcentage en cinq ans, de 24,7 % à 26,3 %.",
+                en: "The smallest of the three, and the most directly territorial. This is the kind of scheme that moves the rural curve — the one that has gained just 1.6 percentage points in five years, from 24.7% to 26.3%."
               },
               source: "ENV 2026 · ODD 7" },
 
